@@ -5,42 +5,87 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-  <title>UK Postal Code Lookup | Find Zip Codes in UK</title>
-  <meta name="description" content="Search postal codes and zip codes for cities in UK. Find UK postal code information by city name or address. Free lookup tool with map.">
-  <meta name="keywords" content="uk postal code, uk zip code, uk postcode, postal code lookup uk, uk address lookup">
-  <meta name="robots" content="index, follow">
+  <title>UK Postal Code Lookup | Find Zip Codes in UK 2026</title>
+  <meta name="description" content="Free UK postal code lookup tool. Search zip codes for 0+ cities in UK. Find UK postal code information by city name or address with interactive map.">
+  <meta name="keywords" content="UK postcode lookup, British postal codes, United Kingdom zip code">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
   <link rel="canonical" href="https://postalcodelookup.info/united-kingdom-postal-code.html">
+  <meta name="author" content="Postal Code Lookup">
+  <meta name="geo.region" content="UK">
+  <meta name="geo.placename" content="UK">
 
   <meta property="og:type" content="website">
   <meta property="og:title" content="UK Postal Code Lookup | Find Zip Codes in UK">
-  <meta property="og:description" content="Search postal codes for cities in UK. Free lookup tool with interactive map.">
+  <meta property="og:description" content="Search postal codes for 0+ cities in UK. Free lookup tool with interactive map.">
   <meta property="og:url" content="https://postalcodelookup.info/united-kingdom-postal-code.html">
+  <meta property="og:site_name" content="Postal Code Lookup">
+  <meta property="og:image" content="https://postalcodelookup.info/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="UK Postal Code Lookup">
+  <meta name="twitter:description" content="Search postal codes for 0+ cities in UK">
+  <meta name="twitter:image" content="https://postalcodelookup.info/og-image.jpg">
 
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect fill='%231E40AF' width='100' height='100' rx='20'/%3E%3Ctext x='50' y='68' font-size='50' text-anchor='middle' fill='white' font-family='Arial' font-weight='bold'%3EP%3C/text%3E%3C/svg%3E">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="dns-prefetch" href="https://unpkg.com">
+  <link rel="dns-prefetch" href="https://nominatim.openstreetmap.org">
+
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700;800&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="country.css">
 
-  <!-- Leaflet CSS for Map -->
+  <!-- Leaflet CSS for Map - Load async -->
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
-    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"></noscript>
 
+  <!-- Schema.org Structured Data -->
   <script type="application/ld+json">
+  [
   {
-  "@context": "https://schema.org",
-  "@type": "WebPage",
-  "name": "UK Postal Code Lookup",
-  "description": "Search postal codes and zip codes for cities in UK. Find postal code information by city name or address.",
-  "url": "https://postalcodelookup.info/united-kingdom-postal-code.html",
-  "mainEntity": {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "UK Postal Code Lookup",
+    "description": "Search postal codes and zip codes for cities in UK. Find postal code information by city name or address.",
+    "url": "https://postalcodelookup.info/united-kingdom-postal-code.html",
+    "breadcrumb": {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://postalcodelookup.info/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "UK Postal Code Lookup",
+          "item": "https://postalcodelookup.info/united-kingdom-postal-code.html"
+        }
+      ]
+    }
+  },
+  {
+    "@context": "https://schema.org",
     "@type": "ItemList",
+    "name": "Popular Cities in UK",
     "itemListElement": []
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Postal Code Lookup",
+    "url": "https://postalcodelookup.info/",
+    "logo": "https://postalcodelookup.info/favicon.ico"
   }
-}
+]
   </script>
 </head>
 
@@ -64,19 +109,33 @@
 
   <main id="main-content" class="main-content">
     <div class="container">
+      <!-- Breadcrumb Navigation -->
+      <nav aria-label="Breadcrumb" class="breadcrumb">
+        <ol itemscope itemtype="https://schema.org/BreadcrumbList">
+          <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+            <a itemprop="item" href="index.html"><span itemprop="name">Home</span></a>
+            <meta itemprop="position" content="1" />
+          </li>
+          <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+            <span itemprop="name">UK Postal Code</span>
+            <meta itemprop="position" content="2" />
+          </li>
+        </ol>
+      </nav>
+
       <!-- Top Section: Search + About -->
       <div class="top-section">
         <!-- Left: Search Tool -->
         <section class="search-tool" aria-labelledby="search-heading">
           <div class="search-tool-header">
-            <img id="search-country-flag" class="search-country-flag" src="flags/gb.png" alt="UK flag" width="24" height="18">
+            <img id="search-country-flag" class="search-country-flag" src="flags/gb.png" alt="UK flag" width="24" height="18" loading="eager">
             <h1 id="search-heading" class="search-tool-title">
               UK Postal Code Lookup
             </h1>
           </div>
 
           <div class="search-box">
-            <label for="city-search" class="form-label">Enter Address / Place / Location / City</label>
+            <label for="city-search" class="form-label">Enter Address / Place / Location / City in UK</label>
             <div class="autocomplete-wrapper">
               <svg class="form-input-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
@@ -89,6 +148,7 @@
                 autocomplete="off"
                 aria-autocomplete="list"
                 aria-controls="suggestions-list"
+                aria-label="Search for a city in UK"
               >
               <ul id="suggestions-list" class="suggestions-list" role="listbox" aria-label="City suggestions"></ul>
             </div>
@@ -104,11 +164,12 @@
           <h2 id="about-heading" class="about-title">About UK Postal Code Lookup</h2>
           <div class="about-content">
             <p>
-              This is an online tool to search postal code of a place, address or city in UK.
+              This is an online tool to search postal code of a place, address or city in <strong>UK</strong>.
               Select the name of the Place/Address/City (in UK) from the suggested list.
               This will display the postal code of the selected location from UK on the map.
             </p>
             <p><strong>Note that the postal code may be searched with nearby approximation.</strong></p>
+            <p>We cover <strong>0 cities</strong> across <strong>0 states/provinces</strong> in UK.</p>
           </div>
         </section>
       </div>
@@ -150,7 +211,7 @@
           </p>
 
           <div class="cities-select-wrapper">
-            <select id="cities-select" class="cities-select">
+            <select id="cities-select" class="cities-select" aria-label="Select a city in UK">
               <option value="">Select a city...</option>
 
             </select>
@@ -162,8 +223,8 @@
 
           <!-- Popular Cities Links for SEO -->
           <div class="popular-cities-links" style="margin-top: 1.5rem;">
-            <h3 style="font-size: 0.875rem; color: var(--color-text-muted); margin-bottom: 0.75rem;">Popular UK Cities:</h3>
-            <div class="city-links-grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 0.5rem;">
+            <h3 style="font-size: 0.875rem; color: var(--color-text-muted); margin-bottom: 0.75rem;">Popular UK Cities with Postal Codes:</h3>
+            <div class="city-links-grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 0.5rem; font-size: 0.8rem;">
 
             </div>
           </div>
@@ -172,11 +233,38 @@
         <!-- Right: State/Province List -->
         <section class="states-list" aria-labelledby="states-heading">
           <h2 id="states-heading" class="states-title">State/Province level Postal Code Search:</h2>
+          <p style="font-size: 0.8rem; color: var(--color-text-muted); margin-bottom: 1rem;">
+            Click on a state/province to filter cities in that region.
+          </p>
           <div id="states-container" class="states-container">
 
           </div>
         </section>
       </div>
+
+      <!-- SEO Content Section -->
+      <section class="seo-content" style="margin-top: 2rem; padding: 1.5rem; background: var(--color-surface); border-radius: var(--radius-lg);">
+        <h2 style="font-size: 1.25rem; margin-bottom: 1rem; color: var(--color-text);">UK Postal Code Information</h2>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem;">
+          <div>
+            <h3 style="font-size: 1rem; margin-bottom: 0.5rem; color: var(--color-primary);">About UK Postal Codes</h3>
+            <p style="font-size: 0.875rem; line-height: 1.6; color: var(--color-text-muted);">
+              UK uses a postal code system to help deliver mail efficiently. 
+              Our database covers 0 cities and towns across 0 states/provinces.
+              Use our lookup tool to find the correct postal code for any address in UK.
+            </p>
+          </div>
+          <div>
+            <h3 style="font-size: 1rem; margin-bottom: 0.5rem; color: var(--color-primary);">How to Use</h3>
+            <p style="font-size: 0.875rem; line-height: 1.6; color: var(--color-text-muted);">
+              1. Enter a city name or address in the search box<br>
+              2. Select from the autocomplete suggestions<br>
+              3. Click "Show Postal Code" to see results<br>
+              4. View the location on the interactive map
+            </p>
+          </div>
+        </div>
+      </section>
     </div>
 
     <!-- Data Accuracy Notice -->
@@ -211,9 +299,9 @@
   <!-- Toast Container -->
   <div id="toast-container"></div>
 
-  <!-- Leaflet JS -->
+  <!-- Leaflet JS - Async loading for performance -->
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
-    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin="" async></script>
 
   <!-- Cookie Consent Banner -->
   <div id="cookie-consent" class="cookie-consent" style="display: none;">
@@ -231,6 +319,8 @@
     window.countryId = "UK";
     window.countryName = "UK";
     window.countryCoords = [55.3781, -3.436];
+    window.totalCities = 0;
+    window.totalStates = 0;
   </script>
   <script src="mockData.js"></script>
   <script src="country.js"></script>
