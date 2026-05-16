@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog - Postal Code Lookup | Tips & Guides</title>
+  <meta name="description" content="Read our blog for postal code tips, guides, and interesting facts about zip codes around the world.">
+  <meta name="robots" content="index, follow">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .blog-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 2rem 1rem;
+    }
+    .blog-header {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+    .blog-header h1 {
+      font-size: 2.5rem;
+      color: var(--color-primary);
+      margin-bottom: 1rem;
+    }
+    .blog-header p {
+      font-size: 1.125rem;
+      color: var(--color-text-muted);
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    .blog-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+      gap: 2rem;
+    }
+    .blog-card {
+      background: var(--color-surface);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      box-shadow: var(--shadow-sm);
+      transition: box-shadow 0.2s;
+    }
+    .blog-card:hover {
+      box-shadow: var(--shadow-md);
+    }
+    .blog-card-image {
+      width: 100%;
+      height: 200px;
+      background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 3rem;
+    }
+    .blog-card-content {
+      padding: 1.5rem;
+    }
+    .blog-card-category {
+      display: inline-block;
+      padding: 0.25rem 0.75rem;
+      background: var(--color-primary-light);
+      color: var(--color-primary);
+      border-radius: var(--radius-full);
+      font-size: 0.75rem;
+      font-weight: 600;
+      margin-bottom: 0.75rem;
+    }
+    .blog-card h2 {
+      font-size: 1.25rem;
+      margin-bottom: 0.75rem;
+      color: var(--color-text);
+    }
+    .blog-card p {
+      color: var(--color-text-muted);
+      font-size: 0.875rem;
+      line-height: 1.6;
+      margin-bottom: 1rem;
+    }
+    .blog-card-meta {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.75rem;
+      color: var(--color-text-muted);
+    }
+    .blog-card-link {
+      color: var(--color-primary);
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .blog-card-link:hover {
+      text-decoration: underline;
+    }
+    .ad-container {
+      margin: 2rem 0;
+      text-align: center;
+      min-height: 90px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--color-surface);
+      border-radius: var(--radius-md);
+      border: 1px dashed var(--color-border);
+    }
+    .ad-label {
+      font-size: 0.75rem;
+      color: var(--color-text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+  </style>
+</head>
+<body>
+  <header class="header" role="banner">
+    <div class="header-content">
+      <a href="index.html" class="logo">
+        <svg class="logo-icon-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+          <path fill-rule="evenodd" d="M1.5 8.67v8.58a3 3 0 003 3h15a3 3 0 003-3V8.67l-8.928 5.493a3 3 0 01-3.144 0L1.5 8.67z" clip-rule="evenodd" />
+        </svg>
+        <span>Postal Code Lookup</span>
+      </a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="blog.html" class="nav-link active">Blog</a>
+        <a href="privacy-policy.html" class="nav-link">Privacy</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main-content">
+    <div class="blog-container">
+      <div class="blog-header">
+        <h1>Our Blog</h1>
+        <p>Discover interesting facts, guides, and tips about postal codes and zip codes from around the world.</p>
+      </div>
+
+      <!-- Ad Unit: Leaderboard -->
+      <div class="ad-container">
+        <span class="ad-label">Advertisement</span>
+      </div>
+
+      <div class="blog-grid">
+        <article class="blog-card">
+          <div class="blog-card-image">🌍</div>
+          <div class="blog-card-content">
+            <span class="blog-card-category">Guide</span>
+            <h2>Understanding Postal Codes: A Complete Guide</h2>
+            <p>Learn how postal codes work, why they matter, and how to use them effectively for mailing and shipping.</p>
+            <div class="blog-card-meta">
+              <span>May 15, 2026</span>
+              <a href="#" class="blog-card-link">Read More →</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="blog-card">
+          <div class="blog-card-image">🇺🇸</div>
+          <div class="blog-card-content">
+            <span class="blog-card-category">Country Guide</span>
+            <h2>US ZIP Codes: History and Format</h2>
+            <p>Explore the history of ZIP codes in the United States and understand the 5-digit and 9-digit formats.</p>
+            <div class="blog-card-meta">
+              <span>May 12, 2026</span>
+              <a href="#" class="blog-card-link">Read More →</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="blog-card">
+          <div class="blog-card-image">🇬🇧</div>
+          <div class="blog-card-content">
+            <span class="blog-card-category">Country Guide</span>
+            <h2>UK Postcodes: How They Work</h2>
+            <p>Understanding the UK postcode system, from the alphanumeric format to delivery point suffixes.</p>
+            <div class="blog-card-meta">
+              <span>May 10, 2026</span>
+              <a href="#" class="blog-card-link">Read More →</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="blog-card">
+          <div class="blog-card-image">📦</div>
+          <div class="blog-card-content">
+            <span class="blog-card-category">Tips</span>
+            <h2>Common Postal Code Mistakes to Avoid</h2>
+            <p>Avoid these common mistakes when writing addresses to ensure your mail reaches its destination.</p>
+            <div class="blog-card-meta">
+              <span>May 8, 2026</span>
+              <a href="#" class="blog-card-link">Read More →</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="blog-card">
+          <div class="blog-card-image">🌏</div>
+          <div class="blog-card-content">
+            <span class="blog-card-category">Global</span>
+            <h2>Postal Codes Around the World</h2>
+            <p>Discover how different countries format their postal codes and the unique systems they use.</p>
+            <div class="blog-card-meta">
+              <span>May 5, 2026</span>
+              <a href="#" class="blog-card-link">Read More →</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="blog-card">
+          <div class="blog-card-image">🔍</div>
+          <div class="blog-card-content">
+            <span class="blog-card-category">How-To</span>
+            <h2>How to Find Your Postal Code</h2>
+            <p>Step-by-step guide to finding your postal code using our tool and other reliable methods.</p>
+            <div class="blog-card-meta">
+              <span>May 1, 2026</span>
+              <a href="#" class="blog-card-link">Read More →</a>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <!-- Ad Unit: Leaderboard -->
+      <div class="ad-container">
+        <span class="ad-label">Advertisement</span>
+      </div>
+
+      <!-- Data Accuracy Notice -->
+      <div class="data-notice" role="note" aria-label="Data accuracy notice">
+        <div class="data-notice-icon">⚠️</div>
+        <div class="data-notice-content">
+          <strong>Data Disclaimer:</strong> Postal code information provided is for reference only and may not reflect the most current data. For official verification, please contact your local postal service or visit the official website.
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer --><footer class="footer">
+    <div class="footer-content">
+      <nav class="footer-links" aria-label="Footer navigation">
+        <a href="privacy-policy.html" class="footer-link">Privacy Policy</a>
+        <a href="terms-of-service.html" class="footer-link">Terms of Service</a>
+        <a href="cookie-policy.html" class="footer-link">Cookie Policy</a>
+        <a href="disclaimer.html" class="footer-link">Disclaimer</a>
+      </nav>
+      <p style="text-align: center; font-size: 0.75rem; color: rgba(255,255,255,0.5);">
+        &copy; 2026 Postal Code Lookup. All rights reserved.
+      </p>
+      <p style="text-align: center; margin-top: 0.5rem; font-size: 0.6875rem; color: rgba(255,255,255,0.4);">
+        Data sources: <a href="https://www.geonames.org/" target="_blank" rel="noopener noreferrer" style="color: rgba(255,255,255,0.5); text-decoration: underline;">GeoNames.org</a> | <a href="https://www.openstreetmap.org/" target="_blank" rel="noopener noreferrer" style="color: rgba(255,255,255,0.5); text-decoration: underline;">OpenStreetMap</a>
+      </p>
+    </div>
+  </footer>
+
+  <!-- Cookie Consent Banner -->
+  <div id="cookie-consent" class="cookie-consent" style="display: none;">
+    <div class="cookie-consent-content">
+      <p>We use cookies to enhance your experience and serve personalized ads. By continuing to use our site, you agree to our <a href="cookie-policy.html">Cookie Policy</a>.</p>
+      <div class="cookie-consent-buttons">
+        <button id="cookie-accept" class="cookie-btn cookie-btn-primary">Accept All</button>
+        <button id="cookie-decline" class="cookie-btn cookie-btn-secondary">Decline</button>
+      </div>
+    </div>
+  </div>
+
+  <style>
+    .cookie-consent {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: var(--color-surface);
+      box-shadow: 0 -4px 6px -1px rgba(0, 0, 0, 0.1);
+      z-index: 1000;
+      padding: 1rem;
+      border-top: 1px solid var(--color-border);
+    }
+    .cookie-consent-content {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+    }
+    .cookie-consent p {
+      margin: 0;
+      font-size: 0.875rem;
+      color: var(--color-text);
+    }
+    .cookie-consent a {
+      color: var(--color-primary);
+      text-decoration: underline;
+    }
+    .cookie-consent-buttons {
+      display: flex;
+      gap: 0.5rem;
+      flex-shrink: 0;
+    }
+    .cookie-btn {
+      padding: 0.5rem 1.5rem;
+      border-radius: var(--radius-md);
+      font-weight: 600;
+      cursor: pointer;
+      border: none;
+      font-size: 0.875rem;
+      transition: opacity 0.2s;
+    }
+    .cookie-btn:hover {
+      opacity: 0.9;
+    }
+    .cookie-btn-primary {
+      background: var(--color-primary);
+      color: white;
+    }
+    .cookie-btn-secondary {
+      background: transparent;
+      color: var(--color-text);
+      border: 1px solid var(--color-border);
+    }
+    @media (max-width: 768px) {
+      .cookie-consent-content {
+        flex-direction: column;
+        text-align: center;
+      }
+    }
+  </style>
+
+  <script>
+    // Cookie Consent Logic
+    (function() {
+      const consentBanner = document.getElementById('cookie-consent');
+      const acceptBtn = document.getElementById('cookie-accept');
+      const declineBtn = document.getElementById('cookie-decline');
+      
+      // Check if user has already made a choice
+      const cookieChoice = localStorage.getItem('cookieConsent');
+      
+      if (!cookieChoice) {
+        consentBanner.style.display = 'block';
+      }
+      
+      acceptBtn.addEventListener('click', function() {
+        localStorage.setItem('cookieConsent', 'accepted');
+        consentBanner.style.display = 'none';
+        // Initialize ads after consent
+        if (typeof initAds === 'function') {
+          initAds();
+        }
+      });
+      
+      declineBtn.addEventListener('click', function() {
+        localStorage.setItem('cookieConsent', 'declined');
+        consentBanner.style.display = 'none';
+      });
+    })();
+  </script>
+</body>
+</html>

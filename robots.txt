@@ -1,0 +1,13 @@
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://postalcodelookup.com/sitemap.xml
+
+# Disallow admin and private areas (if any in the future)
+Disallow: /admin/
+Disallow: /private/
+Disallow: /api/
+
+# Crawl delay for bots (optional, helps with server load)
+Crawl-delay: 1
