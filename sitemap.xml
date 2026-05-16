@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <!-- Homepage -->
   <url>
-    <loc>https://postalcodelookup.com/</loc>
+    <loc>https://postalcodelookup.info/</loc>
     <lastmod>2026-05-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
@@ -10,251 +10,327 @@
 
   <!-- Blog Page -->
   <url>
-    <loc>https://postalcodelookup.com/blog.html</loc>
+    <loc>https://postalcodelookup.info/blog.html</loc>
     <lastmod>2026-05-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
 
-  <!-- Country Pages -->
+  <!-- Static Country Pages - High Priority -->
   <url>
-    <loc>https://postalcodelookup.com/country.html?country=US</loc>
+    <loc>https://postalcodelookup.info/us-postal-code.html</loc>
+    <lastmod>2026-05-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.95</priority>
+  </url>
+  <url>
+    <loc>https://postalcodelookup.info/canada-postal-code.html</loc>
+    <lastmod>2026-05-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.95</priority>
+  </url>
+  <url>
+    <loc>https://postalcodelookup.info/united-kingdom-postal-code.html</loc>
+    <lastmod>2026-05-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.95</priority>
+  </url>
+  <url>
+    <loc>https://postalcodelookup.info/germany-postal-code.html</loc>
     <lastmod>2026-05-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://postalcodelookup.com/country.html?country=UK</loc>
+    <loc>https://postalcodelookup.info/france-postal-code.html</loc>
     <lastmod>2026-05-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://postalcodelookup.com/country.html?country=CA</loc>
+    <loc>https://postalcodelookup.info/japan-postal-code.html</loc>
     <lastmod>2026-05-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://postalcodelookup.com/country.html?country=AU</loc>
+    <loc>https://postalcodelookup.info/india-postal-code.html</loc>
     <lastmod>2026-05-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://postalcodelookup.com/country.html?country=DE</loc>
+    <loc>https://postalcodelookup.info/australia-postal-code.html</loc>
+    <lastmod>2026-05-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://postalcodelookup.info/brazil-postal-code.html</loc>
+    <lastmod>2026-05-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://postalcodelookup.info/italy-postal-code.html</loc>
+    <lastmod>2026-05-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://postalcodelookup.info/spain-postal-code.html</loc>
+    <lastmod>2026-05-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://postalcodelookup.info/netherlands-postal-code.html</loc>
+    <lastmod>2026-05-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://postalcodelookup.info/mexico-postal-code.html</loc>
+    <lastmod>2026-05-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://postalcodelookup.info/russia-postal-code.html</loc>
+    <lastmod>2026-05-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://postalcodelookup.info/china-postal-code.html</loc>
+    <lastmod>2026-05-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <!-- Static Country Pages - Medium Priority -->
+  <url>
+    <loc>https://postalcodelookup.info/sweden-postal-code.html</loc>
     <lastmod>2026-05-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://postalcodelookup.com/country.html?country=FR</loc>
+    <loc>https://postalcodelookup.info/norway-postal-code.html</loc>
     <lastmod>2026-05-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://postalcodelookup.com/country.html?country=JP</loc>
+    <loc>https://postalcodelookup.info/poland-postal-code.html</loc>
     <lastmod>2026-05-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://postalcodelookup.com/country.html?country=IN</loc>
+    <loc>https://postalcodelookup.info/turkey-postal-code.html</loc>
     <lastmod>2026-05-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://postalcodelookup.com/country.html?country=BR</loc>
+    <loc>https://postalcodelookup.info/belgium-postal-code.html</loc>
     <lastmod>2026-05-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://postalcodelookup.com/country.html?country=IT</loc>
+    <loc>https://postalcodelookup.info/switzerland-postal-code.html</loc>
     <lastmod>2026-05-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://postalcodelookup.com/country.html?country=ES</loc>
+    <loc>https://postalcodelookup.info/austria-postal-code.html</loc>
     <lastmod>2026-05-17</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://postalcodelookup.com/country.html?country=NL</loc>
+    <loc>https://postalcodelookup.info/denmark-postal-code.html</loc>
     <lastmod>2026-05-17</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://postalcodelookup.com/country.html?country=MX</loc>
+    <loc>https://postalcodelookup.info/finland-postal-code.html</loc>
     <lastmod>2026-05-17</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://postalcodelookup.com/country.html?country=RU</loc>
+    <loc>https://postalcodelookup.info/new-zealand-postal-code.html</loc>
     <lastmod>2026-05-17</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://postalcodelookup.com/country.html?country=CN</loc>
+    <loc>https://postalcodelookup.info/portugal-postal-code.html</loc>
     <lastmod>2026-05-17</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://postalcodelookup.com/country.html?country=ZA</loc>
+    <loc>https://postalcodelookup.info/greece-postal-code.html</loc>
     <lastmod>2026-05-17</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://postalcodelookup.com/country.html?country=SE</loc>
+    <loc>https://postalcodelookup.info/czech-republic-postal-code.html</loc>
     <lastmod>2026-05-17</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://postalcodelookup.com/country.html?country=NO</loc>
+    <loc>https://postalcodelookup.info/hungary-postal-code.html</loc>
     <lastmod>2026-05-17</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://postalcodelookup.com/country.html?country=PL</loc>
+    <loc>https://postalcodelookup.info/ireland-postal-code.html</loc>
     <lastmod>2026-05-17</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://postalcodelookup.com/country.html?country=ID</loc>
+    <loc>https://postalcodelookup.info/singapore-postal-code.html</loc>
     <lastmod>2026-05-17</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://postalcodelookup.com/country.html?country=TR</loc>
+    <loc>https://postalcodelookup.info/thailand-postal-code.html</loc>
     <lastmod>2026-05-17</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://postalcodelookup.com/country.html?country=BE</loc>
+    <loc>https://postalcodelookup.info/malaysia-postal-code.html</loc>
     <lastmod>2026-05-17</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://postalcodelookup.com/country.html?country=CH</loc>
+    <loc>https://postalcodelookup.info/philippines-postal-code.html</loc>
     <lastmod>2026-05-17</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://postalcodelookup.com/country.html?country=AT</loc>
+    <loc>https://postalcodelookup.info/south-korea-postal-code.html</loc>
     <lastmod>2026-05-17</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://postalcodelookup.com/country.html?country=DK</loc>
+    <loc>https://postalcodelookup.info/uae-postal-code.html</loc>
     <lastmod>2026-05-17</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://postalcodelookup.com/country.html?country=FI</loc>
+    <loc>https://postalcodelookup.info/israel-postal-code.html</loc>
     <lastmod>2026-05-17</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Static Country Pages - Standard Priority -->
+  <url>
+    <loc>https://postalcodelookup.info/south-africa-postal-code.html</loc>
+    <lastmod>2026-05-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://postalcodelookup.com/country.html?country=NZ</loc>
+    <loc>https://postalcodelookup.info/indonesia-postal-code.html</loc>
     <lastmod>2026-05-17</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://postalcodelookup.com/country.html?country=PT</loc>
+    <loc>https://postalcodelookup.info/slovakia-postal-code.html</loc>
     <lastmod>2026-05-17</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://postalcodelookup.com/country.html?country=GR</loc>
+    <loc>https://postalcodelookup.info/croatia-postal-code.html</loc>
     <lastmod>2026-05-17</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
+    <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://postalcodelookup.com/country.html?country=CZ</loc>
+    <loc>https://postalcodelookup.info/slovenia-postal-code.html</loc>
     <lastmod>2026-05-17</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
+    <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://postalcodelookup.com/country.html?country=HU</loc>
+    <loc>https://postalcodelookup.info/lithuania-postal-code.html</loc>
     <lastmod>2026-05-17</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
+    <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://postalcodelookup.com/country.html?country=IE</loc>
+    <loc>https://postalcodelookup.info/latvia-postal-code.html</loc>
     <lastmod>2026-05-17</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
+    <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://postalcodelookup.com/country.html?country=SG</loc>
+    <loc>https://postalcodelookup.info/estonia-postal-code.html</loc>
     <lastmod>2026-05-17</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
+    <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://postalcodelookup.com/country.html?country=TH</loc>
+    <loc>https://postalcodelookup.info/luxembourg-postal-code.html</loc>
     <lastmod>2026-05-17</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
+    <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://postalcodelookup.com/country.html?country=MY</loc>
+    <loc>https://postalcodelookup.info/iceland-postal-code.html</loc>
     <lastmod>2026-05-17</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
+    <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://postalcodelookup.com/country.html?country=PH</loc>
+    <loc>https://postalcodelookup.info/malta-postal-code.html</loc>
     <lastmod>2026-05-17</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
+    <priority>0.75</priority>
   </url>
 
   <!-- Legal Pages -->
   <url>
-    <loc>https://postalcodelookup.com/privacy-policy.html</loc>
+    <loc>https://postalcodelookup.info/privacy-policy.html</loc>
     <lastmod>2026-05-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://postalcodelookup.com/terms-of-service.html</loc>
+    <loc>https://postalcodelookup.info/terms-of-service.html</loc>
     <lastmod>2026-05-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://postalcodelookup.com/cookie-policy.html</loc>
+    <loc>https://postalcodelookup.info/cookie-policy.html</loc>
     <lastmod>2026-05-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://postalcodelookup.com/disclaimer.html</loc>
+    <loc>https://postalcodelookup.info/disclaimer.html</loc>
     <lastmod>2026-05-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>

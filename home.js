@@ -54,6 +54,61 @@ class HomePage {
     ];
   }
 
+  // Static page URL mapping for SEO-friendly URLs
+  getStaticPageUrl(countryId) {
+    const staticPages = {
+      'US': 'us-postal-code.html',
+      'CA': 'canada-postal-code.html',
+      'UK': 'united-kingdom-postal-code.html',
+      'DE': 'germany-postal-code.html',
+      'FR': 'france-postal-code.html',
+      'JP': 'japan-postal-code.html',
+      'IN': 'india-postal-code.html',
+      'AU': 'australia-postal-code.html',
+      'BR': 'brazil-postal-code.html',
+      'IT': 'italy-postal-code.html',
+      'ES': 'spain-postal-code.html',
+      'NL': 'netherlands-postal-code.html',
+      'SE': 'sweden-postal-code.html',
+      'NO': 'norway-postal-code.html',
+      'FI': 'finland-postal-code.html',
+      'DK': 'denmark-postal-code.html',
+      'PL': 'poland-postal-code.html',
+      'AT': 'austria-postal-code.html',
+      'CH': 'switzerland-postal-code.html',
+      'BE': 'belgium-postal-code.html',
+      'PT': 'portugal-postal-code.html',
+      'IE': 'ireland-postal-code.html',
+      'NZ': 'new-zealand-postal-code.html',
+      'ZA': 'south-africa-postal-code.html',
+      'MX': 'mexico-postal-code.html',
+      'RU': 'russia-postal-code.html',
+      'TR': 'turkey-postal-code.html',
+      'CZ': 'czech-republic-postal-code.html',
+      'HU': 'hungary-postal-code.html',
+      'SK': 'slovakia-postal-code.html',
+      'HR': 'croatia-postal-code.html',
+      'SI': 'slovenia-postal-code.html',
+      'LT': 'lithuania-postal-code.html',
+      'LV': 'latvia-postal-code.html',
+      'EE': 'estonia-postal-code.html',
+      'LU': 'luxembourg-postal-code.html',
+      'IS': 'iceland-postal-code.html',
+      'MT': 'malta-postal-code.html',
+      'CN': 'china-postal-code.html',
+      'ID': 'indonesia-postal-code.html',
+      'GR': 'greece-postal-code.html',
+      'SG': 'singapore-postal-code.html',
+      'TH': 'thailand-postal-code.html',
+      'MY': 'malaysia-postal-code.html',
+      'PH': 'philippines-postal-code.html',
+      'KR': 'south-korea-postal-code.html',
+      'AE': 'uae-postal-code.html',
+      'IL': 'israel-postal-code.html'
+    };
+    return staticPages[countryId] || `country.html?country=${countryId}`;
+  }
+
   renderHotCountries() {
     if (!this.countriesGrid) return;
 
@@ -62,7 +117,7 @@ class HomePage {
     countries.forEach(country => {
       const link = document.createElement('a');
       link.className = 'country-link';
-      link.href = `country.html?country=${country.id}`;
+      link.href = this.getStaticPageUrl(country.id);
 
       link.innerHTML = `
         <img class="country-flag-img" src="flags/${country.flag}.png" alt="${country.name} flag" width="20" height="15">
