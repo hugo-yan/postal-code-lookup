@@ -380,20 +380,21 @@
       <!-- Ad Unit: Leaderboard -->
       <div class="ad-container">
         <span class="ad-label">Advertisement</span>
-      </div>
-
-      <!-- Bottom Section: Cities + States -->
+      </div>      <!-- Bottom Section: States Filter + City Selection + Popular Cities -->
       <div class="bottom-section">
-        <!-- Left: Popular Cities -->
-        <section class="popular-cities" aria-labelledby="cities-heading">
-          <h2 id="cities-heading" class="section-title">
-            Popular Cities in Switzerland
+        <!-- Left: State/Province Filter + City Selection Combined -->
+        <section class="popular-cities" aria-labelledby="states-heading">
+          <h2 id="states-heading" class="section-title">
+            Filter by State/Province
           </h2>
           <p class="cities-note">
-            Below is the select list of some major cities from Switzerland. Click on the "Show Postal Code" button to go get its postal code.
+            Click on a state/province to filter cities, then select a city to view its postal code.
           </p>
 
-          <div class="cities-select-wrapper">
+          <!-- City Selection Dropdown -->
+          <div style="margin-bottom: 1.5rem;">
+            <label for="cities-select" style="display: block; font-size: 0.875rem; font-weight: 600; color: var(--color-text); margin-bottom: 0.5rem;">Select a City</label>
+            <div class="cities-select-wrapper">
             <select id="cities-select" class="cities-select" aria-label="Select a city in Switzerland">
               <option value="">Select a city...</option>
           <option value="CH_0_0">Aarau (Kanton Aargau)</option>
@@ -602,7 +603,37 @@
           <button id="show-selected-btn" class="show-btn">
             Show Postal Code
           </button>
+          </div>
 
+          <!-- State/Province Links -->
+          <div id="states-container" class="states-container">
+          <a href="#canton-de-berne" class="state-link" data-state="Canton de Berne">Canton de Berne</a>
+          <a href="#canton-de-fribourg" class="state-link" data-state="Canton de Fribourg">Canton de Fribourg</a>
+          <a href="#genève" class="state-link" data-state="Genève">Genève</a>
+          <a href="#jura" class="state-link" data-state="Jura">Jura</a>
+          <a href="#kanton-aargau" class="state-link" data-state="Kanton Aargau">Kanton Aargau</a>
+          <a href="#kanton-appenzell-ausserrhoden" class="state-link" data-state="Kanton Appenzell Ausserrhoden">Kanton Appenzell Ausserrhoden</a>
+          <a href="#kanton-appenzell-innerrhoden" class="state-link" data-state="Kanton Appenzell Innerrhoden">Kanton Appenzell Innerrhoden</a>
+          <a href="#kanton-basel-landschaft" class="state-link" data-state="Kanton Basel-Landschaft">Kanton Basel-Landschaft</a>
+          <a href="#kanton-basel-stadt" class="state-link" data-state="Kanton Basel-Stadt">Kanton Basel-Stadt</a>
+          <a href="#kanton-glarus" class="state-link" data-state="Kanton Glarus">Kanton Glarus</a>
+          <a href="#kanton-graubünden" class="state-link" data-state="Kanton Graubünden">Kanton Graubünden</a>
+          <a href="#kanton-luzern" class="state-link" data-state="Kanton Luzern">Kanton Luzern</a>
+          <a href="#kanton-nidwalden" class="state-link" data-state="Kanton Nidwalden">Kanton Nidwalden</a>
+          <a href="#kanton-obwalden" class="state-link" data-state="Kanton Obwalden">Kanton Obwalden</a>
+          <a href="#kanton-schaffhausen" class="state-link" data-state="Kanton Schaffhausen">Kanton Schaffhausen</a>
+          <a href="#kanton-schwyz" class="state-link" data-state="Kanton Schwyz">Kanton Schwyz</a>
+          <a href="#kanton-solothurn" class="state-link" data-state="Kanton Solothurn">Kanton Solothurn</a>
+          <a href="#kanton-st.-gallen" class="state-link" data-state="Kanton St. Gallen">Kanton St. Gallen</a>
+          <a href="#kanton-thurgau" class="state-link" data-state="Kanton Thurgau">Kanton Thurgau</a>
+          <a href="#neuchâtel" class="state-link" data-state="Neuchâtel">Neuchâtel</a>
+          </div>
+        </section>
+
+        <!-- Right: Popular Cities -->
+        <section class="states-list popular-cities-links-section" aria-labelledby="popular-cities-heading">
+          <h2 id="popular-cities-heading" class="states-title">Popular Switzerland Cities with Postal Codes</h2>
+          <p style="font-size: 0.875rem; color: var(--color-text-muted); margin-bottom: 1rem;">Click on any city below to quickly view its postal code information.</p>
           <!-- Popular Cities Links for SEO -->
           <div class="popular-cities-links" style="margin-top: 1.5rem;">
             <h3 style="font-size: 0.875rem; color: var(--color-text-muted); margin-bottom: 0.75rem;">Popular Switzerland Cities with Postal Codes:</h3>
@@ -658,41 +689,8 @@
         <div class="city-link-item" data-city="Bottmingen">Bottmingen (Kanton Basel-Landschaft)</div>
         <div class="city-link-item" data-city="Boudry">Boudry (Neuchâtel)</div>
             </div>
-          </div>
         </section>
-
-        <!-- Right: State/Province List -->
-        <section class="states-list" aria-labelledby="states-heading">
-          <h2 id="states-heading" class="states-title">State/Province level Postal Code Search:</h2>
-          <p style="font-size: 0.8rem; color: var(--color-text-muted); margin-bottom: 1rem;">
-            Click on a state/province to filter cities in that region.
-          </p>
-          <div id="states-container" class="states-container">
-          <a href="#canton-de-berne" class="state-link" data-state="Canton de Berne">Canton de Berne</a>
-          <a href="#canton-de-fribourg" class="state-link" data-state="Canton de Fribourg">Canton de Fribourg</a>
-          <a href="#genève" class="state-link" data-state="Genève">Genève</a>
-          <a href="#jura" class="state-link" data-state="Jura">Jura</a>
-          <a href="#kanton-aargau" class="state-link" data-state="Kanton Aargau">Kanton Aargau</a>
-          <a href="#kanton-appenzell-ausserrhoden" class="state-link" data-state="Kanton Appenzell Ausserrhoden">Kanton Appenzell Ausserrhoden</a>
-          <a href="#kanton-appenzell-innerrhoden" class="state-link" data-state="Kanton Appenzell Innerrhoden">Kanton Appenzell Innerrhoden</a>
-          <a href="#kanton-basel-landschaft" class="state-link" data-state="Kanton Basel-Landschaft">Kanton Basel-Landschaft</a>
-          <a href="#kanton-basel-stadt" class="state-link" data-state="Kanton Basel-Stadt">Kanton Basel-Stadt</a>
-          <a href="#kanton-glarus" class="state-link" data-state="Kanton Glarus">Kanton Glarus</a>
-          <a href="#kanton-graubünden" class="state-link" data-state="Kanton Graubünden">Kanton Graubünden</a>
-          <a href="#kanton-luzern" class="state-link" data-state="Kanton Luzern">Kanton Luzern</a>
-          <a href="#kanton-nidwalden" class="state-link" data-state="Kanton Nidwalden">Kanton Nidwalden</a>
-          <a href="#kanton-obwalden" class="state-link" data-state="Kanton Obwalden">Kanton Obwalden</a>
-          <a href="#kanton-schaffhausen" class="state-link" data-state="Kanton Schaffhausen">Kanton Schaffhausen</a>
-          <a href="#kanton-schwyz" class="state-link" data-state="Kanton Schwyz">Kanton Schwyz</a>
-          <a href="#kanton-solothurn" class="state-link" data-state="Kanton Solothurn">Kanton Solothurn</a>
-          <a href="#kanton-st.-gallen" class="state-link" data-state="Kanton St. Gallen">Kanton St. Gallen</a>
-          <a href="#kanton-thurgau" class="state-link" data-state="Kanton Thurgau">Kanton Thurgau</a>
-          <a href="#neuchâtel" class="state-link" data-state="Neuchâtel">Neuchâtel</a>
-          </div>
-        </section>
-      </div>
-
-      <!-- SEO Content Section -->
+      </div><!-- SEO Content Section -->
       <section class="seo-content" style="margin-top: 2rem; padding: 1.5rem; background: var(--color-surface); border-radius: var(--radius-lg);">
         <h2 style="font-size: 1.25rem; margin-bottom: 1rem; color: var(--color-text);">Switzerland Postal Code Information</h2>
         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem;">

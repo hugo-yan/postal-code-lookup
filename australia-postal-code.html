@@ -380,20 +380,21 @@
       <!-- Ad Unit: Leaderboard -->
       <div class="ad-container">
         <span class="ad-label">Advertisement</span>
-      </div>
-
-      <!-- Bottom Section: Cities + States -->
+      </div>      <!-- Bottom Section: States Filter + City Selection + Popular Cities -->
       <div class="bottom-section">
-        <!-- Left: Popular Cities -->
-        <section class="popular-cities" aria-labelledby="cities-heading">
-          <h2 id="cities-heading" class="section-title">
-            Popular Cities in Australia
+        <!-- Left: State/Province Filter + City Selection Combined -->
+        <section class="popular-cities" aria-labelledby="states-heading">
+          <h2 id="states-heading" class="section-title">
+            Filter by State/Province
           </h2>
           <p class="cities-note">
-            Below is the select list of some major cities from Australia. Click on the "Show Postal Code" button to go get its postal code.
+            Click on a state/province to filter cities, then select a city to view its postal code.
           </p>
 
-          <div class="cities-select-wrapper">
+          <!-- City Selection Dropdown -->
+          <div style="margin-bottom: 1.5rem;">
+            <label for="cities-select" style="display: block; font-size: 0.875rem; font-weight: 600; color: var(--color-text); margin-bottom: 0.5rem;">Select a City</label>
+            <div class="cities-select-wrapper">
             <select id="cities-select" class="cities-select" aria-label="Select a city in Australia">
               <option value="">Select a city...</option>
           <option value="AU_4_12">Adelaide (South Australia)</option>
@@ -522,7 +523,25 @@
           <button id="show-selected-btn" class="show-btn">
             Show Postal Code
           </button>
+          </div>
 
+          <!-- State/Province Links -->
+          <div id="states-container" class="states-container">
+          <a href="#australian-capital-territory" class="state-link" data-state="Australian Capital Territory">Australian Capital Territory</a>
+          <a href="#new-south-wales" class="state-link" data-state="New South Wales">New South Wales</a>
+          <a href="#northern-territory" class="state-link" data-state="Northern Territory">Northern Territory</a>
+          <a href="#queensland" class="state-link" data-state="Queensland">Queensland</a>
+          <a href="#south-australia" class="state-link" data-state="South Australia">South Australia</a>
+          <a href="#tasmania" class="state-link" data-state="Tasmania">Tasmania</a>
+          <a href="#victoria" class="state-link" data-state="Victoria">Victoria</a>
+          <a href="#western-australia" class="state-link" data-state="Western Australia">Western Australia</a>
+          </div>
+        </section>
+
+        <!-- Right: Popular Cities -->
+        <section class="states-list popular-cities-links-section" aria-labelledby="popular-cities-heading">
+          <h2 id="popular-cities-heading" class="states-title">Popular Australia Cities with Postal Codes</h2>
+          <p style="font-size: 0.875rem; color: var(--color-text-muted); margin-bottom: 1rem;">Click on any city below to quickly view its postal code information.</p>
           <!-- Popular Cities Links for SEO -->
           <div class="popular-cities-links" style="margin-top: 1.5rem;">
             <h3 style="font-size: 0.875rem; color: var(--color-text-muted); margin-bottom: 0.75rem;">Popular Australia Cities with Postal Codes:</h3>
@@ -578,29 +597,8 @@
         <div class="city-link-item" data-city="Hume">Hume (Australian Capital Territory)</div>
         <div class="city-link-item" data-city="Hunterston">Hunterston (Victoria)</div>
             </div>
-          </div>
         </section>
-
-        <!-- Right: State/Province List -->
-        <section class="states-list" aria-labelledby="states-heading">
-          <h2 id="states-heading" class="states-title">State/Province level Postal Code Search:</h2>
-          <p style="font-size: 0.8rem; color: var(--color-text-muted); margin-bottom: 1rem;">
-            Click on a state/province to filter cities in that region.
-          </p>
-          <div id="states-container" class="states-container">
-          <a href="#australian-capital-territory" class="state-link" data-state="Australian Capital Territory">Australian Capital Territory</a>
-          <a href="#new-south-wales" class="state-link" data-state="New South Wales">New South Wales</a>
-          <a href="#northern-territory" class="state-link" data-state="Northern Territory">Northern Territory</a>
-          <a href="#queensland" class="state-link" data-state="Queensland">Queensland</a>
-          <a href="#south-australia" class="state-link" data-state="South Australia">South Australia</a>
-          <a href="#tasmania" class="state-link" data-state="Tasmania">Tasmania</a>
-          <a href="#victoria" class="state-link" data-state="Victoria">Victoria</a>
-          <a href="#western-australia" class="state-link" data-state="Western Australia">Western Australia</a>
-          </div>
-        </section>
-      </div>
-
-      <!-- SEO Content Section -->
+      </div><!-- SEO Content Section -->
       <section class="seo-content" style="margin-top: 2rem; padding: 1.5rem; background: var(--color-surface); border-radius: var(--radius-lg);">
         <h2 style="font-size: 1.25rem; margin-bottom: 1rem; color: var(--color-text);">Australia Postal Code Information</h2>
         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem;">

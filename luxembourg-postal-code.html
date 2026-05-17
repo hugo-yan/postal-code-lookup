@@ -380,20 +380,21 @@
       <!-- Ad Unit: Leaderboard -->
       <div class="ad-container">
         <span class="ad-label">Advertisement</span>
-      </div>
-
-      <!-- Bottom Section: Cities + States -->
+      </div>      <!-- Bottom Section: States Filter + City Selection + Popular Cities -->
       <div class="bottom-section">
-        <!-- Left: Popular Cities -->
-        <section class="popular-cities" aria-labelledby="cities-heading">
-          <h2 id="cities-heading" class="section-title">
-            Popular Cities in Luxembourg
+        <!-- Left: State/Province Filter + City Selection Combined -->
+        <section class="popular-cities" aria-labelledby="states-heading">
+          <h2 id="states-heading" class="section-title">
+            Filter by State/Province
           </h2>
           <p class="cities-note">
-            Below is the select list of some major cities from Luxembourg. Click on the "Show Postal Code" button to go get its postal code.
+            Click on a state/province to filter cities, then select a city to view its postal code.
           </p>
 
-          <div class="cities-select-wrapper">
+          <!-- City Selection Dropdown -->
+          <div style="margin-bottom: 1.5rem;">
+            <label for="cities-select" style="display: block; font-size: 0.875rem; font-weight: 600; color: var(--color-text); margin-bottom: 0.5rem;">Select a City</label>
+            <div class="cities-select-wrapper">
             <select id="cities-select" class="cities-select" aria-label="Select a city in Luxembourg">
               <option value="">Select a city...</option>
           <option value="LU_4_1">Abweiler (Esch-sur-Alzette)</option>
@@ -582,7 +583,29 @@
           <button id="show-selected-btn" class="show-btn">
             Show Postal Code
           </button>
+          </div>
 
+          <!-- State/Province Links -->
+          <div id="states-container" class="states-container">
+          <a href="#capellen" class="state-link" data-state="Capellen">Capellen</a>
+          <a href="#clervaux" class="state-link" data-state="Clervaux">Clervaux</a>
+          <a href="#diekirch" class="state-link" data-state="Diekirch">Diekirch</a>
+          <a href="#echternach" class="state-link" data-state="Echternach">Echternach</a>
+          <a href="#esch-sur-alzette" class="state-link" data-state="Esch-sur-Alzette">Esch-sur-Alzette</a>
+          <a href="#grevenmacher" class="state-link" data-state="Grevenmacher">Grevenmacher</a>
+          <a href="#luxembourg" class="state-link" data-state="Luxembourg">Luxembourg</a>
+          <a href="#mersch" class="state-link" data-state="Mersch">Mersch</a>
+          <a href="#redange" class="state-link" data-state="Redange">Redange</a>
+          <a href="#remich" class="state-link" data-state="Remich">Remich</a>
+          <a href="#vianden" class="state-link" data-state="Vianden">Vianden</a>
+          <a href="#wiltz" class="state-link" data-state="Wiltz">Wiltz</a>
+          </div>
+        </section>
+
+        <!-- Right: Popular Cities -->
+        <section class="states-list popular-cities-links-section" aria-labelledby="popular-cities-heading">
+          <h2 id="popular-cities-heading" class="states-title">Popular Luxembourg Cities with Postal Codes</h2>
+          <p style="font-size: 0.875rem; color: var(--color-text-muted); margin-bottom: 1rem;">Click on any city below to quickly view its postal code information.</p>
           <!-- Popular Cities Links for SEO -->
           <div class="popular-cities-links" style="margin-top: 1.5rem;">
             <h3 style="font-size: 0.875rem; color: var(--color-text-muted); margin-bottom: 0.75rem;">Popular Luxembourg Cities with Postal Codes:</h3>
@@ -638,33 +661,8 @@
         <div class="city-link-item" data-city="Colpach-Haut">Colpach-Haut (Redange)</div>
         <div class="city-link-item" data-city="Contern">Contern (Luxembourg)</div>
             </div>
-          </div>
         </section>
-
-        <!-- Right: State/Province List -->
-        <section class="states-list" aria-labelledby="states-heading">
-          <h2 id="states-heading" class="states-title">State/Province level Postal Code Search:</h2>
-          <p style="font-size: 0.8rem; color: var(--color-text-muted); margin-bottom: 1rem;">
-            Click on a state/province to filter cities in that region.
-          </p>
-          <div id="states-container" class="states-container">
-          <a href="#capellen" class="state-link" data-state="Capellen">Capellen</a>
-          <a href="#clervaux" class="state-link" data-state="Clervaux">Clervaux</a>
-          <a href="#diekirch" class="state-link" data-state="Diekirch">Diekirch</a>
-          <a href="#echternach" class="state-link" data-state="Echternach">Echternach</a>
-          <a href="#esch-sur-alzette" class="state-link" data-state="Esch-sur-Alzette">Esch-sur-Alzette</a>
-          <a href="#grevenmacher" class="state-link" data-state="Grevenmacher">Grevenmacher</a>
-          <a href="#luxembourg" class="state-link" data-state="Luxembourg">Luxembourg</a>
-          <a href="#mersch" class="state-link" data-state="Mersch">Mersch</a>
-          <a href="#redange" class="state-link" data-state="Redange">Redange</a>
-          <a href="#remich" class="state-link" data-state="Remich">Remich</a>
-          <a href="#vianden" class="state-link" data-state="Vianden">Vianden</a>
-          <a href="#wiltz" class="state-link" data-state="Wiltz">Wiltz</a>
-          </div>
-        </section>
-      </div>
-
-      <!-- SEO Content Section -->
+      </div><!-- SEO Content Section -->
       <section class="seo-content" style="margin-top: 2rem; padding: 1.5rem; background: var(--color-surface); border-radius: var(--radius-lg);">
         <h2 style="font-size: 1.25rem; margin-bottom: 1rem; color: var(--color-text);">Luxembourg Postal Code Information</h2>
         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem;">

@@ -380,20 +380,21 @@
       <!-- Ad Unit: Leaderboard -->
       <div class="ad-container">
         <span class="ad-label">Advertisement</span>
-      </div>
-
-      <!-- Bottom Section: Cities + States -->
+      </div>      <!-- Bottom Section: States Filter + City Selection + Popular Cities -->
       <div class="bottom-section">
-        <!-- Left: Popular Cities -->
-        <section class="popular-cities" aria-labelledby="cities-heading">
-          <h2 id="cities-heading" class="section-title">
-            Popular Cities in India
+        <!-- Left: State/Province Filter + City Selection Combined -->
+        <section class="popular-cities" aria-labelledby="states-heading">
+          <h2 id="states-heading" class="section-title">
+            Filter by State/Province
           </h2>
           <p class="cities-note">
-            Below is the select list of some major cities from India. Click on the "Show Postal Code" button to go get its postal code.
+            Click on a state/province to filter cities, then select a city to view its postal code.
           </p>
 
-          <div class="cities-select-wrapper">
+          <!-- City Selection Dropdown -->
+          <div style="margin-bottom: 1.5rem;">
+            <label for="cities-select" style="display: block; font-size: 0.875rem; font-weight: 600; color: var(--color-text); margin-bottom: 0.5rem;">Select a City</label>
+            <div class="cities-select-wrapper">
             <select id="cities-select" class="cities-select" aria-label="Select a city in India">
               <option value="">Select a city...</option>
           <option value="IN_19_8">10 Z (Rajasthan)</option>
@@ -602,7 +603,37 @@
           <button id="show-selected-btn" class="show-btn">
             Show Postal Code
           </button>
+          </div>
 
+          <!-- State/Province Links -->
+          <div id="states-container" class="states-container">
+          <a href="#andaman-&-nicobar-islands" class="state-link" data-state="Andaman & Nicobar Islands">Andaman & Nicobar Islands</a>
+          <a href="#andhra-pradesh" class="state-link" data-state="Andhra Pradesh">Andhra Pradesh</a>
+          <a href="#assam" class="state-link" data-state="Assam">Assam</a>
+          <a href="#chandigarh" class="state-link" data-state="Chandigarh">Chandigarh</a>
+          <a href="#delhi" class="state-link" data-state="Delhi">Delhi</a>
+          <a href="#gujarat" class="state-link" data-state="Gujarat">Gujarat</a>
+          <a href="#haryana" class="state-link" data-state="Haryana">Haryana</a>
+          <a href="#himachal-pradesh" class="state-link" data-state="Himachal Pradesh">Himachal Pradesh</a>
+          <a href="#jammu-&-kashmir" class="state-link" data-state="Jammu & Kashmir">Jammu & Kashmir</a>
+          <a href="#karnataka" class="state-link" data-state="Karnataka">Karnataka</a>
+          <a href="#kerala" class="state-link" data-state="Kerala">Kerala</a>
+          <a href="#lakshadweep" class="state-link" data-state="Lakshadweep">Lakshadweep</a>
+          <a href="#maharashtra" class="state-link" data-state="Maharashtra">Maharashtra</a>
+          <a href="#manipur" class="state-link" data-state="Manipur">Manipur</a>
+          <a href="#meghalaya" class="state-link" data-state="Meghalaya">Meghalaya</a>
+          <a href="#nagaland" class="state-link" data-state="Nagaland">Nagaland</a>
+          <a href="#odisha" class="state-link" data-state="Odisha">Odisha</a>
+          <a href="#pondicherry" class="state-link" data-state="Pondicherry">Pondicherry</a>
+          <a href="#punjab" class="state-link" data-state="Punjab">Punjab</a>
+          <a href="#rajasthan" class="state-link" data-state="Rajasthan">Rajasthan</a>
+          </div>
+        </section>
+
+        <!-- Right: Popular Cities -->
+        <section class="states-list popular-cities-links-section" aria-labelledby="popular-cities-heading">
+          <h2 id="popular-cities-heading" class="states-title">Popular India Cities with Postal Codes</h2>
+          <p style="font-size: 0.875rem; color: var(--color-text-muted); margin-bottom: 1rem;">Click on any city below to quickly view its postal code information.</p>
           <!-- Popular Cities Links for SEO -->
           <div class="popular-cities-links" style="margin-top: 1.5rem;">
             <h3 style="font-size: 0.875rem; color: var(--color-text-muted); margin-bottom: 0.75rem;">Popular India Cities with Postal Codes:</h3>
@@ -658,41 +689,8 @@
         <div class="city-link-item" data-city="Block Area">Block Area (Rajasthan)</div>
         <div class="city-link-item" data-city="Bolsong">Bolsong (Meghalaya)</div>
             </div>
-          </div>
         </section>
-
-        <!-- Right: State/Province List -->
-        <section class="states-list" aria-labelledby="states-heading">
-          <h2 id="states-heading" class="states-title">State/Province level Postal Code Search:</h2>
-          <p style="font-size: 0.8rem; color: var(--color-text-muted); margin-bottom: 1rem;">
-            Click on a state/province to filter cities in that region.
-          </p>
-          <div id="states-container" class="states-container">
-          <a href="#andaman-&-nicobar-islands" class="state-link" data-state="Andaman & Nicobar Islands">Andaman & Nicobar Islands</a>
-          <a href="#andhra-pradesh" class="state-link" data-state="Andhra Pradesh">Andhra Pradesh</a>
-          <a href="#assam" class="state-link" data-state="Assam">Assam</a>
-          <a href="#chandigarh" class="state-link" data-state="Chandigarh">Chandigarh</a>
-          <a href="#delhi" class="state-link" data-state="Delhi">Delhi</a>
-          <a href="#gujarat" class="state-link" data-state="Gujarat">Gujarat</a>
-          <a href="#haryana" class="state-link" data-state="Haryana">Haryana</a>
-          <a href="#himachal-pradesh" class="state-link" data-state="Himachal Pradesh">Himachal Pradesh</a>
-          <a href="#jammu-&-kashmir" class="state-link" data-state="Jammu & Kashmir">Jammu & Kashmir</a>
-          <a href="#karnataka" class="state-link" data-state="Karnataka">Karnataka</a>
-          <a href="#kerala" class="state-link" data-state="Kerala">Kerala</a>
-          <a href="#lakshadweep" class="state-link" data-state="Lakshadweep">Lakshadweep</a>
-          <a href="#maharashtra" class="state-link" data-state="Maharashtra">Maharashtra</a>
-          <a href="#manipur" class="state-link" data-state="Manipur">Manipur</a>
-          <a href="#meghalaya" class="state-link" data-state="Meghalaya">Meghalaya</a>
-          <a href="#nagaland" class="state-link" data-state="Nagaland">Nagaland</a>
-          <a href="#odisha" class="state-link" data-state="Odisha">Odisha</a>
-          <a href="#pondicherry" class="state-link" data-state="Pondicherry">Pondicherry</a>
-          <a href="#punjab" class="state-link" data-state="Punjab">Punjab</a>
-          <a href="#rajasthan" class="state-link" data-state="Rajasthan">Rajasthan</a>
-          </div>
-        </section>
-      </div>
-
-      <!-- SEO Content Section -->
+      </div><!-- SEO Content Section -->
       <section class="seo-content" style="margin-top: 2rem; padding: 1.5rem; background: var(--color-surface); border-radius: var(--radius-lg);">
         <h2 style="font-size: 1.25rem; margin-bottom: 1rem; color: var(--color-text);">India Postal Code Information</h2>
         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem;">

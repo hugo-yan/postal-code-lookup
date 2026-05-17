@@ -380,20 +380,21 @@
       <!-- Ad Unit: Leaderboard -->
       <div class="ad-container">
         <span class="ad-label">Advertisement</span>
-      </div>
-
-      <!-- Bottom Section: Cities + States -->
+      </div>      <!-- Bottom Section: States Filter + City Selection + Popular Cities -->
       <div class="bottom-section">
-        <!-- Left: Popular Cities -->
-        <section class="popular-cities" aria-labelledby="cities-heading">
-          <h2 id="cities-heading" class="section-title">
-            Popular Cities in South Korea
+        <!-- Left: State/Province Filter + City Selection Combined -->
+        <section class="popular-cities" aria-labelledby="states-heading">
+          <h2 id="states-heading" class="section-title">
+            Filter by State/Province
           </h2>
           <p class="cities-note">
-            Below is the select list of some major cities from South Korea. Click on the "Show Postal Code" button to go get its postal code.
+            Click on a state/province to filter cities, then select a city to view its postal code.
           </p>
 
-          <div class="cities-select-wrapper">
+          <!-- City Selection Dropdown -->
+          <div style="margin-bottom: 1.5rem;">
+            <label for="cities-select" style="display: block; font-size: 0.875rem; font-weight: 600; color: var(--color-text); margin-bottom: 0.5rem;">Select a City</label>
+            <div class="cities-select-wrapper">
             <select id="cities-select" class="cities-select" aria-label="Select a city in South Korea">
               <option value="">Select a city...</option>
           <option value="KR_2_3">가덕면 (충청북도)</option>
@@ -602,7 +603,34 @@
           <button id="show-selected-btn" class="show-btn">
             Show Postal Code
           </button>
+          </div>
 
+          <!-- State/Province Links -->
+          <div id="states-container" class="states-container">
+          <a href="#강원도" class="state-link" data-state="강원도">강원도</a>
+          <a href="#경기도" class="state-link" data-state="경기도">경기도</a>
+          <a href="#경상남도" class="state-link" data-state="경상남도">경상남도</a>
+          <a href="#경상북도" class="state-link" data-state="경상북도">경상북도</a>
+          <a href="#광주광역시" class="state-link" data-state="광주광역시">광주광역시</a>
+          <a href="#대구광역시" class="state-link" data-state="대구광역시">대구광역시</a>
+          <a href="#대전광역시" class="state-link" data-state="대전광역시">대전광역시</a>
+          <a href="#부산광역시" class="state-link" data-state="부산광역시">부산광역시</a>
+          <a href="#서울특별시" class="state-link" data-state="서울특별시">서울특별시</a>
+          <a href="#세종특별자치시" class="state-link" data-state="세종특별자치시">세종특별자치시</a>
+          <a href="#울산광역시" class="state-link" data-state="울산광역시">울산광역시</a>
+          <a href="#인천광역시" class="state-link" data-state="인천광역시">인천광역시</a>
+          <a href="#전라남도" class="state-link" data-state="전라남도">전라남도</a>
+          <a href="#전라북도" class="state-link" data-state="전라북도">전라북도</a>
+          <a href="#제주특별자치도" class="state-link" data-state="제주특별자치도">제주특별자치도</a>
+          <a href="#충청남도" class="state-link" data-state="충청남도">충청남도</a>
+          <a href="#충청북도" class="state-link" data-state="충청북도">충청북도</a>
+          </div>
+        </section>
+
+        <!-- Right: Popular Cities -->
+        <section class="states-list popular-cities-links-section" aria-labelledby="popular-cities-heading">
+          <h2 id="popular-cities-heading" class="states-title">Popular South Korea Cities with Postal Codes</h2>
+          <p style="font-size: 0.875rem; color: var(--color-text-muted); margin-bottom: 1rem;">Click on any city below to quickly view its postal code information.</p>
           <!-- Popular Cities Links for SEO -->
           <div class="popular-cities-links" style="margin-top: 1.5rem;">
             <h3 style="font-size: 0.875rem; color: var(--color-text-muted); margin-bottom: 0.75rem;">Popular South Korea Cities with Postal Codes:</h3>
@@ -658,38 +686,8 @@
         <div class="city-link-item" data-city="동구">동구 (대구광역시)</div>
         <div class="city-link-item" data-city="동구">동구 (광주광역시)</div>
             </div>
-          </div>
         </section>
-
-        <!-- Right: State/Province List -->
-        <section class="states-list" aria-labelledby="states-heading">
-          <h2 id="states-heading" class="states-title">State/Province level Postal Code Search:</h2>
-          <p style="font-size: 0.8rem; color: var(--color-text-muted); margin-bottom: 1rem;">
-            Click on a state/province to filter cities in that region.
-          </p>
-          <div id="states-container" class="states-container">
-          <a href="#강원도" class="state-link" data-state="강원도">강원도</a>
-          <a href="#경기도" class="state-link" data-state="경기도">경기도</a>
-          <a href="#경상남도" class="state-link" data-state="경상남도">경상남도</a>
-          <a href="#경상북도" class="state-link" data-state="경상북도">경상북도</a>
-          <a href="#광주광역시" class="state-link" data-state="광주광역시">광주광역시</a>
-          <a href="#대구광역시" class="state-link" data-state="대구광역시">대구광역시</a>
-          <a href="#대전광역시" class="state-link" data-state="대전광역시">대전광역시</a>
-          <a href="#부산광역시" class="state-link" data-state="부산광역시">부산광역시</a>
-          <a href="#서울특별시" class="state-link" data-state="서울특별시">서울특별시</a>
-          <a href="#세종특별자치시" class="state-link" data-state="세종특별자치시">세종특별자치시</a>
-          <a href="#울산광역시" class="state-link" data-state="울산광역시">울산광역시</a>
-          <a href="#인천광역시" class="state-link" data-state="인천광역시">인천광역시</a>
-          <a href="#전라남도" class="state-link" data-state="전라남도">전라남도</a>
-          <a href="#전라북도" class="state-link" data-state="전라북도">전라북도</a>
-          <a href="#제주특별자치도" class="state-link" data-state="제주특별자치도">제주특별자치도</a>
-          <a href="#충청남도" class="state-link" data-state="충청남도">충청남도</a>
-          <a href="#충청북도" class="state-link" data-state="충청북도">충청북도</a>
-          </div>
-        </section>
-      </div>
-
-      <!-- SEO Content Section -->
+      </div><!-- SEO Content Section -->
       <section class="seo-content" style="margin-top: 2rem; padding: 1.5rem; background: var(--color-surface); border-radius: var(--radius-lg);">
         <h2 style="font-size: 1.25rem; margin-bottom: 1rem; color: var(--color-text);">South Korea Postal Code Information</h2>
         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem;">

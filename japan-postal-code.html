@@ -380,20 +380,21 @@
       <!-- Ad Unit: Leaderboard -->
       <div class="ad-container">
         <span class="ad-label">Advertisement</span>
-      </div>
-
-      <!-- Bottom Section: Cities + States -->
+      </div>      <!-- Bottom Section: States Filter + City Selection + Popular Cities -->
       <div class="bottom-section">
-        <!-- Left: Popular Cities -->
-        <section class="popular-cities" aria-labelledby="cities-heading">
-          <h2 id="cities-heading" class="section-title">
-            Popular Cities in Japan
+        <!-- Left: State/Province Filter + City Selection Combined -->
+        <section class="popular-cities" aria-labelledby="states-heading">
+          <h2 id="states-heading" class="section-title">
+            Filter by State/Province
           </h2>
           <p class="cities-note">
-            Below is the select list of some major cities from Japan. Click on the "Show Postal Code" button to go get its postal code.
+            Click on a state/province to filter cities, then select a city to view its postal code.
           </p>
 
-          <div class="cities-select-wrapper">
+          <!-- City Selection Dropdown -->
+          <div style="margin-bottom: 1.5rem;">
+            <label for="cities-select" style="display: block; font-size: 0.875rem; font-weight: 600; color: var(--color-text); margin-bottom: 0.5rem;">Select a City</label>
+            <div class="cities-select-wrapper">
             <select id="cities-select" class="cities-select" aria-label="Select a city in Japan">
               <option value="">Select a city...</option>
           <option value="JP_9_6">Ainota (Gumma Ken)</option>
@@ -602,7 +603,37 @@
           <button id="show-selected-btn" class="show-btn">
             Show Postal Code
           </button>
+          </div>
 
+          <!-- State/Province Links -->
+          <div id="states-container" class="states-container">
+          <a href="#aichi-ken" class="state-link" data-state="Aichi Ken">Aichi Ken</a>
+          <a href="#akita-ken" class="state-link" data-state="Akita Ken">Akita Ken</a>
+          <a href="#aomori-ken" class="state-link" data-state="Aomori Ken">Aomori Ken</a>
+          <a href="#chiba-ken" class="state-link" data-state="Chiba Ken">Chiba Ken</a>
+          <a href="#ehime-ken" class="state-link" data-state="Ehime Ken">Ehime Ken</a>
+          <a href="#fukui-ken" class="state-link" data-state="Fukui Ken">Fukui Ken</a>
+          <a href="#fukuoka-ken" class="state-link" data-state="Fukuoka Ken">Fukuoka Ken</a>
+          <a href="#fukushima-ken" class="state-link" data-state="Fukushima Ken">Fukushima Ken</a>
+          <a href="#gifu-ken" class="state-link" data-state="Gifu Ken">Gifu Ken</a>
+          <a href="#gumma-ken" class="state-link" data-state="Gumma Ken">Gumma Ken</a>
+          <a href="#hiroshima-ken" class="state-link" data-state="Hiroshima Ken">Hiroshima Ken</a>
+          <a href="#hokkaido" class="state-link" data-state="Hokkaido">Hokkaido</a>
+          <a href="#hyogo-ken" class="state-link" data-state="Hyogo Ken">Hyogo Ken</a>
+          <a href="#ibaraki-ken" class="state-link" data-state="Ibaraki Ken">Ibaraki Ken</a>
+          <a href="#ishikawa-ken" class="state-link" data-state="Ishikawa Ken">Ishikawa Ken</a>
+          <a href="#iwate-ken" class="state-link" data-state="Iwate Ken">Iwate Ken</a>
+          <a href="#kagawa-ken" class="state-link" data-state="Kagawa Ken">Kagawa Ken</a>
+          <a href="#kagoshima-ken" class="state-link" data-state="Kagoshima Ken">Kagoshima Ken</a>
+          <a href="#kanagawa-ken" class="state-link" data-state="Kanagawa Ken">Kanagawa Ken</a>
+          <a href="#kochi-ken" class="state-link" data-state="Kochi Ken">Kochi Ken</a>
+          </div>
+        </section>
+
+        <!-- Right: Popular Cities -->
+        <section class="states-list popular-cities-links-section" aria-labelledby="popular-cities-heading">
+          <h2 id="popular-cities-heading" class="states-title">Popular Japan Cities with Postal Codes</h2>
+          <p style="font-size: 0.875rem; color: var(--color-text-muted); margin-bottom: 1rem;">Click on any city below to quickly view its postal code information.</p>
           <!-- Popular Cities Links for SEO -->
           <div class="popular-cities-links" style="margin-top: 1.5rem;">
             <h3 style="font-size: 0.875rem; color: var(--color-text-muted); margin-bottom: 0.75rem;">Popular Japan Cities with Postal Codes:</h3>
@@ -658,41 +689,8 @@
         <div class="city-link-item" data-city="Higashino">Higashino (Aomori Ken)</div>
         <div class="city-link-item" data-city="Higashiohashi">Higashiohashi (Fukuoka Ken)</div>
             </div>
-          </div>
         </section>
-
-        <!-- Right: State/Province List -->
-        <section class="states-list" aria-labelledby="states-heading">
-          <h2 id="states-heading" class="states-title">State/Province level Postal Code Search:</h2>
-          <p style="font-size: 0.8rem; color: var(--color-text-muted); margin-bottom: 1rem;">
-            Click on a state/province to filter cities in that region.
-          </p>
-          <div id="states-container" class="states-container">
-          <a href="#aichi-ken" class="state-link" data-state="Aichi Ken">Aichi Ken</a>
-          <a href="#akita-ken" class="state-link" data-state="Akita Ken">Akita Ken</a>
-          <a href="#aomori-ken" class="state-link" data-state="Aomori Ken">Aomori Ken</a>
-          <a href="#chiba-ken" class="state-link" data-state="Chiba Ken">Chiba Ken</a>
-          <a href="#ehime-ken" class="state-link" data-state="Ehime Ken">Ehime Ken</a>
-          <a href="#fukui-ken" class="state-link" data-state="Fukui Ken">Fukui Ken</a>
-          <a href="#fukuoka-ken" class="state-link" data-state="Fukuoka Ken">Fukuoka Ken</a>
-          <a href="#fukushima-ken" class="state-link" data-state="Fukushima Ken">Fukushima Ken</a>
-          <a href="#gifu-ken" class="state-link" data-state="Gifu Ken">Gifu Ken</a>
-          <a href="#gumma-ken" class="state-link" data-state="Gumma Ken">Gumma Ken</a>
-          <a href="#hiroshima-ken" class="state-link" data-state="Hiroshima Ken">Hiroshima Ken</a>
-          <a href="#hokkaido" class="state-link" data-state="Hokkaido">Hokkaido</a>
-          <a href="#hyogo-ken" class="state-link" data-state="Hyogo Ken">Hyogo Ken</a>
-          <a href="#ibaraki-ken" class="state-link" data-state="Ibaraki Ken">Ibaraki Ken</a>
-          <a href="#ishikawa-ken" class="state-link" data-state="Ishikawa Ken">Ishikawa Ken</a>
-          <a href="#iwate-ken" class="state-link" data-state="Iwate Ken">Iwate Ken</a>
-          <a href="#kagawa-ken" class="state-link" data-state="Kagawa Ken">Kagawa Ken</a>
-          <a href="#kagoshima-ken" class="state-link" data-state="Kagoshima Ken">Kagoshima Ken</a>
-          <a href="#kanagawa-ken" class="state-link" data-state="Kanagawa Ken">Kanagawa Ken</a>
-          <a href="#kochi-ken" class="state-link" data-state="Kochi Ken">Kochi Ken</a>
-          </div>
-        </section>
-      </div>
-
-      <!-- SEO Content Section -->
+      </div><!-- SEO Content Section -->
       <section class="seo-content" style="margin-top: 2rem; padding: 1.5rem; background: var(--color-surface); border-radius: var(--radius-lg);">
         <h2 style="font-size: 1.25rem; margin-bottom: 1rem; color: var(--color-text);">Japan Postal Code Information</h2>
         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem;">

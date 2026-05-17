@@ -380,20 +380,21 @@
       <!-- Ad Unit: Leaderboard -->
       <div class="ad-container">
         <span class="ad-label">Advertisement</span>
-      </div>
-
-      <!-- Bottom Section: Cities + States -->
+      </div>      <!-- Bottom Section: States Filter + City Selection + Popular Cities -->
       <div class="bottom-section">
-        <!-- Left: Popular Cities -->
-        <section class="popular-cities" aria-labelledby="cities-heading">
-          <h2 id="cities-heading" class="section-title">
-            Popular Cities in Canada
+        <!-- Left: State/Province Filter + City Selection Combined -->
+        <section class="popular-cities" aria-labelledby="states-heading">
+          <h2 id="states-heading" class="section-title">
+            Filter by State/Province
           </h2>
           <p class="cities-note">
-            Below is the select list of some major cities from Canada. Click on the "Show Postal Code" button to go get its postal code.
+            Click on a state/province to filter cities, then select a city to view its postal code.
           </p>
 
-          <div class="cities-select-wrapper">
+          <!-- City Selection Dropdown -->
+          <div style="margin-bottom: 1.5rem;">
+            <label for="cities-select" style="display: block; font-size: 0.875rem; font-weight: 600; color: var(--color-text); margin-bottom: 0.5rem;">Select a City</label>
+            <div class="cities-select-wrapper">
             <select id="cities-select" class="cities-select" aria-label="Select a city in Canada">
               <option value="">Select a city...</option>
           <option value="CA_8_0">Algoma Southwest (Blind River) (Ontario)</option>
@@ -554,7 +555,30 @@
           <button id="show-selected-btn" class="show-btn">
             Show Postal Code
           </button>
+          </div>
 
+          <!-- State/Province Links -->
+          <div id="states-container" class="states-container">
+          <a href="#alberta" class="state-link" data-state="Alberta">Alberta</a>
+          <a href="#british-columbia" class="state-link" data-state="British Columbia">British Columbia</a>
+          <a href="#manitoba" class="state-link" data-state="Manitoba">Manitoba</a>
+          <a href="#new-brunswick" class="state-link" data-state="New Brunswick">New Brunswick</a>
+          <a href="#newfoundland-and-labrador" class="state-link" data-state="Newfoundland and Labrador">Newfoundland and Labrador</a>
+          <a href="#northwest-territory" class="state-link" data-state="Northwest Territory">Northwest Territory</a>
+          <a href="#nova-scotia" class="state-link" data-state="Nova Scotia">Nova Scotia</a>
+          <a href="#nunavut-territory" class="state-link" data-state="Nunavut Territory">Nunavut Territory</a>
+          <a href="#ontario" class="state-link" data-state="Ontario">Ontario</a>
+          <a href="#prince-edward-island" class="state-link" data-state="Prince Edward Island">Prince Edward Island</a>
+          <a href="#quebec" class="state-link" data-state="Quebec">Quebec</a>
+          <a href="#saskatchewan" class="state-link" data-state="Saskatchewan">Saskatchewan</a>
+          <a href="#yukon" class="state-link" data-state="Yukon">Yukon</a>
+          </div>
+        </section>
+
+        <!-- Right: Popular Cities -->
+        <section class="states-list popular-cities-links-section" aria-labelledby="popular-cities-heading">
+          <h2 id="popular-cities-heading" class="states-title">Popular Canada Cities with Postal Codes</h2>
+          <p style="font-size: 0.875rem; color: var(--color-text-muted); margin-bottom: 1rem;">Click on any city below to quickly view its postal code information.</p>
           <!-- Popular Cities Links for SEO -->
           <div class="popular-cities-links" style="margin-top: 1.5rem;">
             <h3 style="font-size: 0.875rem; color: var(--color-text-muted); margin-bottom: 0.75rem;">Popular Canada Cities with Postal Codes:</h3>
@@ -610,34 +634,8 @@
         <div class="city-link-item" data-city="International Border Region (Cardston)">International Border Region (Cardston) (Alberta)</div>
         <div class="city-link-item" data-city="Isthmus of Chignecto (River Hébert)">Isthmus of Chignecto (River Hébert) (Nova Scotia)</div>
             </div>
-          </div>
         </section>
-
-        <!-- Right: State/Province List -->
-        <section class="states-list" aria-labelledby="states-heading">
-          <h2 id="states-heading" class="states-title">State/Province level Postal Code Search:</h2>
-          <p style="font-size: 0.8rem; color: var(--color-text-muted); margin-bottom: 1rem;">
-            Click on a state/province to filter cities in that region.
-          </p>
-          <div id="states-container" class="states-container">
-          <a href="#alberta" class="state-link" data-state="Alberta">Alberta</a>
-          <a href="#british-columbia" class="state-link" data-state="British Columbia">British Columbia</a>
-          <a href="#manitoba" class="state-link" data-state="Manitoba">Manitoba</a>
-          <a href="#new-brunswick" class="state-link" data-state="New Brunswick">New Brunswick</a>
-          <a href="#newfoundland-and-labrador" class="state-link" data-state="Newfoundland and Labrador">Newfoundland and Labrador</a>
-          <a href="#northwest-territory" class="state-link" data-state="Northwest Territory">Northwest Territory</a>
-          <a href="#nova-scotia" class="state-link" data-state="Nova Scotia">Nova Scotia</a>
-          <a href="#nunavut-territory" class="state-link" data-state="Nunavut Territory">Nunavut Territory</a>
-          <a href="#ontario" class="state-link" data-state="Ontario">Ontario</a>
-          <a href="#prince-edward-island" class="state-link" data-state="Prince Edward Island">Prince Edward Island</a>
-          <a href="#quebec" class="state-link" data-state="Quebec">Quebec</a>
-          <a href="#saskatchewan" class="state-link" data-state="Saskatchewan">Saskatchewan</a>
-          <a href="#yukon" class="state-link" data-state="Yukon">Yukon</a>
-          </div>
-        </section>
-      </div>
-
-      <!-- SEO Content Section -->
+      </div><!-- SEO Content Section -->
       <section class="seo-content" style="margin-top: 2rem; padding: 1.5rem; background: var(--color-surface); border-radius: var(--radius-lg);">
         <h2 style="font-size: 1.25rem; margin-bottom: 1rem; color: var(--color-text);">Canada Postal Code Information</h2>
         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem;">

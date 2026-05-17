@@ -380,20 +380,21 @@
       <!-- Ad Unit: Leaderboard -->
       <div class="ad-container">
         <span class="ad-label">Advertisement</span>
-      </div>
-
-      <!-- Bottom Section: Cities + States -->
+      </div>      <!-- Bottom Section: States Filter + City Selection + Popular Cities -->
       <div class="bottom-section">
-        <!-- Left: Popular Cities -->
-        <section class="popular-cities" aria-labelledby="cities-heading">
-          <h2 id="cities-heading" class="section-title">
-            Popular Cities in Finland
+        <!-- Left: State/Province Filter + City Selection Combined -->
+        <section class="popular-cities" aria-labelledby="states-heading">
+          <h2 id="states-heading" class="section-title">
+            Filter by State/Province
           </h2>
           <p class="cities-note">
-            Below is the select list of some major cities from Finland. Click on the "Show Postal Code" button to go get its postal code.
+            Click on a state/province to filter cities, then select a city to view its postal code.
           </p>
 
-          <div class="cities-select-wrapper">
+          <!-- City Selection Dropdown -->
+          <div style="margin-bottom: 1.5rem;">
+            <label for="cities-select" style="display: block; font-size: 0.875rem; font-weight: 600; color: var(--color-text); margin-bottom: 0.5rem;">Select a City</label>
+            <div class="cities-select-wrapper">
             <select id="cities-select" class="cities-select" aria-label="Select a city in Finland">
               <option value="">Select a city...</option>
           <option value="FI_9_0">Alapitkä (Northern Savo)</option>
@@ -602,7 +603,35 @@
           <button id="show-selected-btn" class="show-btn">
             Show Postal Code
           </button>
+          </div>
 
+          <!-- State/Province Links -->
+          <div id="states-container" class="states-container">
+          <a href="#central-finland-region" class="state-link" data-state="Central Finland Region">Central Finland Region</a>
+          <a href="#central-ostrobothnia-region" class="state-link" data-state="Central Ostrobothnia Region">Central Ostrobothnia Region</a>
+          <a href="#kainuu" class="state-link" data-state="Kainuu">Kainuu</a>
+          <a href="#kanta-häme" class="state-link" data-state="Kanta-Häme">Kanta-Häme</a>
+          <a href="#kymenlaakso" class="state-link" data-state="Kymenlaakso">Kymenlaakso</a>
+          <a href="#lapland" class="state-link" data-state="Lapland">Lapland</a>
+          <a href="#north-karelia" class="state-link" data-state="North Karelia">North Karelia</a>
+          <a href="#north-ostrobothnia-region" class="state-link" data-state="North Ostrobothnia Region">North Ostrobothnia Region</a>
+          <a href="#northern-savo" class="state-link" data-state="Northern Savo">Northern Savo</a>
+          <a href="#ostrobothnia-region" class="state-link" data-state="Ostrobothnia Region">Ostrobothnia Region</a>
+          <a href="#pirkanmaa" class="state-link" data-state="Pirkanmaa">Pirkanmaa</a>
+          <a href="#päijänne-tavastia" class="state-link" data-state="Päijänne Tavastia">Päijänne Tavastia</a>
+          <a href="#satakunta" class="state-link" data-state="Satakunta">Satakunta</a>
+          <a href="#south-karelia" class="state-link" data-state="South Karelia">South Karelia</a>
+          <a href="#south-ostrobothnia-region" class="state-link" data-state="South Ostrobothnia Region">South Ostrobothnia Region</a>
+          <a href="#southern-savonia" class="state-link" data-state="Southern Savonia">Southern Savonia</a>
+          <a href="#southwest-finland" class="state-link" data-state="Southwest Finland">Southwest Finland</a>
+          <a href="#uusimaa" class="state-link" data-state="Uusimaa">Uusimaa</a>
+          </div>
+        </section>
+
+        <!-- Right: Popular Cities -->
+        <section class="states-list popular-cities-links-section" aria-labelledby="popular-cities-heading">
+          <h2 id="popular-cities-heading" class="states-title">Popular Finland Cities with Postal Codes</h2>
+          <p style="font-size: 0.875rem; color: var(--color-text-muted); margin-bottom: 1rem;">Click on any city below to quickly view its postal code information.</p>
           <!-- Popular Cities Links for SEO -->
           <div class="popular-cities-links" style="margin-top: 1.5rem;">
             <h3 style="font-size: 0.875rem; color: var(--color-text-muted); margin-bottom: 0.75rem;">Popular Finland Cities with Postal Codes:</h3>
@@ -658,39 +687,8 @@
         <div class="city-link-item" data-city="Joukokylä">Joukokylä (Kainuu)</div>
         <div class="city-link-item" data-city="Joutseno">Joutseno (South Karelia)</div>
             </div>
-          </div>
         </section>
-
-        <!-- Right: State/Province List -->
-        <section class="states-list" aria-labelledby="states-heading">
-          <h2 id="states-heading" class="states-title">State/Province level Postal Code Search:</h2>
-          <p style="font-size: 0.8rem; color: var(--color-text-muted); margin-bottom: 1rem;">
-            Click on a state/province to filter cities in that region.
-          </p>
-          <div id="states-container" class="states-container">
-          <a href="#central-finland-region" class="state-link" data-state="Central Finland Region">Central Finland Region</a>
-          <a href="#central-ostrobothnia-region" class="state-link" data-state="Central Ostrobothnia Region">Central Ostrobothnia Region</a>
-          <a href="#kainuu" class="state-link" data-state="Kainuu">Kainuu</a>
-          <a href="#kanta-häme" class="state-link" data-state="Kanta-Häme">Kanta-Häme</a>
-          <a href="#kymenlaakso" class="state-link" data-state="Kymenlaakso">Kymenlaakso</a>
-          <a href="#lapland" class="state-link" data-state="Lapland">Lapland</a>
-          <a href="#north-karelia" class="state-link" data-state="North Karelia">North Karelia</a>
-          <a href="#north-ostrobothnia-region" class="state-link" data-state="North Ostrobothnia Region">North Ostrobothnia Region</a>
-          <a href="#northern-savo" class="state-link" data-state="Northern Savo">Northern Savo</a>
-          <a href="#ostrobothnia-region" class="state-link" data-state="Ostrobothnia Region">Ostrobothnia Region</a>
-          <a href="#pirkanmaa" class="state-link" data-state="Pirkanmaa">Pirkanmaa</a>
-          <a href="#päijänne-tavastia" class="state-link" data-state="Päijänne Tavastia">Päijänne Tavastia</a>
-          <a href="#satakunta" class="state-link" data-state="Satakunta">Satakunta</a>
-          <a href="#south-karelia" class="state-link" data-state="South Karelia">South Karelia</a>
-          <a href="#south-ostrobothnia-region" class="state-link" data-state="South Ostrobothnia Region">South Ostrobothnia Region</a>
-          <a href="#southern-savonia" class="state-link" data-state="Southern Savonia">Southern Savonia</a>
-          <a href="#southwest-finland" class="state-link" data-state="Southwest Finland">Southwest Finland</a>
-          <a href="#uusimaa" class="state-link" data-state="Uusimaa">Uusimaa</a>
-          </div>
-        </section>
-      </div>
-
-      <!-- SEO Content Section -->
+      </div><!-- SEO Content Section -->
       <section class="seo-content" style="margin-top: 2rem; padding: 1.5rem; background: var(--color-surface); border-radius: var(--radius-lg);">
         <h2 style="font-size: 1.25rem; margin-bottom: 1rem; color: var(--color-text);">Finland Postal Code Information</h2>
         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem;">

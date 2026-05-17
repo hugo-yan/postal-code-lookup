@@ -380,20 +380,21 @@
       <!-- Ad Unit: Leaderboard -->
       <div class="ad-container">
         <span class="ad-label">Advertisement</span>
-      </div>
-
-      <!-- Bottom Section: Cities + States -->
+      </div>      <!-- Bottom Section: States Filter + City Selection + Popular Cities -->
       <div class="bottom-section">
-        <!-- Left: Popular Cities -->
-        <section class="popular-cities" aria-labelledby="cities-heading">
-          <h2 id="cities-heading" class="section-title">
-            Popular Cities in Italy
+        <!-- Left: State/Province Filter + City Selection Combined -->
+        <section class="popular-cities" aria-labelledby="states-heading">
+          <h2 id="states-heading" class="section-title">
+            Filter by State/Province
           </h2>
           <p class="cities-note">
-            Below is the select list of some major cities from Italy. Click on the "Show Postal Code" button to go get its postal code.
+            Click on a state/province to filter cities, then select a city to view its postal code.
           </p>
 
-          <div class="cities-select-wrapper">
+          <!-- City Selection Dropdown -->
+          <div style="margin-bottom: 1.5rem;">
+            <label for="cities-select" style="display: block; font-size: 0.875rem; font-weight: 600; color: var(--color-text); margin-bottom: 0.5rem;">Select a City</label>
+            <div class="cities-select-wrapper">
             <select id="cities-select" class="cities-select" aria-label="Select a city in Italy">
               <option value="">Select a city...</option>
           <option value="IT_1_11">Accettura (Basilicata)</option>
@@ -602,7 +603,37 @@
           <button id="show-selected-btn" class="show-btn">
             Show Postal Code
           </button>
+          </div>
 
+          <!-- State/Province Links -->
+          <div id="states-container" class="states-container">
+          <a href="#abruzzi" class="state-link" data-state="Abruzzi">Abruzzi</a>
+          <a href="#basilicata" class="state-link" data-state="Basilicata">Basilicata</a>
+          <a href="#calabria" class="state-link" data-state="Calabria">Calabria</a>
+          <a href="#campania" class="state-link" data-state="Campania">Campania</a>
+          <a href="#emilia-romagna" class="state-link" data-state="Emilia-Romagna">Emilia-Romagna</a>
+          <a href="#friuli-venezia-giulia" class="state-link" data-state="Friuli-Venezia Giulia">Friuli-Venezia Giulia</a>
+          <a href="#lazio" class="state-link" data-state="Lazio">Lazio</a>
+          <a href="#liguria" class="state-link" data-state="Liguria">Liguria</a>
+          <a href="#lombardia" class="state-link" data-state="Lombardia">Lombardia</a>
+          <a href="#marche" class="state-link" data-state="Marche">Marche</a>
+          <a href="#molise" class="state-link" data-state="Molise">Molise</a>
+          <a href="#piemonte" class="state-link" data-state="Piemonte">Piemonte</a>
+          <a href="#puglia" class="state-link" data-state="Puglia">Puglia</a>
+          <a href="#sardegna" class="state-link" data-state="Sardegna">Sardegna</a>
+          <a href="#sicilia" class="state-link" data-state="Sicilia">Sicilia</a>
+          <a href="#toscana" class="state-link" data-state="Toscana">Toscana</a>
+          <a href="#trentino-alto-adige" class="state-link" data-state="Trentino-Alto Adige">Trentino-Alto Adige</a>
+          <a href="#umbria" class="state-link" data-state="Umbria">Umbria</a>
+          <a href="#valle-d'aosta" class="state-link" data-state="Valle D'Aosta">Valle D'Aosta</a>
+          <a href="#veneto" class="state-link" data-state="Veneto">Veneto</a>
+          </div>
+        </section>
+
+        <!-- Right: Popular Cities -->
+        <section class="states-list popular-cities-links-section" aria-labelledby="popular-cities-heading">
+          <h2 id="popular-cities-heading" class="states-title">Popular Italy Cities with Postal Codes</h2>
+          <p style="font-size: 0.875rem; color: var(--color-text-muted); margin-bottom: 1rem;">Click on any city below to quickly view its postal code information.</p>
           <!-- Popular Cities Links for SEO -->
           <div class="popular-cities-links" style="margin-top: 1.5rem;">
             <h3 style="font-size: 0.875rem; color: var(--color-text-muted); margin-bottom: 0.75rem;">Popular Italy Cities with Postal Codes:</h3>
@@ -658,41 +689,8 @@
         <div class="city-link-item" data-city="Casamassima">Casamassima (Puglia)</div>
         <div class="city-link-item" data-city="Casine">Casine (Marche)</div>
             </div>
-          </div>
         </section>
-
-        <!-- Right: State/Province List -->
-        <section class="states-list" aria-labelledby="states-heading">
-          <h2 id="states-heading" class="states-title">State/Province level Postal Code Search:</h2>
-          <p style="font-size: 0.8rem; color: var(--color-text-muted); margin-bottom: 1rem;">
-            Click on a state/province to filter cities in that region.
-          </p>
-          <div id="states-container" class="states-container">
-          <a href="#abruzzi" class="state-link" data-state="Abruzzi">Abruzzi</a>
-          <a href="#basilicata" class="state-link" data-state="Basilicata">Basilicata</a>
-          <a href="#calabria" class="state-link" data-state="Calabria">Calabria</a>
-          <a href="#campania" class="state-link" data-state="Campania">Campania</a>
-          <a href="#emilia-romagna" class="state-link" data-state="Emilia-Romagna">Emilia-Romagna</a>
-          <a href="#friuli-venezia-giulia" class="state-link" data-state="Friuli-Venezia Giulia">Friuli-Venezia Giulia</a>
-          <a href="#lazio" class="state-link" data-state="Lazio">Lazio</a>
-          <a href="#liguria" class="state-link" data-state="Liguria">Liguria</a>
-          <a href="#lombardia" class="state-link" data-state="Lombardia">Lombardia</a>
-          <a href="#marche" class="state-link" data-state="Marche">Marche</a>
-          <a href="#molise" class="state-link" data-state="Molise">Molise</a>
-          <a href="#piemonte" class="state-link" data-state="Piemonte">Piemonte</a>
-          <a href="#puglia" class="state-link" data-state="Puglia">Puglia</a>
-          <a href="#sardegna" class="state-link" data-state="Sardegna">Sardegna</a>
-          <a href="#sicilia" class="state-link" data-state="Sicilia">Sicilia</a>
-          <a href="#toscana" class="state-link" data-state="Toscana">Toscana</a>
-          <a href="#trentino-alto-adige" class="state-link" data-state="Trentino-Alto Adige">Trentino-Alto Adige</a>
-          <a href="#umbria" class="state-link" data-state="Umbria">Umbria</a>
-          <a href="#valle-d'aosta" class="state-link" data-state="Valle D'Aosta">Valle D'Aosta</a>
-          <a href="#veneto" class="state-link" data-state="Veneto">Veneto</a>
-          </div>
-        </section>
-      </div>
-
-      <!-- SEO Content Section -->
+      </div><!-- SEO Content Section -->
       <section class="seo-content" style="margin-top: 2rem; padding: 1.5rem; background: var(--color-surface); border-radius: var(--radius-lg);">
         <h2 style="font-size: 1.25rem; margin-bottom: 1rem; color: var(--color-text);">Italy Postal Code Information</h2>
         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem;">

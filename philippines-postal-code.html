@@ -380,20 +380,21 @@
       <!-- Ad Unit: Leaderboard -->
       <div class="ad-container">
         <span class="ad-label">Advertisement</span>
-      </div>
-
-      <!-- Bottom Section: Cities + States -->
+      </div>      <!-- Bottom Section: States Filter + City Selection + Popular Cities -->
       <div class="bottom-section">
-        <!-- Left: Popular Cities -->
-        <section class="popular-cities" aria-labelledby="cities-heading">
-          <h2 id="cities-heading" class="section-title">
-            Popular Cities in Philippines
+        <!-- Left: State/Province Filter + City Selection Combined -->
+        <section class="popular-cities" aria-labelledby="states-heading">
+          <h2 id="states-heading" class="section-title">
+            Filter by State/Province
           </h2>
           <p class="cities-note">
-            Below is the select list of some major cities from Philippines. Click on the "Show Postal Code" button to go get its postal code.
+            Click on a state/province to filter cities, then select a city to view its postal code.
           </p>
 
-          <div class="cities-select-wrapper">
+          <!-- City Selection Dropdown -->
+          <div style="margin-bottom: 1.5rem;">
+            <label for="cities-select" style="display: block; font-size: 0.875rem; font-weight: 600; color: var(--color-text); margin-bottom: 0.5rem;">Select a City</label>
+            <div class="cities-select-wrapper">
             <select id="cities-select" class="cities-select" aria-label="Select a city in Philippines">
               <option value="">Select a city...</option>
           <option value="PH_15_13">Abra de Ilog (Mimaropa)</option>
@@ -602,7 +603,35 @@
           <button id="show-selected-btn" class="show-btn">
             Show Postal Code
           </button>
+          </div>
 
+          <!-- State/Province Links -->
+          <div id="states-container" class="states-container">
+          <a href="#autonomous-region-in-muslim-mindanao" class="state-link" data-state="Autonomous Region in Muslim Mindanao">Autonomous Region in Muslim Mindanao</a>
+          <a href="#bicol" class="state-link" data-state="Bicol">Bicol</a>
+          <a href="#cagayan-valley" class="state-link" data-state="Cagayan Valley">Cagayan Valley</a>
+          <a href="#calabarzon" class="state-link" data-state="Calabarzon">Calabarzon</a>
+          <a href="#caraga" class="state-link" data-state="Caraga">Caraga</a>
+          <a href="#central-luzon" class="state-link" data-state="Central Luzon">Central Luzon</a>
+          <a href="#central-visayas" class="state-link" data-state="Central Visayas">Central Visayas</a>
+          <a href="#cordillera" class="state-link" data-state="Cordillera">Cordillera</a>
+          <a href="#davao" class="state-link" data-state="Davao">Davao</a>
+          <a href="#eastern-visayas" class="state-link" data-state="Eastern Visayas">Eastern Visayas</a>
+          <a href="#general" class="state-link" data-state="General">General</a>
+          <a href="#ilocos" class="state-link" data-state="Ilocos">Ilocos</a>
+          <a href="#metro-manila" class="state-link" data-state="Metro Manila">Metro Manila</a>
+          <a href="#mimaropa" class="state-link" data-state="Mimaropa">Mimaropa</a>
+          <a href="#northern-mindanao" class="state-link" data-state="Northern Mindanao">Northern Mindanao</a>
+          <a href="#soccsksargen" class="state-link" data-state="Soccsksargen">Soccsksargen</a>
+          <a href="#western-visayas" class="state-link" data-state="Western Visayas">Western Visayas</a>
+          <a href="#zamboanga-peninsula" class="state-link" data-state="Zamboanga Peninsula">Zamboanga Peninsula</a>
+          </div>
+        </section>
+
+        <!-- Right: Popular Cities -->
+        <section class="states-list popular-cities-links-section" aria-labelledby="popular-cities-heading">
+          <h2 id="popular-cities-heading" class="states-title">Popular Philippines Cities with Postal Codes</h2>
+          <p style="font-size: 0.875rem; color: var(--color-text-muted); margin-bottom: 1rem;">Click on any city below to quickly view its postal code information.</p>
           <!-- Popular Cities Links for SEO -->
           <div class="popular-cities-links" style="margin-top: 1.5rem;">
             <h3 style="font-size: 0.875rem; color: var(--color-text-muted); margin-bottom: 0.75rem;">Popular Philippines Cities with Postal Codes:</h3>
@@ -658,39 +687,8 @@
         <div class="city-link-item" data-city="Cabcaben">Cabcaben (Central Luzon)</div>
         <div class="city-link-item" data-city="Calaca">Calaca (Calabarzon)</div>
             </div>
-          </div>
         </section>
-
-        <!-- Right: State/Province List -->
-        <section class="states-list" aria-labelledby="states-heading">
-          <h2 id="states-heading" class="states-title">State/Province level Postal Code Search:</h2>
-          <p style="font-size: 0.8rem; color: var(--color-text-muted); margin-bottom: 1rem;">
-            Click on a state/province to filter cities in that region.
-          </p>
-          <div id="states-container" class="states-container">
-          <a href="#autonomous-region-in-muslim-mindanao" class="state-link" data-state="Autonomous Region in Muslim Mindanao">Autonomous Region in Muslim Mindanao</a>
-          <a href="#bicol" class="state-link" data-state="Bicol">Bicol</a>
-          <a href="#cagayan-valley" class="state-link" data-state="Cagayan Valley">Cagayan Valley</a>
-          <a href="#calabarzon" class="state-link" data-state="Calabarzon">Calabarzon</a>
-          <a href="#caraga" class="state-link" data-state="Caraga">Caraga</a>
-          <a href="#central-luzon" class="state-link" data-state="Central Luzon">Central Luzon</a>
-          <a href="#central-visayas" class="state-link" data-state="Central Visayas">Central Visayas</a>
-          <a href="#cordillera" class="state-link" data-state="Cordillera">Cordillera</a>
-          <a href="#davao" class="state-link" data-state="Davao">Davao</a>
-          <a href="#eastern-visayas" class="state-link" data-state="Eastern Visayas">Eastern Visayas</a>
-          <a href="#general" class="state-link" data-state="General">General</a>
-          <a href="#ilocos" class="state-link" data-state="Ilocos">Ilocos</a>
-          <a href="#metro-manila" class="state-link" data-state="Metro Manila">Metro Manila</a>
-          <a href="#mimaropa" class="state-link" data-state="Mimaropa">Mimaropa</a>
-          <a href="#northern-mindanao" class="state-link" data-state="Northern Mindanao">Northern Mindanao</a>
-          <a href="#soccsksargen" class="state-link" data-state="Soccsksargen">Soccsksargen</a>
-          <a href="#western-visayas" class="state-link" data-state="Western Visayas">Western Visayas</a>
-          <a href="#zamboanga-peninsula" class="state-link" data-state="Zamboanga Peninsula">Zamboanga Peninsula</a>
-          </div>
-        </section>
-      </div>
-
-      <!-- SEO Content Section -->
+      </div><!-- SEO Content Section -->
       <section class="seo-content" style="margin-top: 2rem; padding: 1.5rem; background: var(--color-surface); border-radius: var(--radius-lg);">
         <h2 style="font-size: 1.25rem; margin-bottom: 1rem; color: var(--color-text);">Philippines Postal Code Information</h2>
         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem;">

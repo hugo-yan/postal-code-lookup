@@ -382,20 +382,23 @@
         <span class="ad-label">Advertisement</span>
       </div>
 
-      <!-- Bottom Section: Cities + States -->
+      <!-- Bottom Section: States Filter + City Selection + Popular Cities -->
       <div class="bottom-section">
-        <!-- Left: Popular Cities -->
-        <section class="popular-cities" aria-labelledby="cities-heading">
-          <h2 id="cities-heading" class="section-title">
-            Popular Cities in Turkey
+        <!-- Left: State/Province Filter + City Selection Combined -->
+        <section class="popular-cities" aria-labelledby="states-heading">
+          <h2 id="states-heading" class="section-title">
+            Filter by State/Province
           </h2>
           <p class="cities-note">
-            Below is the select list of some major cities from Turkey. Click on the "Show Postal Code" button to go get its postal code.
+            Click on a state/province to filter cities, then select a city to view its postal code.
           </p>
 
-          <div class="cities-select-wrapper">
-            <select id="cities-select" class="cities-select" aria-label="Select a city in Turkey">
-              <option value="">Select a city...</option>
+          <!-- City Selection Dropdown -->
+          <div style="margin-bottom: 1.5rem;">
+            <label for="cities-select" style="display: block; font-size: 0.875rem; font-weight: 600; color: var(--color-text); margin-bottom: 0.5rem;">Select a City</label>
+            <div class="cities-select-wrapper">
+              <select id="cities-select" class="cities-select" aria-label="Select a city in Turkey" style="width: 100%;">
+                <option value="">Select a city...</option>
           <option value="TR_14_10">Abdiağa (Çanakkale)</option>
           <option value="TR_13_3">Adliye (Bursa)</option>
           <option value="TR_14_7">Adliye (Çanakkale)</option>
@@ -596,17 +599,43 @@
           <option value="TR_0_3">Ortaca (Adiyaman)</option>
           <option value="TR_5_2">Osmaniye (Artvin)</option>
           <option value="TR_0_14">Oymakli (Adiyaman)</option>
-            </select>
+              </select>
+            </div>
+            <button id="show-selected-btn" class="show-btn" style="margin-top: 1rem; width: 100%;">
+              Show Postal Code
+            </button>
           </div>
 
-          <button id="show-selected-btn" class="show-btn">
-            Show Postal Code
-          </button>
+          <!-- State/Province Links -->
+          <div id="states-container" class="states-container">
+          <a href="#adiyaman" class="state-link" data-state="Adiyaman">Adiyaman</a>
+          <a href="#afyonkarahisar" class="state-link" data-state="Afyonkarahisar">Afyonkarahisar</a>
+          <a href="#amasya" class="state-link" data-state="Amasya">Amasya</a>
+          <a href="#antalya" class="state-link" data-state="Antalya">Antalya</a>
+          <a href="#artvin" class="state-link" data-state="Artvin">Artvin</a>
+          <a href="#aydin" class="state-link" data-state="Aydin">Aydin</a>
+          <a href="#ağri" class="state-link" data-state="Ağri">Ağri</a>
+          <a href="#balikesir" class="state-link" data-state="Balikesir">Balikesir</a>
+          <a href="#bilecik" class="state-link" data-state="Bilecik">Bilecik</a>
+          <a href="#bingöl" class="state-link" data-state="Bingöl">Bingöl</a>
+          <a href="#bitlis" class="state-link" data-state="Bitlis">Bitlis</a>
+          <a href="#bolu" class="state-link" data-state="Bolu">Bolu</a>
+          <a href="#burdur" class="state-link" data-state="Burdur">Burdur</a>
+          <a href="#bursa" class="state-link" data-state="Bursa">Bursa</a>
+          <a href="#denizli" class="state-link" data-state="Denizli">Denizli</a>
+          <a href="#diyarbakir" class="state-link" data-state="Diyarbakir">Diyarbakir</a>
+          <a href="#edirne" class="state-link" data-state="Edirne">Edirne</a>
+          <a href="#elaziğ" class="state-link" data-state="Elaziğ">Elaziğ</a>
+          <a href="#çanakkale" class="state-link" data-state="Çanakkale">Çanakkale</a>
+          <a href="#çorum" class="state-link" data-state="Çorum">Çorum</a>
+          </div>
+        </section>
 
-          <!-- Popular Cities Links for SEO -->
-          <div class="popular-cities-links" style="margin-top: 1.5rem;">
-            <h3 style="font-size: 0.875rem; color: var(--color-text-muted); margin-bottom: 0.75rem;">Popular Turkey Cities with Postal Codes:</h3>
-            <div class="city-links-grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 0.5rem; font-size: 0.8rem;">
+        <!-- Right: Popular Cities -->
+        <section class="states-list popular-cities-links-section" aria-labelledby="popular-cities-heading">
+          <h2 id="popular-cities-heading" class="states-title">Popular Turkey Cities with Postal Codes</h2>
+          <p style="font-size: 0.875rem; color: var(--color-text-muted); margin-bottom: 1rem;">Click on any city below to quickly view its postal code information.</p>
+          <div class="city-links-grid" style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 0.5rem; font-size: 0.8rem;">
         <div class="city-link-item" data-city="Abdiağa">Abdiağa (Çanakkale)</div>
         <div class="city-link-item" data-city="Adliye">Adliye (Bursa)</div>
         <div class="city-link-item" data-city="Adliye">Adliye (Çanakkale)</div>
@@ -658,36 +687,6 @@
         <div class="city-link-item" data-city="Başoba">Başoba (Artvin)</div>
         <div class="city-link-item" data-city="Belevi">Belevi (Amasya)</div>
             </div>
-          </div>
-        </section>
-
-        <!-- Right: State/Province List -->
-        <section class="states-list" aria-labelledby="states-heading">
-          <h2 id="states-heading" class="states-title">State/Province level Postal Code Search:</h2>
-          <p style="font-size: 0.8rem; color: var(--color-text-muted); margin-bottom: 1rem;">
-            Click on a state/province to filter cities in that region.
-          </p>
-          <div id="states-container" class="states-container">
-          <a href="#adiyaman" class="state-link" data-state="Adiyaman">Adiyaman</a>
-          <a href="#afyonkarahisar" class="state-link" data-state="Afyonkarahisar">Afyonkarahisar</a>
-          <a href="#amasya" class="state-link" data-state="Amasya">Amasya</a>
-          <a href="#antalya" class="state-link" data-state="Antalya">Antalya</a>
-          <a href="#artvin" class="state-link" data-state="Artvin">Artvin</a>
-          <a href="#aydin" class="state-link" data-state="Aydin">Aydin</a>
-          <a href="#ağri" class="state-link" data-state="Ağri">Ağri</a>
-          <a href="#balikesir" class="state-link" data-state="Balikesir">Balikesir</a>
-          <a href="#bilecik" class="state-link" data-state="Bilecik">Bilecik</a>
-          <a href="#bingöl" class="state-link" data-state="Bingöl">Bingöl</a>
-          <a href="#bitlis" class="state-link" data-state="Bitlis">Bitlis</a>
-          <a href="#bolu" class="state-link" data-state="Bolu">Bolu</a>
-          <a href="#burdur" class="state-link" data-state="Burdur">Burdur</a>
-          <a href="#bursa" class="state-link" data-state="Bursa">Bursa</a>
-          <a href="#denizli" class="state-link" data-state="Denizli">Denizli</a>
-          <a href="#diyarbakir" class="state-link" data-state="Diyarbakir">Diyarbakir</a>
-          <a href="#edirne" class="state-link" data-state="Edirne">Edirne</a>
-          <a href="#elaziğ" class="state-link" data-state="Elaziğ">Elaziğ</a>
-          <a href="#çanakkale" class="state-link" data-state="Çanakkale">Çanakkale</a>
-          <a href="#çorum" class="state-link" data-state="Çorum">Çorum</a>
           </div>
         </section>
       </div>
