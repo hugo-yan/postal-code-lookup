@@ -141,14 +141,30 @@ class CountryPage {
     const flagCode = flagCodeMap[this.countryId] || this.countryId.toLowerCase();
 
     document.title = `${displayName} Postal Code Lookup`;
-    this.elements.pageDescription.content = `Search postal codes for cities in ${displayName}. Find zip codes by city name or address.`;
+    
+    // 安全设置元素内容，检查元素是否存在
+    if (this.elements.pageDescription) {
+      this.elements.pageDescription.content = `Search postal codes for cities in ${displayName}. Find zip codes by city name or address.`;
+    }
 
-    this.elements.aboutCountryName.textContent = displayName;
-    this.elements.aboutCountry.textContent = displayName;
-    this.elements.aboutCountry2.textContent = displayName;
-    this.elements.aboutCountry3.textContent = displayName;
-    this.elements.citiesCountry.textContent = displayName;
-    this.elements.citiesCountryNote.textContent = displayName;
+    if (this.elements.aboutCountryName) {
+      this.elements.aboutCountryName.textContent = displayName;
+    }
+    if (this.elements.aboutCountry) {
+      this.elements.aboutCountry.textContent = displayName;
+    }
+    if (this.elements.aboutCountry2) {
+      this.elements.aboutCountry2.textContent = displayName;
+    }
+    if (this.elements.aboutCountry3) {
+      this.elements.aboutCountry3.textContent = displayName;
+    }
+    if (this.elements.citiesCountry) {
+      this.elements.citiesCountry.textContent = displayName;
+    }
+    if (this.elements.citiesCountryNote) {
+      this.elements.citiesCountryNote.textContent = displayName;
+    }
 
     // 更新搜索板块的国家标题和国旗
     if (this.elements.searchCountryName) {
