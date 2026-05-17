@@ -637,55 +637,44 @@
           </button>
         </section>
 
-        <!-- Right: Info or additional content -->
-        <section class="states-list" aria-labelledby="states-heading">
-          <h2 id="states-heading" class="states-title">About China Postal Codes</h2>
-          <p style="font-size: 0.875rem; line-height: 1.6; color: var(--color-text-muted);">
-            China uses a 6-digit postal code system. The first two digits represent the province or autonomous region, the third digit represents the postal district within the province, and the last three digits represent the specific delivery office.
-          </p>
-          <p style="font-size: 0.875rem; line-height: 1.6; color: var(--color-text-muted); margin-top: 1rem;">
-            Our database covers cities and towns across all 26 provinces and autonomous regions in China, including major cities like Beijing, Shanghai, Guangzhou, and Shenzhen.
-          </p>
+        <!-- Right: Popular Cities -->
+        <section class="states-list popular-cities-links-section" aria-labelledby="popular-cities-heading">
+          <h2 id="popular-cities-heading" class="states-title">Popular China Cities with Postal Codes</h2>
+          <p style="font-size: 0.875rem; color: var(--color-text-muted); margin-bottom: 1rem;">Click on any city below to quickly view its postal code information.</p>
+          <div class="city-links-grid" style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 0.5rem; font-size: 0.8rem;">
+            <div class="city-link-item" data-city="Beijing">Beijing</div>
+            <div class="city-link-item" data-city="Shanghai">Shanghai</div>
+            <div class="city-link-item" data-city="Guangzhou">Guangzhou</div>
+            <div class="city-link-item" data-city="Shenzhen">Shenzhen</div>
+            <div class="city-link-item" data-city="Chengdu">Chengdu</div>
+            <div class="city-link-item" data-city="Hangzhou">Hangzhou</div>
+            <div class="city-link-item" data-city="Wuhan">Wuhan</div>
+            <div class="city-link-item" data-city="Xi'an">Xi'an</div>
+            <div class="city-link-item" data-city="Nanjing">Nanjing</div>
+            <div class="city-link-item" data-city="Chongqing">Chongqing</div>
+            <div class="city-link-item" data-city="Tianjin">Tianjin</div>
+            <div class="city-link-item" data-city="Suzhou">Suzhou</div>
+            <div class="city-link-item" data-city="Zhengzhou">Zhengzhou</div>
+            <div class="city-link-item" data-city="Changsha">Changsha</div>
+            <div class="city-link-item" data-city="Qingdao">Qingdao</div>
+            <div class="city-link-item" data-city="Shenyang">Shenyang</div>
+            <div class="city-link-item" data-city="Dalian">Dalian</div>
+            <div class="city-link-item" data-city="Xiamen">Xiamen</div>
+            <div class="city-link-item" data-city="Harbin">Harbin</div>
+            <div class="city-link-item" data-city="Jinan">Jinan</div>
+            <div class="city-link-item" data-city="Ningbo">Ningbo</div>
+            <div class="city-link-item" data-city="Kunming">Kunming</div>
+            <div class="city-link-item" data-city="Fuzhou">Fuzhou</div>
+            <div class="city-link-item" data-city="Changchun">Changchun</div>
+            <div class="city-link-item" data-city="Hefei">Hefei</div>
+            <div class="city-link-item" data-city="Shijiazhuang">Shijiazhuang</div>
+            <div class="city-link-item" data-city="Nanning">Nanning</div>
+            <div class="city-link-item" data-city="Guiyang">Guiyang</div>
+            <div class="city-link-item" data-city="Lanzhou">Lanzhou</div>
+            <div class="city-link-item" data-city="Urumqi">Urumqi</div>
+          </div>
         </section>
       </div>
-
-      <!-- Popular Cities Links Section (Moved to bottom) -->
-      <section class="popular-cities-links-section" style="margin-top: 2rem; padding: 1.5rem; background: var(--color-surface); border-radius: var(--radius-lg);">
-        <h2 style="font-size: 1.25rem; margin-bottom: 1rem; color: var(--color-text);">Popular China Cities with Postal Codes</h2>
-        <p style="font-size: 0.875rem; color: var(--color-text-muted); margin-bottom: 1rem;">Click on any city below to quickly view its postal code information.</p>
-        <div class="city-links-grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 0.5rem; font-size: 0.8rem;">
-          <div class="city-link-item" data-city="Beijing">Beijing</div>
-          <div class="city-link-item" data-city="Shanghai">Shanghai</div>
-          <div class="city-link-item" data-city="Guangzhou">Guangzhou</div>
-          <div class="city-link-item" data-city="Shenzhen">Shenzhen</div>
-          <div class="city-link-item" data-city="Chengdu">Chengdu</div>
-          <div class="city-link-item" data-city="Hangzhou">Hangzhou</div>
-          <div class="city-link-item" data-city="Wuhan">Wuhan</div>
-          <div class="city-link-item" data-city="Xi'an">Xi'an</div>
-          <div class="city-link-item" data-city="Nanjing">Nanjing</div>
-          <div class="city-link-item" data-city="Chongqing">Chongqing</div>
-          <div class="city-link-item" data-city="Tianjin">Tianjin</div>
-          <div class="city-link-item" data-city="Suzhou">Suzhou</div>
-          <div class="city-link-item" data-city="Zhengzhou">Zhengzhou</div>
-          <div class="city-link-item" data-city="Changsha">Changsha</div>
-          <div class="city-link-item" data-city="Qingdao">Qingdao</div>
-          <div class="city-link-item" data-city="Shenyang">Shenyang</div>
-          <div class="city-link-item" data-city="Dalian">Dalian</div>
-          <div class="city-link-item" data-city="Xiamen">Xiamen</div>
-          <div class="city-link-item" data-city="Harbin">Harbin</div>
-          <div class="city-link-item" data-city="Jinan">Jinan</div>
-          <div class="city-link-item" data-city="Ningbo">Ningbo</div>
-          <div class="city-link-item" data-city="Kunming">Kunming</div>
-          <div class="city-link-item" data-city="Fuzhou">Fuzhou</div>
-          <div class="city-link-item" data-city="Changchun">Changchun</div>
-          <div class="city-link-item" data-city="Hefei">Hefei</div>
-          <div class="city-link-item" data-city="Shijiazhuang">Shijiazhuang</div>
-          <div class="city-link-item" data-city="Nanning">Nanning</div>
-          <div class="city-link-item" data-city="Guiyang">Guiyang</div>
-          <div class="city-link-item" data-city="Lanzhou">Lanzhou</div>
-          <div class="city-link-item" data-city="Urumqi">Urumqi</div>
-        </div>
-      </section>
 
       <!-- SEO Content Section -->
       <section class="seo-content" style="margin-top: 2rem; padding: 1.5rem; background: var(--color-surface); border-radius: var(--radius-lg);">
