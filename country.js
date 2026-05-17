@@ -8,6 +8,7 @@ class CountryPage {
     this.nearbyMarkers = [];
     this.currentLayer = 'street';
     this.tileLayers = {};
+    this.searchDebounceTimer = null;
 
     this.elements = {
       aboutCountryName: document.getElementById('about-country-name'),
@@ -296,6 +297,11 @@ class CountryPage {
       item.addEventListener('click', () => {
         const cityName = item.getAttribute('data-city');
         if (cityName) {
+          // 添加加载状态
+          item.classList.add('loading');
+          item.style.opacity = '0.6';
+          item.style.pointerEvents = 'none';
+          
           const cities = this.getAllCities();
           const city = cities.find(c => c.name === cityName);
           if (city) {
@@ -304,6 +310,13 @@ class CountryPage {
             // Scroll to results section
             this.elements.resultsSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
           }
+          
+          // 移除加载状态
+          setTimeout(() => {
+            item.classList.remove('loading');
+            item.style.opacity = '1';
+            item.style.pointerEvents = 'auto';
+          }, 500);
         }
       });
     });
@@ -311,6 +324,12 @@ class CountryPage {
 
   handleSearch(e) {
     const query = e.target.value.trim().toLowerCase();
+    
+    // 清除之前的防抖定时器
+    if (this.searchDebounceTimer) {
+      clearTimeout(this.searchDebounceTimer);
+    }
+    
     if (query.length === 0) {
       this.hideSuggestions();
       this.selectedCity = null;
@@ -318,13 +337,16 @@ class CountryPage {
       return;
     }
 
-    const cities = this.getAllCities();
-    const matches = cities.filter(city =>
-      city.name.toLowerCase().includes(query) ||
-      city.state.toLowerCase().includes(query)
-    ).slice(0, 10);
+    // 防抖处理：延迟 200ms 执行搜索
+    this.searchDebounceTimer = setTimeout(() => {
+      const cities = this.getAllCities();
+      const matches = cities.filter(city =>
+        city.name.toLowerCase().includes(query) ||
+        city.state.toLowerCase().includes(query)
+      ).slice(0, 10);
 
-    this.renderSuggestions(matches);
+      this.renderSuggestions(matches);
+    }, 200);
   }
 
   renderSuggestions(matches) {
@@ -365,20 +387,37 @@ class CountryPage {
         e.preventDefault();
         currentIndex = Math.min(currentIndex + 1, items.length - 1);
         this.highlightItem(items, currentIndex);
+        // 自动更新输入框为当前高亮项的城市名
+        if (items[currentIndex]) {
+          const cityName = items[currentIndex].querySelector('.suggestion-city').textContent;
+          this.elements.citySearch.value = cityName;
+        }
         break;
       case 'ArrowUp':
         e.preventDefault();
         currentIndex = Math.max(currentIndex - 1, 0);
         this.highlightItem(items, currentIndex);
+        // 自动更新输入框为当前高亮项的城市名
+        if (items[currentIndex]) {
+          const cityName = items[currentIndex].querySelector('.suggestion-city').textContent;
+          this.elements.citySearch.value = cityName;
+        }
         break;
       case 'Enter':
         e.preventDefault();
         if (highlighted) {
           highlighted.click();
+        } else if (items.length > 0) {
+          // 如果没有高亮项但建议列表不为空，选中第一项
+          items[0].click();
         }
         break;
       case 'Escape':
         this.hideSuggestions();
+        // 恢复原始输入值
+        if (this.selectedCity) {
+          this.elements.citySearch.value = this.selectedCity.name;
+        }
         break;
     }
   }
@@ -430,15 +469,21 @@ class CountryPage {
     const postalCodes = city.postalCodes;
     const primaryPostal = postalCodes[0];
 
-    // Show results section
+    // Show results section with animation
     this.elements.resultsSection.style.display = 'block';
+    this.elements.resultsSection.classList.add('showing');
+    
+    // Remove animation class after animation completes
+    setTimeout(() => {
+      this.elements.resultsSection.classList.remove('showing');
+    }, 400);
 
     // Render postal code info with enhanced layout
     let postalCodesHtml = postalCodes.map((pc, index) => `
       <div class="postal-code-item ${index === 0 ? 'primary' : ''}">
         <div class="postal-code-number">${pc.code}</div>
         <div class="postal-code-area">${pc.area}</div>
-        <button class="copy-btn-small" onclick="countryPage.copyToClipboard('${pc.code}')" title="Copy">
+        <button class="copy-btn-small" onclick="countryPage.copyToClipboard('${pc.code}', this)" title="Copy">
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" style="width: 16px; height: 16px;">
             <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 17.25v3.375c0 .621-.504 1.125-1.125 1.125h-9.75a1.125 1.125 0 01-1.125-1.125V7.875c0-.621.504-1.125 1.125-1.125H6.75a9.06 9.06 0 011.5.124m7.5 10.376h3.375c.621 0 1.125-.504 1.125-1.125V11.25c0-4.46-3.243-8.161-7.5-8.876a9.06 9.06 0 00-1.5-.124H9.375c-.621 0-1.125.504-1.125 1.125v3.5m7.5 10.375H9.375a1.125 1.125 0 01-1.125-1.125v-9.25m12 6.625v-1.875a3.375 3.375 0 00-3.375-3.375h-1.5" />
           </svg>
@@ -819,9 +864,10 @@ class CountryPage {
     }
   }
 
-  async copyToClipboard(code) {
+  async copyToClipboard(code, btnElement) {
     try {
       await navigator.clipboard.writeText(code);
+      this.showCopySuccess(btnElement);
       this.showToast(`Copied: ${code}`);
     } catch (err) {
       const textArea = document.createElement('textarea');
@@ -832,8 +878,30 @@ class CountryPage {
       textArea.select();
       document.execCommand('copy');
       document.body.removeChild(textArea);
+      this.showCopySuccess(btnElement);
       this.showToast(`Copied: ${code}`);
     }
+  }
+
+  showCopySuccess(btnElement) {
+    if (!btnElement) return;
+    
+    // 保存原始内容
+    const originalHTML = btnElement.innerHTML;
+    
+    // 显示成功状态
+    btnElement.innerHTML = `
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" style="width: 16px; height: 16px;">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+      </svg>
+    `;
+    btnElement.style.background = '#059669';
+    
+    // 2秒后恢复原始状态
+    setTimeout(() => {
+      btnElement.innerHTML = originalHTML;
+      btnElement.style.background = '';
+    }, 2000);
   }
 
   showToast(message) {
