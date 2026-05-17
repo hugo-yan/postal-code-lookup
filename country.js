@@ -214,6 +214,7 @@ class CountryPage {
       const link = document.createElement('a');
       link.href = `#state-${state.id}`;
       link.className = 'state-link';
+      link.setAttribute('data-state-id', state.id);
       link.textContent = state.name;
       link.addEventListener('click', (e) => {
         e.preventDefault();
@@ -226,6 +227,17 @@ class CountryPage {
   filterCitiesByState(stateId) {
     const state = this.country.states.find(s => s.id === stateId);
     if (!state) return;
+
+    // 高亮当前选中的州/省链接
+    const stateLinks = this.elements.statesContainer.querySelectorAll('.state-link');
+    stateLinks.forEach(link => {
+      link.classList.remove('active');
+      if (link.getAttribute('data-state-id') === stateId) {
+        link.classList.add('active');
+        // 滚动到选中的州/省（如果在可视区域外）
+        link.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+      }
+    });
 
     // 显示所有城市，但高亮当前选中的州/省
     const allCities = this.getAllCities();
