@@ -277,6 +277,24 @@ class CountryPage {
         this.elements.showBtn.disabled = true;
       }
     });
+
+    // Popular city links click handler
+    document.querySelectorAll('.city-link-item').forEach(item => {
+      item.style.cursor = 'pointer';
+      item.addEventListener('click', () => {
+        const cityName = item.getAttribute('data-city');
+        if (cityName) {
+          const cities = this.getAllCities();
+          const city = cities.find(c => c.name === cityName);
+          if (city) {
+            this.selectCity(city);
+            this.showResults();
+            // Scroll to results section
+            this.elements.resultsSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          }
+        }
+      });
+    });
   }
 
   handleSearch(e) {

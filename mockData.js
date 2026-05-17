@@ -9301,7 +9301,20 @@ const postalData = {
         ]},
         { id: "CN_22", name: "Guangdong", cities: [
           { id: "CN_22_0", name: "Guangzhou", postalCodes: [{ code: "510000", area: "Guangzhou", type: "Standard" }], lat: 23.1291, lng: 113.2644 },
-          { id: "CN_22_1", name: "Shenzhen", postalCodes: [{ code: "518000", area: "Shenzhen", type: "Standard" }], lat: 22.5431, lng: 114.0579 }
+          { id: "CN_22_1", name: "Shenzhen", postalCodes: [{ code: "518000", area: "Shenzhen", type: "Standard" }], lat: 22.5431, lng: 114.0579 },
+          { id: "CN_22_2", name: "Zhuhai", postalCodes: [{ code: "519000", area: "Zhuhai", type: "Standard" }], lat: 22.271, lng: 113.567 },
+          { id: "CN_22_3", name: "Shantou", postalCodes: [{ code: "515000", area: "Shantou", type: "Standard" }], lat: 23.3535, lng: 116.7319 },
+          { id: "CN_22_4", name: "Foshan", postalCodes: [{ code: "528000", area: "Foshan", type: "Standard" }], lat: 23.0218, lng: 113.1219 },
+          { id: "CN_22_5", name: "Dongguan", postalCodes: [{ code: "523000", area: "Dongguan", type: "Standard" }], lat: 23.0477, lng: 113.749 },
+          { id: "CN_22_6", name: "Zhongshan", postalCodes: [{ code: "528400", area: "Zhongshan", type: "Standard" }], lat: 22.5176, lng: 113.3927 },
+          { id: "CN_22_7", name: "Jiangmen", postalCodes: [{ code: "529000", area: "Jiangmen", type: "Standard" }], lat: 22.5787, lng: 113.0815 },
+          { id: "CN_22_8", name: "Zhanjiang", postalCodes: [{ code: "524000", area: "Zhanjiang", type: "Standard" }], lat: 21.2707, lng: 110.3594 },
+          { id: "CN_22_9", name: "Maoming", postalCodes: [{ code: "525000", area: "Maoming", type: "Standard" }], lat: 21.6629, lng: 110.9254 },
+          { id: "CN_22_10", name: "Zhaoqing", postalCodes: [{ code: "526000", area: "Zhaoqing", type: "Standard" }], lat: 23.0469, lng: 112.4651 },
+          { id: "CN_22_11", name: "Huizhou", postalCodes: [{ code: "516000", area: "Huizhou", type: "Standard" }], lat: 23.1115, lng: 114.4152 },
+          { id: "CN_22_12", name: "Meizhou", postalCodes: [{ code: "514000", area: "Meizhou", type: "Standard" }], lat: 24.2886, lng: 116.1222 },
+          { id: "CN_22_13", name: "Shaoguan", postalCodes: [{ code: "512000", area: "Shaoguan", type: "Standard" }], lat: 24.8104, lng: 113.5972 },
+          { id: "CN_22_14", name: "Heyuan", postalCodes: [{ code: "517000", area: "Heyuan", type: "Standard" }], lat: 23.7435, lng: 114.7004 }
         ]},
         { id: "CN_23", name: "Sichuan", cities: [
           { id: "CN_23_0", name: "Chengdu", postalCodes: [{ code: "610000", area: "Chengdu", type: "Standard" }], lat: 30.5728, lng: 104.0668 }
