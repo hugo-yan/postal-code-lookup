@@ -1,31 +1,4 @@
 {
-  "cleanUrls": false,
-  "trailingSlash": false,
-  "redirects": [
-    {
-      "source": "/country.html",
-      "destination": "/us-postal-code.html",
-      "permanent": false
-    }
-  ],
-  "headers": [
-    {
-      "source": "/(.*)",
-      "headers": [
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=3600"
-        }
-      ]
-    },
-    {
-      "source": "/sitemap.xml",
-      "headers": [
-        {
-          "key": "Content-Type",
-          "value": "application/xml"
-        }
-      ]
-    }
-  ]
+  "version": 2,
+  "public": true
 }
