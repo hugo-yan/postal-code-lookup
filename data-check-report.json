@@ -1,0 +1,858 @@
+{
+  "totalCountries": 48,
+  "lowDataCountries": [
+    {
+      "id": "FR",
+      "name": "France",
+      "cities": 3
+    },
+    {
+      "id": "FI",
+      "name": "Finland",
+      "cities": 3
+    },
+    {
+      "id": "GR",
+      "name": "Greece",
+      "cities": 3
+    },
+    {
+      "id": "IL",
+      "name": "Israel",
+      "cities": 3
+    },
+    {
+      "id": "US",
+      "name": "United States",
+      "cities": 2
+    },
+    {
+      "id": "CA",
+      "name": "Canada",
+      "cities": 2
+    },
+    {
+      "id": "DE",
+      "name": "Germany",
+      "cities": 2
+    },
+    {
+      "id": "JP",
+      "name": "Japan",
+      "cities": 2
+    },
+    {
+      "id": "IN",
+      "name": "India",
+      "cities": 2
+    },
+    {
+      "id": "AU",
+      "name": "Australia",
+      "cities": 2
+    },
+    {
+      "id": "BR",
+      "name": "Brazil",
+      "cities": 2
+    },
+    {
+      "id": "IT",
+      "name": "Italy",
+      "cities": 2
+    },
+    {
+      "id": "ES",
+      "name": "Spain",
+      "cities": 2
+    },
+    {
+      "id": "NL",
+      "name": "Netherlands",
+      "cities": 2
+    },
+    {
+      "id": "SE",
+      "name": "Sweden",
+      "cities": 2
+    },
+    {
+      "id": "NO",
+      "name": "Norway",
+      "cities": 2
+    },
+    {
+      "id": "DK",
+      "name": "Denmark",
+      "cities": 2
+    },
+    {
+      "id": "PL",
+      "name": "Poland",
+      "cities": 2
+    },
+    {
+      "id": "AT",
+      "name": "Austria",
+      "cities": 2
+    },
+    {
+      "id": "CH",
+      "name": "Switzerland",
+      "cities": 2
+    },
+    {
+      "id": "BE",
+      "name": "Belgium",
+      "cities": 2
+    },
+    {
+      "id": "PT",
+      "name": "Portugal",
+      "cities": 2
+    },
+    {
+      "id": "IE",
+      "name": "Ireland",
+      "cities": 2
+    },
+    {
+      "id": "NZ",
+      "name": "New Zealand",
+      "cities": 2
+    },
+    {
+      "id": "ZA",
+      "name": "South Africa",
+      "cities": 2
+    },
+    {
+      "id": "MX",
+      "name": "Mexico",
+      "cities": 2
+    },
+    {
+      "id": "RU",
+      "name": "Russia",
+      "cities": 2
+    },
+    {
+      "id": "TR",
+      "name": "Turkey",
+      "cities": 2
+    },
+    {
+      "id": "CZ",
+      "name": "Czech Republic",
+      "cities": 2
+    },
+    {
+      "id": "HU",
+      "name": "Hungary",
+      "cities": 2
+    },
+    {
+      "id": "SK",
+      "name": "Slovakia",
+      "cities": 2
+    },
+    {
+      "id": "HR",
+      "name": "Croatia",
+      "cities": 2
+    },
+    {
+      "id": "SI",
+      "name": "Slovenia",
+      "cities": 2
+    },
+    {
+      "id": "LT",
+      "name": "Lithuania",
+      "cities": 2
+    },
+    {
+      "id": "LV",
+      "name": "Latvia",
+      "cities": 2
+    },
+    {
+      "id": "EE",
+      "name": "Estonia",
+      "cities": 2
+    },
+    {
+      "id": "LU",
+      "name": "Luxembourg",
+      "cities": 2
+    },
+    {
+      "id": "IS",
+      "name": "Iceland",
+      "cities": 2
+    },
+    {
+      "id": "MT",
+      "name": "Malta",
+      "cities": 2
+    },
+    {
+      "id": "UK",
+      "name": "United Kingdom",
+      "cities": 2
+    },
+    {
+      "id": "CN",
+      "name": "China",
+      "cities": 2
+    },
+    {
+      "id": "ID",
+      "name": "Indonesia",
+      "cities": 2
+    },
+    {
+      "id": "SG",
+      "name": "Singapore",
+      "cities": 2
+    },
+    {
+      "id": "TH",
+      "name": "Thailand",
+      "cities": 2
+    },
+    {
+      "id": "MY",
+      "name": "Malaysia",
+      "cities": 2
+    },
+    {
+      "id": "PH",
+      "name": "Philippines",
+      "cities": 2
+    },
+    {
+      "id": "KR",
+      "name": "South Korea",
+      "cities": 2
+    },
+    {
+      "id": "AE",
+      "name": "United Arab Emirates",
+      "cities": 2
+    }
+  ],
+  "mediumDataCountries": [],
+  "noCoordCountries": [
+    {
+      "id": "US",
+      "name": "United States"
+    },
+    {
+      "id": "CA",
+      "name": "Canada"
+    },
+    {
+      "id": "DE",
+      "name": "Germany"
+    },
+    {
+      "id": "JP",
+      "name": "Japan"
+    },
+    {
+      "id": "IN",
+      "name": "India"
+    },
+    {
+      "id": "AU",
+      "name": "Australia"
+    },
+    {
+      "id": "BR",
+      "name": "Brazil"
+    },
+    {
+      "id": "IT",
+      "name": "Italy"
+    },
+    {
+      "id": "ES",
+      "name": "Spain"
+    },
+    {
+      "id": "NL",
+      "name": "Netherlands"
+    },
+    {
+      "id": "SE",
+      "name": "Sweden"
+    },
+    {
+      "id": "NO",
+      "name": "Norway"
+    },
+    {
+      "id": "DK",
+      "name": "Denmark"
+    },
+    {
+      "id": "PL",
+      "name": "Poland"
+    },
+    {
+      "id": "AT",
+      "name": "Austria"
+    },
+    {
+      "id": "CH",
+      "name": "Switzerland"
+    },
+    {
+      "id": "BE",
+      "name": "Belgium"
+    },
+    {
+      "id": "PT",
+      "name": "Portugal"
+    },
+    {
+      "id": "IE",
+      "name": "Ireland"
+    },
+    {
+      "id": "NZ",
+      "name": "New Zealand"
+    },
+    {
+      "id": "ZA",
+      "name": "South Africa"
+    },
+    {
+      "id": "MX",
+      "name": "Mexico"
+    },
+    {
+      "id": "RU",
+      "name": "Russia"
+    },
+    {
+      "id": "TR",
+      "name": "Turkey"
+    },
+    {
+      "id": "CZ",
+      "name": "Czech Republic"
+    },
+    {
+      "id": "HU",
+      "name": "Hungary"
+    },
+    {
+      "id": "SK",
+      "name": "Slovakia"
+    },
+    {
+      "id": "HR",
+      "name": "Croatia"
+    },
+    {
+      "id": "SI",
+      "name": "Slovenia"
+    },
+    {
+      "id": "LT",
+      "name": "Lithuania"
+    },
+    {
+      "id": "LV",
+      "name": "Latvia"
+    },
+    {
+      "id": "EE",
+      "name": "Estonia"
+    },
+    {
+      "id": "LU",
+      "name": "Luxembourg"
+    },
+    {
+      "id": "IS",
+      "name": "Iceland"
+    },
+    {
+      "id": "MT",
+      "name": "Malta"
+    },
+    {
+      "id": "UK",
+      "name": "United Kingdom"
+    },
+    {
+      "id": "CN",
+      "name": "China"
+    },
+    {
+      "id": "ID",
+      "name": "Indonesia"
+    },
+    {
+      "id": "SG",
+      "name": "Singapore"
+    },
+    {
+      "id": "TH",
+      "name": "Thailand"
+    },
+    {
+      "id": "MY",
+      "name": "Malaysia"
+    },
+    {
+      "id": "PH",
+      "name": "Philippines"
+    },
+    {
+      "id": "KR",
+      "name": "South Korea"
+    },
+    {
+      "id": "AE",
+      "name": "United Arab Emirates"
+    }
+  ],
+  "allCountries": [
+    {
+      "id": "FR",
+      "name": "France",
+      "states": 3,
+      "cities": 3,
+      "postalCodes": 10,
+      "hasCoords": true,
+      "coordCount": 1
+    },
+    {
+      "id": "FI",
+      "name": "Finland",
+      "states": 3,
+      "cities": 3,
+      "postalCodes": 6,
+      "hasCoords": true,
+      "coordCount": 1
+    },
+    {
+      "id": "GR",
+      "name": "Greece",
+      "states": 3,
+      "cities": 3,
+      "postalCodes": 5,
+      "hasCoords": true,
+      "coordCount": 1
+    },
+    {
+      "id": "IL",
+      "name": "Israel",
+      "states": 3,
+      "cities": 3,
+      "postalCodes": 5,
+      "hasCoords": true,
+      "coordCount": 1
+    },
+    {
+      "id": "US",
+      "name": "United States",
+      "states": 2,
+      "cities": 2,
+      "postalCodes": 1,
+      "hasCoords": false,
+      "coordCount": 0
+    },
+    {
+      "id": "CA",
+      "name": "Canada",
+      "states": 2,
+      "cities": 2,
+      "postalCodes": 1,
+      "hasCoords": false,
+      "coordCount": 0
+    },
+    {
+      "id": "DE",
+      "name": "Germany",
+      "states": 2,
+      "cities": 2,
+      "postalCodes": 1,
+      "hasCoords": false,
+      "coordCount": 0
+    },
+    {
+      "id": "JP",
+      "name": "Japan",
+      "states": 2,
+      "cities": 2,
+      "postalCodes": 2,
+      "hasCoords": false,
+      "coordCount": 0
+    },
+    {
+      "id": "IN",
+      "name": "India",
+      "states": 2,
+      "cities": 2,
+      "postalCodes": 1,
+      "hasCoords": false,
+      "coordCount": 0
+    },
+    {
+      "id": "AU",
+      "name": "Australia",
+      "states": 2,
+      "cities": 2,
+      "postalCodes": 1,
+      "hasCoords": false,
+      "coordCount": 0
+    },
+    {
+      "id": "BR",
+      "name": "Brazil",
+      "states": 2,
+      "cities": 2,
+      "postalCodes": 1,
+      "hasCoords": false,
+      "coordCount": 0
+    },
+    {
+      "id": "IT",
+      "name": "Italy",
+      "states": 2,
+      "cities": 2,
+      "postalCodes": 1,
+      "hasCoords": false,
+      "coordCount": 0
+    },
+    {
+      "id": "ES",
+      "name": "Spain",
+      "states": 2,
+      "cities": 2,
+      "postalCodes": 5,
+      "hasCoords": false,
+      "coordCount": 0
+    },
+    {
+      "id": "NL",
+      "name": "Netherlands",
+      "states": 2,
+      "cities": 2,
+      "postalCodes": 5,
+      "hasCoords": false,
+      "coordCount": 0
+    },
+    {
+      "id": "SE",
+      "name": "Sweden",
+      "states": 2,
+      "cities": 2,
+      "postalCodes": 2,
+      "hasCoords": false,
+      "coordCount": 0
+    },
+    {
+      "id": "NO",
+      "name": "Norway",
+      "states": 2,
+      "cities": 2,
+      "postalCodes": 5,
+      "hasCoords": false,
+      "coordCount": 0
+    },
+    {
+      "id": "DK",
+      "name": "Denmark",
+      "states": 2,
+      "cities": 2,
+      "postalCodes": 5,
+      "hasCoords": false,
+      "coordCount": 0
+    },
+    {
+      "id": "PL",
+      "name": "Poland",
+      "states": 2,
+      "cities": 2,
+      "postalCodes": 2,
+      "hasCoords": false,
+      "coordCount": 0
+    },
+    {
+      "id": "AT",
+      "name": "Austria",
+      "states": 2,
+      "cities": 2,
+      "postalCodes": 1,
+      "hasCoords": false,
+      "coordCount": 0
+    },
+    {
+      "id": "CH",
+      "name": "Switzerland",
+      "states": 2,
+      "cities": 2,
+      "postalCodes": 2,
+      "hasCoords": false,
+      "coordCount": 0
+    },
+    {
+      "id": "BE",
+      "name": "Belgium",
+      "states": 2,
+      "cities": 2,
+      "postalCodes": 1,
+      "hasCoords": false,
+      "coordCount": 0
+    },
+    {
+      "id": "PT",
+      "name": "Portugal",
+      "states": 2,
+      "cities": 2,
+      "postalCodes": 5,
+      "hasCoords": false,
+      "coordCount": 0
+    },
+    {
+      "id": "IE",
+      "name": "Ireland",
+      "states": 2,
+      "cities": 2,
+      "postalCodes": 1,
+      "hasCoords": false,
+      "coordCount": 0
+    },
+    {
+      "id": "NZ",
+      "name": "New Zealand",
+      "states": 2,
+      "cities": 2,
+      "postalCodes": 2,
+      "hasCoords": false,
+      "coordCount": 0
+    },
+    {
+      "id": "ZA",
+      "name": "South Africa",
+      "states": 2,
+      "cities": 2,
+      "postalCodes": 5,
+      "hasCoords": false,
+      "coordCount": 0
+    },
+    {
+      "id": "MX",
+      "name": "Mexico",
+      "states": 2,
+      "cities": 2,
+      "postalCodes": 2,
+      "hasCoords": false,
+      "coordCount": 0
+    },
+    {
+      "id": "RU",
+      "name": "Russia",
+      "states": 2,
+      "cities": 2,
+      "postalCodes": 1,
+      "hasCoords": false,
+      "coordCount": 0
+    },
+    {
+      "id": "TR",
+      "name": "Turkey",
+      "states": 2,
+      "cities": 2,
+      "postalCodes": 1,
+      "hasCoords": false,
+      "coordCount": 0
+    },
+    {
+      "id": "CZ",
+      "name": "Czech Republic",
+      "states": 2,
+      "cities": 2,
+      "postalCodes": 3,
+      "hasCoords": false,
+      "coordCount": 0
+    },
+    {
+      "id": "HU",
+      "name": "Hungary",
+      "states": 2,
+      "cities": 2,
+      "postalCodes": 1,
+      "hasCoords": false,
+      "coordCount": 0
+    },
+    {
+      "id": "SK",
+      "name": "Slovakia",
+      "states": 2,
+      "cities": 2,
+      "postalCodes": 1,
+      "hasCoords": false,
+      "coordCount": 0
+    },
+    {
+      "id": "HR",
+      "name": "Croatia",
+      "states": 2,
+      "cities": 2,
+      "postalCodes": 1,
+      "hasCoords": false,
+      "coordCount": 0
+    },
+    {
+      "id": "SI",
+      "name": "Slovenia",
+      "states": 2,
+      "cities": 2,
+      "postalCodes": 1,
+      "hasCoords": false,
+      "coordCount": 0
+    },
+    {
+      "id": "LT",
+      "name": "Lithuania",
+      "states": 2,
+      "cities": 2,
+      "postalCodes": 3,
+      "hasCoords": false,
+      "coordCount": 0
+    },
+    {
+      "id": "LV",
+      "name": "Latvia",
+      "states": 2,
+      "cities": 2,
+      "postalCodes": 1,
+      "hasCoords": false,
+      "coordCount": 0
+    },
+    {
+      "id": "EE",
+      "name": "Estonia",
+      "states": 2,
+      "cities": 2,
+      "postalCodes": 4,
+      "hasCoords": false,
+      "coordCount": 0
+    },
+    {
+      "id": "LU",
+      "name": "Luxembourg",
+      "states": 2,
+      "cities": 2,
+      "postalCodes": 5,
+      "hasCoords": false,
+      "coordCount": 0
+    },
+    {
+      "id": "IS",
+      "name": "Iceland",
+      "states": 2,
+      "cities": 2,
+      "postalCodes": 2,
+      "hasCoords": false,
+      "coordCount": 0
+    },
+    {
+      "id": "MT",
+      "name": "Malta",
+      "states": 2,
+      "cities": 2,
+      "postalCodes": 1,
+      "hasCoords": false,
+      "coordCount": 0
+    },
+    {
+      "id": "UK",
+      "name": "United Kingdom",
+      "states": 2,
+      "cities": 2,
+      "postalCodes": 4,
+      "hasCoords": false,
+      "coordCount": 0
+    },
+    {
+      "id": "CN",
+      "name": "China",
+      "states": 2,
+      "cities": 2,
+      "postalCodes": 1,
+      "hasCoords": false,
+      "coordCount": 0
+    },
+    {
+      "id": "ID",
+      "name": "Indonesia",
+      "states": 2,
+      "cities": 2,
+      "postalCodes": 1,
+      "hasCoords": false,
+      "coordCount": 0
+    },
+    {
+      "id": "SG",
+      "name": "Singapore",
+      "states": 2,
+      "cities": 2,
+      "postalCodes": 2,
+      "hasCoords": false,
+      "coordCount": 0
+    },
+    {
+      "id": "TH",
+      "name": "Thailand",
+      "states": 2,
+      "cities": 2,
+      "postalCodes": 1,
+      "hasCoords": false,
+      "coordCount": 0
+    },
+    {
+      "id": "MY",
+      "name": "Malaysia",
+      "states": 2,
+      "cities": 2,
+      "postalCodes": 5,
+      "hasCoords": false,
+      "coordCount": 0
+    },
+    {
+      "id": "PH",
+      "name": "Philippines",
+      "states": 2,
+      "cities": 2,
+      "postalCodes": 1,
+      "hasCoords": false,
+      "coordCount": 0
+    },
+    {
+      "id": "KR",
+      "name": "South Korea",
+      "states": 2,
+      "cities": 2,
+      "postalCodes": 2,
+      "hasCoords": false,
+      "coordCount": 0
+    },
+    {
+      "id": "AE",
+      "name": "United Arab Emirates",
+      "states": 2,
+      "cities": 2,
+      "postalCodes": 5,
+      "hasCoords": false,
+      "coordCount": 0
+    }
+  ]
+}

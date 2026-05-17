@@ -10478,32 +10478,32 @@ const postalData = {
       id: "IL",
       name: "Israel",
       states: [
-        { id: "TA", name: "Tel Aviv District", cities: [
-          { id: "IL_TA_0", name: "Tel Aviv", postalCodes: [{ code: "6100000", area: "Tel Aviv", type: "Standard" }, { code: "6100001", area: "Tel Aviv", type: "Standard" }, { code: "6100002", area: "Tel Aviv", type: "Standard" }], lat: 32.0853, lng: 34.7818 },
-          { id: "IL_TA_1", name: "Ramat Gan", postalCodes: [{ code: "5200000", area: "Ramat Gan", type: "Standard" }, { code: "5200001", area: "Ramat Gan", type: "Standard" }] },
-          { id: "IL_TA_2", name: "Givatayim", postalCodes: [{ code: "5300000", area: "Givatayim", type: "Standard" }, { code: "5300001", area: "Givatayim", type: "Standard" }] }
+        { id: "IL_0", name: "Tel Aviv District", cities: [
+          { id: "IL_0_0", name: "Tel Aviv", postalCodes: [{ code: "6100000", area: "Tel Aviv", type: "Standard" }, { code: "6100001", area: "Tel Aviv", type: "Standard" }, { code: "6100002", area: "Tel Aviv", type: "Standard" }], lat: 32.0853, lng: 34.7818 },
+          { id: "IL_0_1", name: "Ramat Gan", postalCodes: [{ code: "5200000", area: "Ramat Gan", type: "Standard" }, { code: "5200001", area: "Ramat Gan", type: "Standard" }] },
+          { id: "IL_0_2", name: "Givatayim", postalCodes: [{ code: "5300000", area: "Givatayim", type: "Standard" }, { code: "5300001", area: "Givatayim", type: "Standard" }] }
         ]},
-        { id: "JM", name: "Jerusalem District", cities: [
-          { id: "IL_JM_0", name: "Jerusalem", postalCodes: [{ code: "9100000", area: "Jerusalem", type: "Standard" }, { code: "9100001", area: "Jerusalem", type: "Standard" }, { code: "9100002", area: "Jerusalem", type: "Standard" }], lat: 31.7683, lng: 35.2137 },
-          { id: "IL_JM_1", name: "Bet Shemesh", postalCodes: [{ code: "9900000", area: "Bet Shemesh", type: "Standard" }, { code: "9900001", area: "Bet Shemesh", type: "Standard" }] }
+        { id: "IL_1", name: "Jerusalem District", cities: [
+          { id: "IL_1_0", name: "Jerusalem", postalCodes: [{ code: "9100000", area: "Jerusalem", type: "Standard" }, { code: "9100001", area: "Jerusalem", type: "Standard" }, { code: "9100002", area: "Jerusalem", type: "Standard" }], lat: 31.7683, lng: 35.2137 },
+          { id: "IL_1_1", name: "Bet Shemesh", postalCodes: [{ code: "9900000", area: "Bet Shemesh", type: "Standard" }, { code: "9900001", area: "Bet Shemesh", type: "Standard" }] }
         ]},
-        { id: "HA", name: "Haifa District", cities: [
-          { id: "IL_HA_0", name: "Haifa", postalCodes: [{ code: "3300000", area: "Haifa", type: "Standard" }, { code: "3300001", area: "Haifa", type: "Standard" }, { code: "3300002", area: "Haifa", type: "Standard" }] },
-          { id: "IL_HA_1", name: "Hadera", postalCodes: [{ code: "3800000", area: "Hadera", type: "Standard" }, { code: "3800001", area: "Hadera", type: "Standard" }] }
+        { id: "IL_2", name: "Haifa District", cities: [
+          { id: "IL_2_0", name: "Haifa", postalCodes: [{ code: "3300000", area: "Haifa", type: "Standard" }, { code: "3300001", area: "Haifa", type: "Standard" }, { code: "3300002", area: "Haifa", type: "Standard" }] },
+          { id: "IL_2_1", name: "Hadera", postalCodes: [{ code: "3800000", area: "Hadera", type: "Standard" }, { code: "3800001", area: "Hadera", type: "Standard" }] }
         ]},
-        { id: "CEN", name: "Central District", cities: [
-          { id: "IL_CEN_0", name: "Petah Tikva", postalCodes: [{ code: "4900000", area: "Petah Tikva", type: "Standard" }, { code: "4900001", area: "Petah Tikva", type: "Standard" }, { code: "4900002", area: "Petah Tikva", type: "Standard" }] },
-          { id: "IL_CEN_1", name: "Rishon LeZion", postalCodes: [{ code: "7500000", area: "Rishon LeZion", type: "Standard" }, { code: "7500001", area: "Rishon LeZion", type: "Standard" }] },
-          { id: "IL_CEN_2", name: "Netanya", postalCodes: [{ code: "4200000", area: "Netanya", type: "Standard" }, { code: "4200001", area: "Netanya", type: "Standard" }] }
+        { id: "IL_3", name: "Central District", cities: [
+          { id: "IL_3_0", name: "Petah Tikva", postalCodes: [{ code: "4900000", area: "Petah Tikva", type: "Standard" }, { code: "4900001", area: "Petah Tikva", type: "Standard" }, { code: "4900002", area: "Petah Tikva", type: "Standard" }] },
+          { id: "IL_3_1", name: "Rishon LeZion", postalCodes: [{ code: "7500000", area: "Rishon LeZion", type: "Standard" }, { code: "7500001", area: "Rishon LeZion", type: "Standard" }] },
+          { id: "IL_3_2", name: "Netanya", postalCodes: [{ code: "4200000", area: "Netanya", type: "Standard" }, { code: "4200001", area: "Netanya", type: "Standard" }] }
         ]},
-        { id: "SOUTH", name: "Southern District", cities: [
-          { id: "IL_SOUTH_0", name: "Beersheba", postalCodes: [{ code: "8400000", area: "Beersheba", type: "Standard" }, { code: "8400001", area: "Beersheba", type: "Standard" }, { code: "8400002", area: "Beersheba", type: "Standard" }] },
-          { id: "IL_SOUTH_1", name: "Ashdod", postalCodes: [{ code: "7700000", area: "Ashdod", type: "Standard" }, { code: "7700001", area: "Ashdod", type: "Standard" }] },
-          { id: "IL_SOUTH_2", name: "Ashkelon", postalCodes: [{ code: "7800000", area: "Ashkelon", type: "Standard" }, { code: "7800001", area: "Ashkelon", type: "Standard" }] }
+        { id: "IL_4", name: "Southern District", cities: [
+          { id: "IL_4_0", name: "Beersheba", postalCodes: [{ code: "8400000", area: "Beersheba", type: "Standard" }, { code: "8400001", area: "Beersheba", type: "Standard" }, { code: "8400002", area: "Beersheba", type: "Standard" }] },
+          { id: "IL_4_1", name: "Ashdod", postalCodes: [{ code: "7700000", area: "Ashdod", type: "Standard" }, { code: "7700001", area: "Ashdod", type: "Standard" }] },
+          { id: "IL_4_2", name: "Ashkelon", postalCodes: [{ code: "7800000", area: "Ashkelon", type: "Standard" }, { code: "7800001", area: "Ashkelon", type: "Standard" }] }
         ]},
-        { id: "NORTH", name: "Northern District", cities: [
-          { id: "IL_NORTH_0", name: "Nazareth", postalCodes: [{ code: "1600000", area: "Nazareth", type: "Standard" }, { code: "1600001", area: "Nazareth", type: "Standard" }] },
-          { id: "IL_NORTH_1", name: "Tiberias", postalCodes: [{ code: "1410000", area: "Tiberias", type: "Standard" }, { code: "1410001", area: "Tiberias", type: "Standard" }] }
+        { id: "IL_5", name: "Northern District", cities: [
+          { id: "IL_5_0", name: "Nazareth", postalCodes: [{ code: "1600000", area: "Nazareth", type: "Standard" }, { code: "1600001", area: "Nazareth", type: "Standard" }] },
+          { id: "IL_5_1", name: "Tiberias", postalCodes: [{ code: "1410000", area: "Tiberias", type: "Standard" }, { code: "1410001", area: "Tiberias", type: "Standard" }] }
         ]}
       ]
     }
@@ -10514,7 +10514,6 @@ const postalData = {
 const countryNames = {
   "US": "United States",
   "CA": "Canada",
-  "GB": "United Kingdom",
   "DE": "Germany",
   "FR": "France",
   "JP": "Japan",
