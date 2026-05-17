@@ -47,11 +47,11 @@ const postalData = {
           { id: "US_2_5", name: "Gillett", postalCodes: [{ code: "72055", area: "Gillett", type: "Standard" }] },
           { id: "US_2_6", name: "Humphrey", postalCodes: [{ code: "72073", area: "Humphrey", type: "Standard" }] },
           { id: "US_2_7", name: "Saint Charles", postalCodes: [{ code: "72140", area: "Saint Charles", type: "Standard" }] },
-          { id: "US_2_8", name: "Stuttgart", postalCodes: [{ code: "72160", area: "Stuttgart", type: "Standard" }] },
+          { id: "US_2_8", name: "Stuttgart", postalCodes: [{ code: "72160", area: "Stuttgart", type: "Standard" }], lat: 48.7758, lng: 9.1829 },
           { id: "US_2_9", name: "Tichnor", postalCodes: [{ code: "72166", area: "Tichnor", type: "Standard" }] },
           { id: "US_2_10", name: "Crossett", postalCodes: [{ code: "71635", area: "Crossett", type: "Standard" }] },
           { id: "US_2_11", name: "Fountain Hill", postalCodes: [{ code: "71642", area: "Fountain Hill", type: "Standard" }] },
-          { id: "US_2_12", name: "Hamburg", postalCodes: [{ code: "71646", area: "Hamburg", type: "Standard" }] },
+          { id: "US_2_12", name: "Hamburg", postalCodes: [{ code: "71646", area: "Hamburg", type: "Standard" }], lat: 53.5511, lng: 9.9937 },
           { id: "US_2_13", name: "Montrose", postalCodes: [{ code: "71658", area: "Montrose", type: "Standard" }] },
           { id: "US_2_14", name: "Parkdale", postalCodes: [{ code: "71661", area: "Parkdale", type: "Standard" }] }
         ]},
@@ -80,7 +80,7 @@ const postalData = {
           { id: "US_4_4", name: "Livermore", postalCodes: [{ code: "94550", area: "Livermore", type: "Standard" }, { code: "94551", area: "Livermore", type: "Standard" }] },
           { id: "US_4_5", name: "Newark", postalCodes: [{ code: "94560", area: "Newark", type: "Standard" }] },
           { id: "US_4_6", name: "Pleasanton", postalCodes: [{ code: "94566", area: "Pleasanton", type: "Standard" }, { code: "94588", area: "Pleasanton", type: "Standard" }] },
-          { id: "US_4_7", name: "Dublin", postalCodes: [{ code: "94568", area: "Dublin", type: "Standard" }] },
+          { id: "US_4_7", name: "Dublin", postalCodes: [{ code: "94568", area: "Dublin", type: "Standard" }], lat: 53.3498, lng: -6.2603 },
           { id: "US_4_8", name: "San Leandro", postalCodes: [{ code: "94577", area: "San Leandro", type: "Standard" }, { code: "94578", area: "San Leandro", type: "Standard" }, { code: "94579", area: "San Leandro", type: "Standard" }] },
           { id: "US_4_9", name: "San Lorenzo", postalCodes: [{ code: "94580", area: "San Lorenzo", type: "Standard" }] },
           { id: "US_4_10", name: "Sunol", postalCodes: [{ code: "94586", area: "Sunol", type: "Standard" }] },
@@ -254,7 +254,7 @@ const postalData = {
         { id: "US_15", name: "Indiana", cities: [
           { id: "US_15_0", name: "Berne", postalCodes: [{ code: "46711", area: "Berne", type: "Standard" }] },
           { id: "US_15_1", name: "Decatur", postalCodes: [{ code: "46733", area: "Decatur", type: "Standard" }] },
-          { id: "US_15_2", name: "Geneva", postalCodes: [{ code: "46740", area: "Geneva", type: "Standard" }] },
+          { id: "US_15_2", name: "Geneva", postalCodes: [{ code: "46740", area: "Geneva", type: "Standard" }], lat: 46.2044, lng: 6.1432 },
           { id: "US_15_3", name: "Linn Grove", postalCodes: [{ code: "46769", area: "Linn Grove", type: "Standard" }] },
           { id: "US_15_4", name: "Monroe", postalCodes: [{ code: "46772", area: "Monroe", type: "Standard" }] },
           { id: "US_15_5", name: "Pleasant Mills", postalCodes: [{ code: "46780", area: "Pleasant Mills", type: "Standard" }] },
@@ -547,133 +547,133 @@ const postalData = {
           { id: "DE_0_7", name: "Berlin", postalCodes: [{ code: "10875", area: "Berlin", type: "Standard" }] },
           { id: "DE_0_8", name: "Berlin", postalCodes: [{ code: "10875", area: "Berlin", type: "Standard" }] },
           { id: "DE_0_9", name: "Berlin", postalCodes: [{ code: "11512", area: "Berlin", type: "Standard" }] },
-          { id: "DE_0_10", name: "Hamburg", postalCodes: [{ code: "22781", area: "Hamburg", type: "Standard" }] },
-          { id: "DE_0_11", name: "Cologne", postalCodes: [{ code: "50606", area: "Cologne", type: "Standard" }] },
-          { id: "DE_0_12", name: "Stuttgart", postalCodes: [{ code: "70131", area: "Stuttgart", type: "Standard" }] },
-          { id: "DE_0_13", name: "Stuttgart", postalCodes: [{ code: "70134", area: "Stuttgart", type: "Standard" }] },
-          { id: "DE_0_14", name: "Stuttgart", postalCodes: [{ code: "70135", area: "Stuttgart", type: "Standard" }] }
+          { id: "DE_0_10", name: "Hamburg", postalCodes: [{ code: "22781", area: "Hamburg", type: "Standard" }], lat: 53.5511, lng: 9.9937 },
+          { id: "DE_0_11", name: "Cologne", postalCodes: [{ code: "50606", area: "Cologne", type: "Standard" }], lat: 50.9375, lng: 6.9603 },
+          { id: "DE_0_12", name: "Stuttgart", postalCodes: [{ code: "70131", area: "Stuttgart", type: "Standard" }], lat: 48.7758, lng: 9.1829 },
+          { id: "DE_0_13", name: "Stuttgart", postalCodes: [{ code: "70134", area: "Stuttgart", type: "Standard" }], lat: 48.7758, lng: 9.1829 },
+          { id: "DE_0_14", name: "Stuttgart", postalCodes: [{ code: "70135", area: "Stuttgart", type: "Standard" }], lat: 48.7758, lng: 9.1829 }
         ]},
         { id: "DE_1", name: "Bavaria", cities: [
-          { id: "DE_1_0", name: "Hamburg", postalCodes: [{ code: "20083", area: "Hamburg", type: "Standard" }] },
-          { id: "DE_1_1", name: "Hamburg", postalCodes: [{ code: "22033", area: "Hamburg", type: "Standard" }] },
-          { id: "DE_1_2", name: "Bremen", postalCodes: [{ code: "26060", area: "Bremen", type: "Standard" }, { code: "80248", area: "Munich", type: "Standard" }] },
-          { id: "DE_1_3", name: "Hanover", postalCodes: [{ code: "31829", area: "Hanover", type: "Standard" }] },
-          { id: "DE_1_4", name: "Hanover", postalCodes: [{ code: "35508", area: "Hanover", type: "Standard" }, { code: "80682", area: "Munich", type: "Standard" }] },
-          { id: "DE_1_5", name: "Cologne", postalCodes: [{ code: "53289", area: "Cologne", type: "Standard" }] },
-          { id: "DE_1_6", name: "Stuttgart", postalCodes: [{ code: "70790", area: "Stuttgart", type: "Standard" }] },
-          { id: "DE_1_7", name: "Munich", postalCodes: [{ code: "80097", area: "Munich", type: "Standard" }] },
-          { id: "DE_1_8", name: "Munich", postalCodes: [{ code: "80097", area: "Munich", type: "Standard" }] },
-          { id: "DE_1_9", name: "Munich", postalCodes: [{ code: "80097", area: "Munich", type: "Standard" }] },
-          { id: "DE_1_10", name: "Munich", postalCodes: [{ code: "80097", area: "Munich", type: "Standard" }] },
-          { id: "DE_1_11", name: "Munich", postalCodes: [{ code: "80097", area: "Munich", type: "Standard" }] },
-          { id: "DE_1_12", name: "Munich", postalCodes: [{ code: "80097", area: "Munich", type: "Standard" }] },
-          { id: "DE_1_13", name: "Munich", postalCodes: [{ code: "80097", area: "Munich", type: "Standard" }] },
-          { id: "DE_1_14", name: "Munich", postalCodes: [{ code: "80097", area: "Munich", type: "Standard" }] }
+          { id: "DE_1_0", name: "Hamburg", postalCodes: [{ code: "20083", area: "Hamburg", type: "Standard" }], lat: 53.5511, lng: 9.9937 },
+          { id: "DE_1_1", name: "Hamburg", postalCodes: [{ code: "22033", area: "Hamburg", type: "Standard" }], lat: 53.5511, lng: 9.9937 },
+          { id: "DE_1_2", name: "Bremen", postalCodes: [{ code: "26060", area: "Bremen", type: "Standard" }, { code: "80248", area: "Munich", type: "Standard" }], lat: 53.0793, lng: 8.8017 },
+          { id: "DE_1_3", name: "Hanover", postalCodes: [{ code: "31829", area: "Hanover", type: "Standard" }], lat: 52.3759, lng: 9.732 },
+          { id: "DE_1_4", name: "Hanover", postalCodes: [{ code: "35508", area: "Hanover", type: "Standard" }, { code: "80682", area: "Munich", type: "Standard" }], lat: 52.3759, lng: 9.732 },
+          { id: "DE_1_5", name: "Cologne", postalCodes: [{ code: "53289", area: "Cologne", type: "Standard" }], lat: 50.9375, lng: 6.9603 },
+          { id: "DE_1_6", name: "Stuttgart", postalCodes: [{ code: "70790", area: "Stuttgart", type: "Standard" }], lat: 48.7758, lng: 9.1829 },
+          { id: "DE_1_7", name: "Munich", postalCodes: [{ code: "80097", area: "Munich", type: "Standard" }], lat: 48.1351, lng: 11.582 },
+          { id: "DE_1_8", name: "Munich", postalCodes: [{ code: "80097", area: "Munich", type: "Standard" }], lat: 48.1351, lng: 11.582 },
+          { id: "DE_1_9", name: "Munich", postalCodes: [{ code: "80097", area: "Munich", type: "Standard" }], lat: 48.1351, lng: 11.582 },
+          { id: "DE_1_10", name: "Munich", postalCodes: [{ code: "80097", area: "Munich", type: "Standard" }], lat: 48.1351, lng: 11.582 },
+          { id: "DE_1_11", name: "Munich", postalCodes: [{ code: "80097", area: "Munich", type: "Standard" }], lat: 48.1351, lng: 11.582 },
+          { id: "DE_1_12", name: "Munich", postalCodes: [{ code: "80097", area: "Munich", type: "Standard" }], lat: 48.1351, lng: 11.582 },
+          { id: "DE_1_13", name: "Munich", postalCodes: [{ code: "80097", area: "Munich", type: "Standard" }], lat: 48.1351, lng: 11.582 },
+          { id: "DE_1_14", name: "Munich", postalCodes: [{ code: "80097", area: "Munich", type: "Standard" }], lat: 48.1351, lng: 11.582 }
         ]},
         { id: "DE_2", name: "Bremen", cities: [
-          { id: "DE_2_0", name: "Bremen", postalCodes: [{ code: "27554", area: "Bremen", type: "Standard" }] },
-          { id: "DE_2_1", name: "Bremen", postalCodes: [{ code: "28100", area: "Radio Bremen", type: "Standard" }, { code: "28323", area: "Radio Bremen", type: "Standard" }] },
-          { id: "DE_2_2", name: "Bremen", postalCodes: [{ code: "28101", area: "Bremen", type: "Standard" }] },
-          { id: "DE_2_3", name: "Bremen", postalCodes: [{ code: "28102", area: "Bremen", type: "Standard" }] },
-          { id: "DE_2_4", name: "Bremen", postalCodes: [{ code: "28103", area: "Bremen", type: "Standard" }] },
-          { id: "DE_2_5", name: "Bremen", postalCodes: [{ code: "28105", area: "Bremen", type: "Standard" }] },
-          { id: "DE_2_6", name: "Bremen", postalCodes: [{ code: "28107", area: "Bremen", type: "Standard" }] },
-          { id: "DE_2_7", name: "Bremen", postalCodes: [{ code: "28111", area: "Bremen", type: "Standard" }] },
-          { id: "DE_2_8", name: "Bremen", postalCodes: [{ code: "28163", area: "Bremen", type: "Standard" }] },
-          { id: "DE_2_9", name: "Bremen", postalCodes: [{ code: "28174", area: "Bremen", type: "Standard" }] },
-          { id: "DE_2_10", name: "Bremen", postalCodes: [{ code: "28177", area: "Bremen", type: "Standard" }] },
-          { id: "DE_2_11", name: "Bremen", postalCodes: [{ code: "28178", area: "Bremen", type: "Standard" }] },
-          { id: "DE_2_12", name: "Bremen", postalCodes: [{ code: "28181", area: "Bremen", type: "Standard" }] },
-          { id: "DE_2_13", name: "Bremen", postalCodes: [{ code: "28183", area: "Bremen", type: "Standard" }] },
-          { id: "DE_2_14", name: "Bremen", postalCodes: [{ code: "28184", area: "Bremen", type: "Standard" }] }
+          { id: "DE_2_0", name: "Bremen", postalCodes: [{ code: "27554", area: "Bremen", type: "Standard" }], lat: 53.0793, lng: 8.8017 },
+          { id: "DE_2_1", name: "Bremen", postalCodes: [{ code: "28100", area: "Radio Bremen", type: "Standard" }, { code: "28323", area: "Radio Bremen", type: "Standard" }], lat: 53.0793, lng: 8.8017 },
+          { id: "DE_2_2", name: "Bremen", postalCodes: [{ code: "28101", area: "Bremen", type: "Standard" }], lat: 53.0793, lng: 8.8017 },
+          { id: "DE_2_3", name: "Bremen", postalCodes: [{ code: "28102", area: "Bremen", type: "Standard" }], lat: 53.0793, lng: 8.8017 },
+          { id: "DE_2_4", name: "Bremen", postalCodes: [{ code: "28103", area: "Bremen", type: "Standard" }], lat: 53.0793, lng: 8.8017 },
+          { id: "DE_2_5", name: "Bremen", postalCodes: [{ code: "28105", area: "Bremen", type: "Standard" }], lat: 53.0793, lng: 8.8017 },
+          { id: "DE_2_6", name: "Bremen", postalCodes: [{ code: "28107", area: "Bremen", type: "Standard" }], lat: 53.0793, lng: 8.8017 },
+          { id: "DE_2_7", name: "Bremen", postalCodes: [{ code: "28111", area: "Bremen", type: "Standard" }], lat: 53.0793, lng: 8.8017 },
+          { id: "DE_2_8", name: "Bremen", postalCodes: [{ code: "28163", area: "Bremen", type: "Standard" }], lat: 53.0793, lng: 8.8017 },
+          { id: "DE_2_9", name: "Bremen", postalCodes: [{ code: "28174", area: "Bremen", type: "Standard" }], lat: 53.0793, lng: 8.8017 },
+          { id: "DE_2_10", name: "Bremen", postalCodes: [{ code: "28177", area: "Bremen", type: "Standard" }], lat: 53.0793, lng: 8.8017 },
+          { id: "DE_2_11", name: "Bremen", postalCodes: [{ code: "28178", area: "Bremen", type: "Standard" }], lat: 53.0793, lng: 8.8017 },
+          { id: "DE_2_12", name: "Bremen", postalCodes: [{ code: "28181", area: "Bremen", type: "Standard" }], lat: 53.0793, lng: 8.8017 },
+          { id: "DE_2_13", name: "Bremen", postalCodes: [{ code: "28183", area: "Bremen", type: "Standard" }], lat: 53.0793, lng: 8.8017 },
+          { id: "DE_2_14", name: "Bremen", postalCodes: [{ code: "28184", area: "Bremen", type: "Standard" }], lat: 53.0793, lng: 8.8017 }
         ]},
         { id: "DE_3", name: "Hamburg", cities: [
-          { id: "DE_3_0", name: "Hamburg", postalCodes: [{ code: "20066", area: "Hamburg", type: "Standard" }, { code: "50423", area: "Cologne", type: "Standard" }] },
-          { id: "DE_3_1", name: "Hamburg", postalCodes: [{ code: "20067", area: "Hamburg", type: "Standard" }] },
-          { id: "DE_3_2", name: "Hamburg", postalCodes: [{ code: "20068", area: "Hamburg", type: "Standard" }] },
-          { id: "DE_3_3", name: "Hamburg", postalCodes: [{ code: "20069", area: "Hamburg", type: "Standard" }] },
-          { id: "DE_3_4", name: "Hamburg", postalCodes: [{ code: "20070", area: "Hamburg", type: "Standard" }] },
-          { id: "DE_3_5", name: "Hamburg", postalCodes: [{ code: "20071", area: "Hamburg", type: "Standard" }] },
-          { id: "DE_3_6", name: "Hamburg", postalCodes: [{ code: "20072", area: "Hamburg", type: "Standard" }] },
-          { id: "DE_3_7", name: "Hamburg", postalCodes: [{ code: "20073", area: "Hamburg", type: "Standard" }] },
-          { id: "DE_3_8", name: "Hamburg", postalCodes: [{ code: "20074", area: "Hamburg", type: "Standard" }] },
-          { id: "DE_3_9", name: "Hamburg", postalCodes: [{ code: "20076", area: "Hamburg", type: "Standard" }] },
-          { id: "DE_3_10", name: "Hamburg", postalCodes: [{ code: "20077", area: "Hamburg", type: "Standard" }] },
-          { id: "DE_3_11", name: "Hamburg", postalCodes: [{ code: "20079", area: "Hamburg", type: "Standard" }] },
-          { id: "DE_3_12", name: "Hamburg", postalCodes: [{ code: "20079", area: "Hamburg", type: "Standard" }] },
-          { id: "DE_3_13", name: "Hamburg", postalCodes: [{ code: "20079", area: "Hamburg", type: "Standard" }] },
-          { id: "DE_3_14", name: "Hamburg", postalCodes: [{ code: "20079", area: "Hamburg", type: "Standard" }] }
+          { id: "DE_3_0", name: "Hamburg", postalCodes: [{ code: "20066", area: "Hamburg", type: "Standard" }, { code: "50423", area: "Cologne", type: "Standard" }], lat: 53.5511, lng: 9.9937 },
+          { id: "DE_3_1", name: "Hamburg", postalCodes: [{ code: "20067", area: "Hamburg", type: "Standard" }], lat: 53.5511, lng: 9.9937 },
+          { id: "DE_3_2", name: "Hamburg", postalCodes: [{ code: "20068", area: "Hamburg", type: "Standard" }], lat: 53.5511, lng: 9.9937 },
+          { id: "DE_3_3", name: "Hamburg", postalCodes: [{ code: "20069", area: "Hamburg", type: "Standard" }], lat: 53.5511, lng: 9.9937 },
+          { id: "DE_3_4", name: "Hamburg", postalCodes: [{ code: "20070", area: "Hamburg", type: "Standard" }], lat: 53.5511, lng: 9.9937 },
+          { id: "DE_3_5", name: "Hamburg", postalCodes: [{ code: "20071", area: "Hamburg", type: "Standard" }], lat: 53.5511, lng: 9.9937 },
+          { id: "DE_3_6", name: "Hamburg", postalCodes: [{ code: "20072", area: "Hamburg", type: "Standard" }], lat: 53.5511, lng: 9.9937 },
+          { id: "DE_3_7", name: "Hamburg", postalCodes: [{ code: "20073", area: "Hamburg", type: "Standard" }], lat: 53.5511, lng: 9.9937 },
+          { id: "DE_3_8", name: "Hamburg", postalCodes: [{ code: "20074", area: "Hamburg", type: "Standard" }], lat: 53.5511, lng: 9.9937 },
+          { id: "DE_3_9", name: "Hamburg", postalCodes: [{ code: "20076", area: "Hamburg", type: "Standard" }], lat: 53.5511, lng: 9.9937 },
+          { id: "DE_3_10", name: "Hamburg", postalCodes: [{ code: "20077", area: "Hamburg", type: "Standard" }], lat: 53.5511, lng: 9.9937 },
+          { id: "DE_3_11", name: "Hamburg", postalCodes: [{ code: "20079", area: "Hamburg", type: "Standard" }], lat: 53.5511, lng: 9.9937 },
+          { id: "DE_3_12", name: "Hamburg", postalCodes: [{ code: "20079", area: "Hamburg", type: "Standard" }], lat: 53.5511, lng: 9.9937 },
+          { id: "DE_3_13", name: "Hamburg", postalCodes: [{ code: "20079", area: "Hamburg", type: "Standard" }], lat: 53.5511, lng: 9.9937 },
+          { id: "DE_3_14", name: "Hamburg", postalCodes: [{ code: "20079", area: "Hamburg", type: "Standard" }], lat: 53.5511, lng: 9.9937 }
         ]},
         { id: "DE_4", name: "Hessen", cities: [
           { id: "DE_4_0", name: "Berlin", postalCodes: [{ code: "10898", area: "Berlin", type: "Standard" }, { code: "65927", area: "Wiesbaden", type: "Standard" }] },
           { id: "DE_4_1", name: "Berlin", postalCodes: [{ code: "12678", area: "Berlin", type: "Standard" }] },
-          { id: "DE_4_2", name: "Hamburg", postalCodes: [{ code: "22780", area: "Hamburg", type: "Standard" }] },
-          { id: "DE_4_3", name: "Hanover", postalCodes: [{ code: "35509", area: "Hanover", type: "Standard" }] },
-          { id: "DE_4_4", name: "Hanover", postalCodes: [{ code: "36380", area: "Hanover", type: "Standard" }] },
-          { id: "DE_4_5", name: "Frankfurt", postalCodes: [{ code: "60060", area: "Frankfurt", type: "Standard" }] },
-          { id: "DE_4_6", name: "Frankfurt", postalCodes: [{ code: "60185", area: "Frankfurt", type: "Standard" }] },
-          { id: "DE_4_7", name: "Frankfurt", postalCodes: [{ code: "60222", area: "Frankfurt", type: "Standard" }] },
-          { id: "DE_4_8", name: "Frankfurt", postalCodes: [{ code: "60223", area: "Frankfurt", type: "Standard" }] },
-          { id: "DE_4_9", name: "Frankfurt", postalCodes: [{ code: "60252", area: "Frankfurt", type: "Standard" }] },
-          { id: "DE_4_10", name: "Frankfurt", postalCodes: [{ code: "60254", area: "Frankfurt", type: "Standard" }] },
-          { id: "DE_4_11", name: "Frankfurt", postalCodes: [{ code: "60255", area: "Frankfurt", type: "Standard" }] },
-          { id: "DE_4_12", name: "Frankfurt", postalCodes: [{ code: "60256", area: "Frankfurt", type: "Standard" }] },
-          { id: "DE_4_13", name: "Frankfurt", postalCodes: [{ code: "60257", area: "Frankfurt", type: "Standard" }] },
-          { id: "DE_4_14", name: "Frankfurt", postalCodes: [{ code: "60259", area: "Frankfurt", type: "Standard" }, { code: "60270", area: "Frankfurt", type: "Standard" }] }
+          { id: "DE_4_2", name: "Hamburg", postalCodes: [{ code: "22780", area: "Hamburg", type: "Standard" }], lat: 53.5511, lng: 9.9937 },
+          { id: "DE_4_3", name: "Hanover", postalCodes: [{ code: "35509", area: "Hanover", type: "Standard" }], lat: 52.3759, lng: 9.732 },
+          { id: "DE_4_4", name: "Hanover", postalCodes: [{ code: "36380", area: "Hanover", type: "Standard" }], lat: 52.3759, lng: 9.732 },
+          { id: "DE_4_5", name: "Frankfurt", postalCodes: [{ code: "60060", area: "Frankfurt", type: "Standard" }], lat: 50.1109, lng: 8.6821 },
+          { id: "DE_4_6", name: "Frankfurt", postalCodes: [{ code: "60185", area: "Frankfurt", type: "Standard" }], lat: 50.1109, lng: 8.6821 },
+          { id: "DE_4_7", name: "Frankfurt", postalCodes: [{ code: "60222", area: "Frankfurt", type: "Standard" }], lat: 50.1109, lng: 8.6821 },
+          { id: "DE_4_8", name: "Frankfurt", postalCodes: [{ code: "60223", area: "Frankfurt", type: "Standard" }], lat: 50.1109, lng: 8.6821 },
+          { id: "DE_4_9", name: "Frankfurt", postalCodes: [{ code: "60252", area: "Frankfurt", type: "Standard" }], lat: 50.1109, lng: 8.6821 },
+          { id: "DE_4_10", name: "Frankfurt", postalCodes: [{ code: "60254", area: "Frankfurt", type: "Standard" }], lat: 50.1109, lng: 8.6821 },
+          { id: "DE_4_11", name: "Frankfurt", postalCodes: [{ code: "60255", area: "Frankfurt", type: "Standard" }], lat: 50.1109, lng: 8.6821 },
+          { id: "DE_4_12", name: "Frankfurt", postalCodes: [{ code: "60256", area: "Frankfurt", type: "Standard" }], lat: 50.1109, lng: 8.6821 },
+          { id: "DE_4_13", name: "Frankfurt", postalCodes: [{ code: "60257", area: "Frankfurt", type: "Standard" }], lat: 50.1109, lng: 8.6821 },
+          { id: "DE_4_14", name: "Frankfurt", postalCodes: [{ code: "60259", area: "Frankfurt", type: "Standard" }, { code: "60270", area: "Frankfurt", type: "Standard" }], lat: 50.1109, lng: 8.6821 }
         ]},
         { id: "DE_5", name: "Lower Saxony", cities: [
-          { id: "DE_5_0", name: "Hamburg", postalCodes: [{ code: "21172", area: "Hamburg", type: "Standard" }] },
-          { id: "DE_5_1", name: "Hamburg", postalCodes: [{ code: "21332", area: "Hamburg", type: "Standard" }] },
-          { id: "DE_5_2", name: "Hamburg", postalCodes: [{ code: "21332", area: "Hamburg", type: "Standard" }] },
-          { id: "DE_5_3", name: "Hamburg", postalCodes: [{ code: "21332", area: "Landgericht", type: "Standard" }, { code: "31673", area: "Landgericht", type: "Standard" }] },
-          { id: "DE_5_4", name: "Hamburg", postalCodes: [{ code: "21332", area: "Landkreis Lüneburg", type: "Standard" }] },
-          { id: "DE_5_5", name: "Hamburg", postalCodes: [{ code: "21332", area: "Hamburg", type: "Standard" }] },
-          { id: "DE_5_6", name: "Hamburg", postalCodes: [{ code: "21332", area: "Hamburg", type: "Standard" }] },
-          { id: "DE_5_7", name: "Hamburg", postalCodes: [{ code: "21332", area: "Hamburg", type: "Standard" }] },
-          { id: "DE_5_8", name: "Hamburg", postalCodes: [{ code: "21332", area: "Stadt Lüneburg", type: "Standard" }] },
-          { id: "DE_5_9", name: "Hamburg", postalCodes: [{ code: "21332", area: "Hamburg", type: "Standard" }] },
-          { id: "DE_5_10", name: "Hamburg", postalCodes: [{ code: "21332", area: "Hamburg", type: "Standard" }] },
-          { id: "DE_5_11", name: "Hamburg", postalCodes: [{ code: "21332", area: "Hamburg", type: "Standard" }] },
-          { id: "DE_5_12", name: "Hamburg", postalCodes: [{ code: "21332", area: "Hamburg", type: "Standard" }] },
-          { id: "DE_5_13", name: "Hamburg", postalCodes: [{ code: "21332", area: "Hamburg", type: "Standard" }, { code: "21333", area: "Hamburg", type: "Standard" }] },
-          { id: "DE_5_14", name: "Hamburg", postalCodes: [{ code: "21421", area: "Hamburg", type: "Standard" }] }
+          { id: "DE_5_0", name: "Hamburg", postalCodes: [{ code: "21172", area: "Hamburg", type: "Standard" }], lat: 53.5511, lng: 9.9937 },
+          { id: "DE_5_1", name: "Hamburg", postalCodes: [{ code: "21332", area: "Hamburg", type: "Standard" }], lat: 53.5511, lng: 9.9937 },
+          { id: "DE_5_2", name: "Hamburg", postalCodes: [{ code: "21332", area: "Hamburg", type: "Standard" }], lat: 53.5511, lng: 9.9937 },
+          { id: "DE_5_3", name: "Hamburg", postalCodes: [{ code: "21332", area: "Landgericht", type: "Standard" }, { code: "31673", area: "Landgericht", type: "Standard" }], lat: 53.5511, lng: 9.9937 },
+          { id: "DE_5_4", name: "Hamburg", postalCodes: [{ code: "21332", area: "Landkreis Lüneburg", type: "Standard" }], lat: 53.5511, lng: 9.9937 },
+          { id: "DE_5_5", name: "Hamburg", postalCodes: [{ code: "21332", area: "Hamburg", type: "Standard" }], lat: 53.5511, lng: 9.9937 },
+          { id: "DE_5_6", name: "Hamburg", postalCodes: [{ code: "21332", area: "Hamburg", type: "Standard" }], lat: 53.5511, lng: 9.9937 },
+          { id: "DE_5_7", name: "Hamburg", postalCodes: [{ code: "21332", area: "Hamburg", type: "Standard" }], lat: 53.5511, lng: 9.9937 },
+          { id: "DE_5_8", name: "Hamburg", postalCodes: [{ code: "21332", area: "Stadt Lüneburg", type: "Standard" }], lat: 53.5511, lng: 9.9937 },
+          { id: "DE_5_9", name: "Hamburg", postalCodes: [{ code: "21332", area: "Hamburg", type: "Standard" }], lat: 53.5511, lng: 9.9937 },
+          { id: "DE_5_10", name: "Hamburg", postalCodes: [{ code: "21332", area: "Hamburg", type: "Standard" }], lat: 53.5511, lng: 9.9937 },
+          { id: "DE_5_11", name: "Hamburg", postalCodes: [{ code: "21332", area: "Hamburg", type: "Standard" }], lat: 53.5511, lng: 9.9937 },
+          { id: "DE_5_12", name: "Hamburg", postalCodes: [{ code: "21332", area: "Hamburg", type: "Standard" }], lat: 53.5511, lng: 9.9937 },
+          { id: "DE_5_13", name: "Hamburg", postalCodes: [{ code: "21332", area: "Hamburg", type: "Standard" }, { code: "21333", area: "Hamburg", type: "Standard" }], lat: 53.5511, lng: 9.9937 },
+          { id: "DE_5_14", name: "Hamburg", postalCodes: [{ code: "21421", area: "Hamburg", type: "Standard" }], lat: 53.5511, lng: 9.9937 }
         ]},
         { id: "DE_6", name: "Nordrhein-Westfalen", cities: [
-          { id: "DE_6_0", name: "Leipzig", postalCodes: [{ code: "04160", area: "Leipzig", type: "Standard" }] },
-          { id: "DE_6_1", name: "Düsseldorf", postalCodes: [{ code: "40180", area: "Düsseldorf", type: "Standard" }] },
-          { id: "DE_6_2", name: "Düsseldorf", postalCodes: [{ code: "40181", area: "Düsseldorf", type: "Standard" }] },
-          { id: "DE_6_3", name: "Düsseldorf", postalCodes: [{ code: "40182", area: "Düsseldorf", type: "Standard" }] },
-          { id: "DE_6_4", name: "Düsseldorf", postalCodes: [{ code: "40186", area: "Düsseldorf", type: "Standard" }] },
-          { id: "DE_6_5", name: "Düsseldorf", postalCodes: [{ code: "40187", area: "Düsseldorf", type: "Standard" }, { code: "40194", area: "Düsseldorf", type: "Standard" }] },
-          { id: "DE_6_6", name: "Düsseldorf", postalCodes: [{ code: "40188", area: "Düsseldorf", type: "Standard" }] },
-          { id: "DE_6_7", name: "Düsseldorf", postalCodes: [{ code: "40189", area: "Düsseldorf", type: "Standard" }, { code: "50587", area: "Cologne", type: "Standard" }] },
-          { id: "DE_6_8", name: "Düsseldorf", postalCodes: [{ code: "40190", area: "Düsseldorf", type: "Standard" }] },
-          { id: "DE_6_9", name: "Düsseldorf", postalCodes: [{ code: "40190", area: "Düsseldorf", type: "Standard" }] },
-          { id: "DE_6_10", name: "Düsseldorf", postalCodes: [{ code: "40190", area: "Düsseldorf", type: "Standard" }] },
-          { id: "DE_6_11", name: "Düsseldorf", postalCodes: [{ code: "40190", area: "Düsseldorf", type: "Standard" }] },
-          { id: "DE_6_12", name: "Düsseldorf", postalCodes: [{ code: "40190", area: "Düsseldorf", type: "Standard" }] },
-          { id: "DE_6_13", name: "Düsseldorf", postalCodes: [{ code: "40190", area: "Düsseldorf", type: "Standard" }] },
-          { id: "DE_6_14", name: "Düsseldorf", postalCodes: [{ code: "40190", area: "Düsseldorf", type: "Standard" }] }
+          { id: "DE_6_0", name: "Leipzig", postalCodes: [{ code: "04160", area: "Leipzig", type: "Standard" }], lat: 51.3397, lng: 12.3731 },
+          { id: "DE_6_1", name: "Düsseldorf", postalCodes: [{ code: "40180", area: "Düsseldorf", type: "Standard" }], lat: 51.2277, lng: 6.7735 },
+          { id: "DE_6_2", name: "Düsseldorf", postalCodes: [{ code: "40181", area: "Düsseldorf", type: "Standard" }], lat: 51.2277, lng: 6.7735 },
+          { id: "DE_6_3", name: "Düsseldorf", postalCodes: [{ code: "40182", area: "Düsseldorf", type: "Standard" }], lat: 51.2277, lng: 6.7735 },
+          { id: "DE_6_4", name: "Düsseldorf", postalCodes: [{ code: "40186", area: "Düsseldorf", type: "Standard" }], lat: 51.2277, lng: 6.7735 },
+          { id: "DE_6_5", name: "Düsseldorf", postalCodes: [{ code: "40187", area: "Düsseldorf", type: "Standard" }, { code: "40194", area: "Düsseldorf", type: "Standard" }], lat: 51.2277, lng: 6.7735 },
+          { id: "DE_6_6", name: "Düsseldorf", postalCodes: [{ code: "40188", area: "Düsseldorf", type: "Standard" }], lat: 51.2277, lng: 6.7735 },
+          { id: "DE_6_7", name: "Düsseldorf", postalCodes: [{ code: "40189", area: "Düsseldorf", type: "Standard" }, { code: "50587", area: "Cologne", type: "Standard" }], lat: 51.2277, lng: 6.7735 },
+          { id: "DE_6_8", name: "Düsseldorf", postalCodes: [{ code: "40190", area: "Düsseldorf", type: "Standard" }], lat: 51.2277, lng: 6.7735 },
+          { id: "DE_6_9", name: "Düsseldorf", postalCodes: [{ code: "40190", area: "Düsseldorf", type: "Standard" }], lat: 51.2277, lng: 6.7735 },
+          { id: "DE_6_10", name: "Düsseldorf", postalCodes: [{ code: "40190", area: "Düsseldorf", type: "Standard" }], lat: 51.2277, lng: 6.7735 },
+          { id: "DE_6_11", name: "Düsseldorf", postalCodes: [{ code: "40190", area: "Düsseldorf", type: "Standard" }], lat: 51.2277, lng: 6.7735 },
+          { id: "DE_6_12", name: "Düsseldorf", postalCodes: [{ code: "40190", area: "Düsseldorf", type: "Standard" }], lat: 51.2277, lng: 6.7735 },
+          { id: "DE_6_13", name: "Düsseldorf", postalCodes: [{ code: "40190", area: "Düsseldorf", type: "Standard" }], lat: 51.2277, lng: 6.7735 },
+          { id: "DE_6_14", name: "Düsseldorf", postalCodes: [{ code: "40190", area: "Düsseldorf", type: "Standard" }], lat: 51.2277, lng: 6.7735 }
         ]},
         { id: "DE_7", name: "Rheinland-Pfalz", cities: [
-          { id: "DE_7_0", name: "Cologne", postalCodes: [{ code: "53423", area: "Cologne", type: "Standard" }] },
-          { id: "DE_7_1", name: "Cologne", postalCodes: [{ code: "53423", area: "Cologne", type: "Standard" }] },
-          { id: "DE_7_2", name: "Cologne", postalCodes: [{ code: "53423", area: "Cologne", type: "Standard" }] },
-          { id: "DE_7_3", name: "Cologne", postalCodes: [{ code: "53423", area: "Cologne", type: "Standard" }] },
-          { id: "DE_7_4", name: "Cologne", postalCodes: [{ code: "53455", area: "Cologne", type: "Standard" }] },
-          { id: "DE_7_5", name: "Cologne", postalCodes: [{ code: "53470", area: "Cologne", type: "Standard" }] },
-          { id: "DE_7_6", name: "Cologne", postalCodes: [{ code: "53470", area: "Cologne", type: "Standard" }] },
-          { id: "DE_7_7", name: "Cologne", postalCodes: [{ code: "53470", area: "Cologne", type: "Standard" }] },
-          { id: "DE_7_8", name: "Cologne", postalCodes: [{ code: "53470", area: "Cologne", type: "Standard" }] },
-          { id: "DE_7_9", name: "Cologne", postalCodes: [{ code: "53470", area: "Cologne", type: "Standard" }] },
-          { id: "DE_7_10", name: "Cologne", postalCodes: [{ code: "53470", area: "Cologne", type: "Standard" }] },
-          { id: "DE_7_11", name: "Cologne", postalCodes: [{ code: "53470", area: "Cologne", type: "Standard" }] },
-          { id: "DE_7_12", name: "Cologne", postalCodes: [{ code: "53470", area: "Cologne", type: "Standard" }] },
-          { id: "DE_7_13", name: "Cologne", postalCodes: [{ code: "53602", area: "Cologne", type: "Standard" }] },
+          { id: "DE_7_0", name: "Cologne", postalCodes: [{ code: "53423", area: "Cologne", type: "Standard" }], lat: 50.9375, lng: 6.9603 },
+          { id: "DE_7_1", name: "Cologne", postalCodes: [{ code: "53423", area: "Cologne", type: "Standard" }], lat: 50.9375, lng: 6.9603 },
+          { id: "DE_7_2", name: "Cologne", postalCodes: [{ code: "53423", area: "Cologne", type: "Standard" }], lat: 50.9375, lng: 6.9603 },
+          { id: "DE_7_3", name: "Cologne", postalCodes: [{ code: "53423", area: "Cologne", type: "Standard" }], lat: 50.9375, lng: 6.9603 },
+          { id: "DE_7_4", name: "Cologne", postalCodes: [{ code: "53455", area: "Cologne", type: "Standard" }], lat: 50.9375, lng: 6.9603 },
+          { id: "DE_7_5", name: "Cologne", postalCodes: [{ code: "53470", area: "Cologne", type: "Standard" }], lat: 50.9375, lng: 6.9603 },
+          { id: "DE_7_6", name: "Cologne", postalCodes: [{ code: "53470", area: "Cologne", type: "Standard" }], lat: 50.9375, lng: 6.9603 },
+          { id: "DE_7_7", name: "Cologne", postalCodes: [{ code: "53470", area: "Cologne", type: "Standard" }], lat: 50.9375, lng: 6.9603 },
+          { id: "DE_7_8", name: "Cologne", postalCodes: [{ code: "53470", area: "Cologne", type: "Standard" }], lat: 50.9375, lng: 6.9603 },
+          { id: "DE_7_9", name: "Cologne", postalCodes: [{ code: "53470", area: "Cologne", type: "Standard" }], lat: 50.9375, lng: 6.9603 },
+          { id: "DE_7_10", name: "Cologne", postalCodes: [{ code: "53470", area: "Cologne", type: "Standard" }], lat: 50.9375, lng: 6.9603 },
+          { id: "DE_7_11", name: "Cologne", postalCodes: [{ code: "53470", area: "Cologne", type: "Standard" }], lat: 50.9375, lng: 6.9603 },
+          { id: "DE_7_12", name: "Cologne", postalCodes: [{ code: "53470", area: "Cologne", type: "Standard" }], lat: 50.9375, lng: 6.9603 },
+          { id: "DE_7_13", name: "Cologne", postalCodes: [{ code: "53602", area: "Cologne", type: "Standard" }], lat: 50.9375, lng: 6.9603 },
           { id: "DE_7_14", name: "Trier", postalCodes: [{ code: "54187", area: "Trier", type: "Standard" }] }
         ]},
         { id: "DE_8", name: "Saarland", cities: [
-          { id: "DE_8_0", name: "Cologne", postalCodes: [{ code: "50424", area: "Cologne", type: "Standard" }] },
+          { id: "DE_8_0", name: "Cologne", postalCodes: [{ code: "50424", area: "Cologne", type: "Standard" }], lat: 50.9375, lng: 6.9603 },
           { id: "DE_8_1", name: "Saarbrücken", postalCodes: [{ code: "66087", area: "Saarbrücken", type: "Standard" }] },
           { id: "DE_8_2", name: "Saarbrücken", postalCodes: [{ code: "66088", area: "Saarbrücken", type: "Standard" }, { code: "66104", area: "Saarbrücken", type: "Standard" }] },
           { id: "DE_8_3", name: "Saarbrücken", postalCodes: [{ code: "66090", area: "Saarbrücken", type: "Standard" }] },
@@ -690,21 +690,21 @@ const postalData = {
           { id: "DE_8_14", name: "Saarbrücken", postalCodes: [{ code: "66104", area: "Saarbrücken", type: "Standard" }] }
         ]},
         { id: "DE_9", name: "Schleswig-Holstein", cities: [
-          { id: "DE_9_0", name: "Hamburg", postalCodes: [{ code: "21462", area: "Hamburg", type: "Standard" }] },
-          { id: "DE_9_1", name: "Hamburg", postalCodes: [{ code: "21462", area: "Hamburg", type: "Standard" }] },
-          { id: "DE_9_2", name: "Hamburg", postalCodes: [{ code: "21462", area: "Hamburg", type: "Standard" }] },
-          { id: "DE_9_3", name: "Hamburg", postalCodes: [{ code: "21462", area: "Hamburg", type: "Standard" }] },
-          { id: "DE_9_4", name: "Hamburg", postalCodes: [{ code: "21462", area: "Hamburg", type: "Standard" }] },
-          { id: "DE_9_5", name: "Hamburg", postalCodes: [{ code: "21462", area: "Hamburg", type: "Standard" }] },
-          { id: "DE_9_6", name: "Hamburg", postalCodes: [{ code: "21462", area: "Hamburg", type: "Standard" }] },
-          { id: "DE_9_7", name: "Hamburg", postalCodes: [{ code: "21462", area: "Hamburg", type: "Standard" }] },
-          { id: "DE_9_8", name: "Hamburg", postalCodes: [{ code: "21462", area: "Hamburg", type: "Standard" }] },
-          { id: "DE_9_9", name: "Hamburg", postalCodes: [{ code: "21462", area: "Hamburg", type: "Standard" }] },
-          { id: "DE_9_10", name: "Hamburg", postalCodes: [{ code: "21500", area: "Hamburg", type: "Standard" }] },
-          { id: "DE_9_11", name: "Hamburg", postalCodes: [{ code: "21500", area: "Hamburg", type: "Standard" }] },
-          { id: "DE_9_12", name: "Hamburg", postalCodes: [{ code: "21500", area: "Hamburg", type: "Standard" }] },
-          { id: "DE_9_13", name: "Hamburg", postalCodes: [{ code: "21500", area: "Hamburg", type: "Standard" }] },
-          { id: "DE_9_14", name: "Hamburg", postalCodes: [{ code: "21500", area: "Hamburg", type: "Standard" }] }
+          { id: "DE_9_0", name: "Hamburg", postalCodes: [{ code: "21462", area: "Hamburg", type: "Standard" }], lat: 53.5511, lng: 9.9937 },
+          { id: "DE_9_1", name: "Hamburg", postalCodes: [{ code: "21462", area: "Hamburg", type: "Standard" }], lat: 53.5511, lng: 9.9937 },
+          { id: "DE_9_2", name: "Hamburg", postalCodes: [{ code: "21462", area: "Hamburg", type: "Standard" }], lat: 53.5511, lng: 9.9937 },
+          { id: "DE_9_3", name: "Hamburg", postalCodes: [{ code: "21462", area: "Hamburg", type: "Standard" }], lat: 53.5511, lng: 9.9937 },
+          { id: "DE_9_4", name: "Hamburg", postalCodes: [{ code: "21462", area: "Hamburg", type: "Standard" }], lat: 53.5511, lng: 9.9937 },
+          { id: "DE_9_5", name: "Hamburg", postalCodes: [{ code: "21462", area: "Hamburg", type: "Standard" }], lat: 53.5511, lng: 9.9937 },
+          { id: "DE_9_6", name: "Hamburg", postalCodes: [{ code: "21462", area: "Hamburg", type: "Standard" }], lat: 53.5511, lng: 9.9937 },
+          { id: "DE_9_7", name: "Hamburg", postalCodes: [{ code: "21462", area: "Hamburg", type: "Standard" }], lat: 53.5511, lng: 9.9937 },
+          { id: "DE_9_8", name: "Hamburg", postalCodes: [{ code: "21462", area: "Hamburg", type: "Standard" }], lat: 53.5511, lng: 9.9937 },
+          { id: "DE_9_9", name: "Hamburg", postalCodes: [{ code: "21462", area: "Hamburg", type: "Standard" }], lat: 53.5511, lng: 9.9937 },
+          { id: "DE_9_10", name: "Hamburg", postalCodes: [{ code: "21500", area: "Hamburg", type: "Standard" }], lat: 53.5511, lng: 9.9937 },
+          { id: "DE_9_11", name: "Hamburg", postalCodes: [{ code: "21500", area: "Hamburg", type: "Standard" }], lat: 53.5511, lng: 9.9937 },
+          { id: "DE_9_12", name: "Hamburg", postalCodes: [{ code: "21500", area: "Hamburg", type: "Standard" }], lat: 53.5511, lng: 9.9937 },
+          { id: "DE_9_13", name: "Hamburg", postalCodes: [{ code: "21500", area: "Hamburg", type: "Standard" }], lat: 53.5511, lng: 9.9937 },
+          { id: "DE_9_14", name: "Hamburg", postalCodes: [{ code: "21500", area: "Hamburg", type: "Standard" }], lat: 53.5511, lng: 9.9937 }
         ]},
         { id: "DE_10", name: "Brandenburg", cities: [
           { id: "DE_10_0", name: "Cottbus", postalCodes: [{ code: "03039", area: "Cottbus", type: "Standard" }] },
@@ -741,21 +741,21 @@ const postalData = {
           { id: "DE_11_14", name: "Berlin", postalCodes: [{ code: "18053", area: "Berlin", type: "Standard" }] }
         ]},
         { id: "DE_12", name: "Saxony", cities: [
-          { id: "DE_12_0", name: "Dresden", postalCodes: [{ code: "01053", area: "Dresden", type: "Standard" }] },
-          { id: "DE_12_1", name: "Dresden", postalCodes: [{ code: "01054", area: "Dresden", type: "Standard" }] },
-          { id: "DE_12_2", name: "Dresden", postalCodes: [{ code: "01054", area: "Dresden", type: "Standard" }, { code: "04022", area: "Dresden", type: "Standard" }] },
-          { id: "DE_12_3", name: "Dresden", postalCodes: [{ code: "01055", area: "Dresden", type: "Standard" }] },
-          { id: "DE_12_4", name: "Dresden", postalCodes: [{ code: "01056", area: "Dresden", type: "Standard" }] },
-          { id: "DE_12_5", name: "Dresden", postalCodes: [{ code: "01057", area: "Dresden", type: "Standard" }, { code: "04097", area: "Leipzig", type: "Standard" }] },
-          { id: "DE_12_6", name: "Dresden", postalCodes: [{ code: "01058", area: "Dresden", type: "Standard" }] },
-          { id: "DE_12_7", name: "Dresden", postalCodes: [{ code: "01059", area: "Dresden", type: "Standard" }] },
-          { id: "DE_12_8", name: "Dresden", postalCodes: [{ code: "01060", area: "Dresden", type: "Standard" }] },
-          { id: "DE_12_9", name: "Dresden", postalCodes: [{ code: "01062", area: "Dresden", type: "Standard" }] },
-          { id: "DE_12_10", name: "Dresden", postalCodes: [{ code: "01063", area: "Dresden", type: "Standard" }, { code: "01070", area: "Dresden", type: "Standard" }] },
-          { id: "DE_12_11", name: "Dresden", postalCodes: [{ code: "01064", area: "Dresden", type: "Standard" }] },
-          { id: "DE_12_12", name: "Dresden", postalCodes: [{ code: "01065", area: "Dresden", type: "Standard" }] },
-          { id: "DE_12_13", name: "Dresden", postalCodes: [{ code: "01095", area: "Dresden", type: "Standard" }] },
-          { id: "DE_12_14", name: "Dresden", postalCodes: [{ code: "01095", area: "Dresden", type: "Standard" }] }
+          { id: "DE_12_0", name: "Dresden", postalCodes: [{ code: "01053", area: "Dresden", type: "Standard" }], lat: 51.0504, lng: 13.7373 },
+          { id: "DE_12_1", name: "Dresden", postalCodes: [{ code: "01054", area: "Dresden", type: "Standard" }], lat: 51.0504, lng: 13.7373 },
+          { id: "DE_12_2", name: "Dresden", postalCodes: [{ code: "01054", area: "Dresden", type: "Standard" }, { code: "04022", area: "Dresden", type: "Standard" }], lat: 51.0504, lng: 13.7373 },
+          { id: "DE_12_3", name: "Dresden", postalCodes: [{ code: "01055", area: "Dresden", type: "Standard" }], lat: 51.0504, lng: 13.7373 },
+          { id: "DE_12_4", name: "Dresden", postalCodes: [{ code: "01056", area: "Dresden", type: "Standard" }], lat: 51.0504, lng: 13.7373 },
+          { id: "DE_12_5", name: "Dresden", postalCodes: [{ code: "01057", area: "Dresden", type: "Standard" }, { code: "04097", area: "Leipzig", type: "Standard" }], lat: 51.0504, lng: 13.7373 },
+          { id: "DE_12_6", name: "Dresden", postalCodes: [{ code: "01058", area: "Dresden", type: "Standard" }], lat: 51.0504, lng: 13.7373 },
+          { id: "DE_12_7", name: "Dresden", postalCodes: [{ code: "01059", area: "Dresden", type: "Standard" }], lat: 51.0504, lng: 13.7373 },
+          { id: "DE_12_8", name: "Dresden", postalCodes: [{ code: "01060", area: "Dresden", type: "Standard" }], lat: 51.0504, lng: 13.7373 },
+          { id: "DE_12_9", name: "Dresden", postalCodes: [{ code: "01062", area: "Dresden", type: "Standard" }], lat: 51.0504, lng: 13.7373 },
+          { id: "DE_12_10", name: "Dresden", postalCodes: [{ code: "01063", area: "Dresden", type: "Standard" }, { code: "01070", area: "Dresden", type: "Standard" }], lat: 51.0504, lng: 13.7373 },
+          { id: "DE_12_11", name: "Dresden", postalCodes: [{ code: "01064", area: "Dresden", type: "Standard" }], lat: 51.0504, lng: 13.7373 },
+          { id: "DE_12_12", name: "Dresden", postalCodes: [{ code: "01065", area: "Dresden", type: "Standard" }], lat: 51.0504, lng: 13.7373 },
+          { id: "DE_12_13", name: "Dresden", postalCodes: [{ code: "01095", area: "Dresden", type: "Standard" }], lat: 51.0504, lng: 13.7373 },
+          { id: "DE_12_14", name: "Dresden", postalCodes: [{ code: "01095", area: "Dresden", type: "Standard" }], lat: 51.0504, lng: 13.7373 }
         ]},
         { id: "DE_13", name: "Saxony-Anhalt", cities: [
           { id: "DE_13_0", name: "Halle", postalCodes: [{ code: "06073", area: "Halle", type: "Standard" }] },
@@ -815,21 +815,21 @@ const postalData = {
           { id: "DE_16_3", name: "Berlin", postalCodes: [{ code: "13047", area: "Reinickendorf", type: "Standard" }] }
         ]},
         { id: "DE_17", name: "Bayern", cities: [
-          { id: "DE_17_0", name: "Munich", postalCodes: [{ code: "80331", area: "München", type: "Standard" }, { code: "80333", area: "München", type: "Standard" }, { code: "80335", area: "München", type: "Standard" }, { code: "80336", area: "München", type: "Standard" }, { code: "80337", area: "München", type: "Standard" }] },
-          { id: "DE_17_1", name: "Munich", postalCodes: [{ code: "82008", area: "Unterhaching", type: "Standard" }] },
-          { id: "DE_17_2", name: "Munich", postalCodes: [{ code: "82024", area: "Taufkirchen", type: "Standard" }, { code: "84574", area: "Taufkirchen", type: "Standard" }] },
-          { id: "DE_17_3", name: "Munich", postalCodes: [{ code: "82031", area: "Grünwald", type: "Standard" }] },
-          { id: "DE_17_4", name: "Munich", postalCodes: [{ code: "82032", area: "Munich", type: "Standard" }] },
-          { id: "DE_17_5", name: "Munich", postalCodes: [{ code: "82041", area: "Oberhaching", type: "Standard" }] },
-          { id: "DE_17_6", name: "Munich", postalCodes: [{ code: "82049", area: "Pullach im Isartal", type: "Standard" }] },
-          { id: "DE_17_7", name: "Munich", postalCodes: [{ code: "82054", area: "Sauerlach", type: "Standard" }] },
-          { id: "DE_17_8", name: "Munich", postalCodes: [{ code: "82057", area: "Icking", type: "Standard" }] },
-          { id: "DE_17_9", name: "Munich", postalCodes: [{ code: "82061", area: "Neuried", type: "Standard" }] },
-          { id: "DE_17_10", name: "Munich", postalCodes: [{ code: "82064", area: "Munich", type: "Standard" }] },
-          { id: "DE_17_11", name: "Munich", postalCodes: [{ code: "82065", area: "Baierbrunn", type: "Standard" }] },
-          { id: "DE_17_12", name: "Munich", postalCodes: [{ code: "82067", area: "Kloster Schäftlarn", type: "Standard" }] },
-          { id: "DE_17_13", name: "Munich", postalCodes: [{ code: "82069", area: "Schäftlarn", type: "Standard" }] },
-          { id: "DE_17_14", name: "Munich", postalCodes: [{ code: "82110", area: "Germering", type: "Standard" }] }
+          { id: "DE_17_0", name: "Munich", postalCodes: [{ code: "80331", area: "München", type: "Standard" }, { code: "80333", area: "München", type: "Standard" }, { code: "80335", area: "München", type: "Standard" }, { code: "80336", area: "München", type: "Standard" }, { code: "80337", area: "München", type: "Standard" }], lat: 48.1351, lng: 11.582 },
+          { id: "DE_17_1", name: "Munich", postalCodes: [{ code: "82008", area: "Unterhaching", type: "Standard" }], lat: 48.1351, lng: 11.582 },
+          { id: "DE_17_2", name: "Munich", postalCodes: [{ code: "82024", area: "Taufkirchen", type: "Standard" }, { code: "84574", area: "Taufkirchen", type: "Standard" }], lat: 48.1351, lng: 11.582 },
+          { id: "DE_17_3", name: "Munich", postalCodes: [{ code: "82031", area: "Grünwald", type: "Standard" }], lat: 48.1351, lng: 11.582 },
+          { id: "DE_17_4", name: "Munich", postalCodes: [{ code: "82032", area: "Munich", type: "Standard" }], lat: 48.1351, lng: 11.582 },
+          { id: "DE_17_5", name: "Munich", postalCodes: [{ code: "82041", area: "Oberhaching", type: "Standard" }], lat: 48.1351, lng: 11.582 },
+          { id: "DE_17_6", name: "Munich", postalCodes: [{ code: "82049", area: "Pullach im Isartal", type: "Standard" }], lat: 48.1351, lng: 11.582 },
+          { id: "DE_17_7", name: "Munich", postalCodes: [{ code: "82054", area: "Sauerlach", type: "Standard" }], lat: 48.1351, lng: 11.582 },
+          { id: "DE_17_8", name: "Munich", postalCodes: [{ code: "82057", area: "Icking", type: "Standard" }], lat: 48.1351, lng: 11.582 },
+          { id: "DE_17_9", name: "Munich", postalCodes: [{ code: "82061", area: "Neuried", type: "Standard" }], lat: 48.1351, lng: 11.582 },
+          { id: "DE_17_10", name: "Munich", postalCodes: [{ code: "82064", area: "Munich", type: "Standard" }], lat: 48.1351, lng: 11.582 },
+          { id: "DE_17_11", name: "Munich", postalCodes: [{ code: "82065", area: "Baierbrunn", type: "Standard" }], lat: 48.1351, lng: 11.582 },
+          { id: "DE_17_12", name: "Munich", postalCodes: [{ code: "82067", area: "Kloster Schäftlarn", type: "Standard" }], lat: 48.1351, lng: 11.582 },
+          { id: "DE_17_13", name: "Munich", postalCodes: [{ code: "82069", area: "Schäftlarn", type: "Standard" }], lat: 48.1351, lng: 11.582 },
+          { id: "DE_17_14", name: "Munich", postalCodes: [{ code: "82110", area: "Germering", type: "Standard" }], lat: 48.1351, lng: 11.582 }
         ]},
         { id: "DE_18", name: "Mecklenburg-Vorpommern", cities: [
           { id: "DE_18_0", name: "Berlin", postalCodes: [{ code: "17033", area: "Neubrandenburg", type: "Standard" }, { code: "17034", area: "Neubrandenburg", type: "Standard" }, { code: "17036", area: "Neubrandenburg", type: "Standard" }] },
@@ -850,20 +850,20 @@ const postalData = {
         ]},
         { id: "DE_19", name: "Niedersachsen", cities: [
           { id: "DE_19_0", name: "Berlin", postalCodes: [{ code: "19273", area: "Neuhaus", type: "Standard" }] },
-          { id: "DE_19_1", name: "Hamburg", postalCodes: [{ code: "21217", area: "Seevetal", type: "Standard" }, { code: "21218", area: "Seevetal", type: "Standard" }, { code: "21220", area: "Seevetal", type: "Standard" }] },
-          { id: "DE_19_2", name: "Hamburg", postalCodes: [{ code: "21224", area: "Rosengarten", type: "Standard" }] },
-          { id: "DE_19_3", name: "Hamburg", postalCodes: [{ code: "21227", area: "Bendestorf", type: "Standard" }] },
-          { id: "DE_19_4", name: "Hamburg", postalCodes: [{ code: "21228", area: "Harmstorf", type: "Standard" }] },
-          { id: "DE_19_5", name: "Hamburg", postalCodes: [{ code: "21244", area: "Hamburg", type: "Standard" }] },
-          { id: "DE_19_6", name: "Hamburg", postalCodes: [{ code: "21255", area: "Kakenstorf", type: "Standard" }] },
-          { id: "DE_19_7", name: "Hamburg", postalCodes: [{ code: "21255", area: "Wistedt", type: "Standard" }] },
-          { id: "DE_19_8", name: "Hamburg", postalCodes: [{ code: "21255", area: "Königsmoor", type: "Standard" }] },
-          { id: "DE_19_9", name: "Hamburg", postalCodes: [{ code: "21255", area: "Tostedt", type: "Standard" }] },
-          { id: "DE_19_10", name: "Hamburg", postalCodes: [{ code: "21255", area: "Dohren", type: "Standard" }, { code: "49770", area: "Dohren", type: "Standard" }] },
-          { id: "DE_19_11", name: "Hamburg", postalCodes: [{ code: "21256", area: "Handeloh", type: "Standard" }] },
-          { id: "DE_19_12", name: "Hamburg", postalCodes: [{ code: "21258", area: "Heidenau", type: "Standard" }] },
-          { id: "DE_19_13", name: "Hamburg", postalCodes: [{ code: "21259", area: "Otter", type: "Standard" }] },
-          { id: "DE_19_14", name: "Hamburg", postalCodes: [{ code: "21261", area: "Welle", type: "Standard" }] }
+          { id: "DE_19_1", name: "Hamburg", postalCodes: [{ code: "21217", area: "Seevetal", type: "Standard" }, { code: "21218", area: "Seevetal", type: "Standard" }, { code: "21220", area: "Seevetal", type: "Standard" }], lat: 53.5511, lng: 9.9937 },
+          { id: "DE_19_2", name: "Hamburg", postalCodes: [{ code: "21224", area: "Rosengarten", type: "Standard" }], lat: 53.5511, lng: 9.9937 },
+          { id: "DE_19_3", name: "Hamburg", postalCodes: [{ code: "21227", area: "Bendestorf", type: "Standard" }], lat: 53.5511, lng: 9.9937 },
+          { id: "DE_19_4", name: "Hamburg", postalCodes: [{ code: "21228", area: "Harmstorf", type: "Standard" }], lat: 53.5511, lng: 9.9937 },
+          { id: "DE_19_5", name: "Hamburg", postalCodes: [{ code: "21244", area: "Hamburg", type: "Standard" }], lat: 53.5511, lng: 9.9937 },
+          { id: "DE_19_6", name: "Hamburg", postalCodes: [{ code: "21255", area: "Kakenstorf", type: "Standard" }], lat: 53.5511, lng: 9.9937 },
+          { id: "DE_19_7", name: "Hamburg", postalCodes: [{ code: "21255", area: "Wistedt", type: "Standard" }], lat: 53.5511, lng: 9.9937 },
+          { id: "DE_19_8", name: "Hamburg", postalCodes: [{ code: "21255", area: "Königsmoor", type: "Standard" }], lat: 53.5511, lng: 9.9937 },
+          { id: "DE_19_9", name: "Hamburg", postalCodes: [{ code: "21255", area: "Tostedt", type: "Standard" }], lat: 53.5511, lng: 9.9937 },
+          { id: "DE_19_10", name: "Hamburg", postalCodes: [{ code: "21255", area: "Dohren", type: "Standard" }, { code: "49770", area: "Dohren", type: "Standard" }], lat: 53.5511, lng: 9.9937 },
+          { id: "DE_19_11", name: "Hamburg", postalCodes: [{ code: "21256", area: "Handeloh", type: "Standard" }], lat: 53.5511, lng: 9.9937 },
+          { id: "DE_19_12", name: "Hamburg", postalCodes: [{ code: "21258", area: "Heidenau", type: "Standard" }], lat: 53.5511, lng: 9.9937 },
+          { id: "DE_19_13", name: "Hamburg", postalCodes: [{ code: "21259", area: "Otter", type: "Standard" }], lat: 53.5511, lng: 9.9937 },
+          { id: "DE_19_14", name: "Hamburg", postalCodes: [{ code: "21261", area: "Welle", type: "Standard" }], lat: 53.5511, lng: 9.9937 }
         ]}
       ]
     },
@@ -2814,7 +2814,7 @@ const postalData = {
         ]},
         { id: "ES_12", name: "Murcia", cities: [
           { id: "ES_12_0", name: "Raspay", postalCodes: [{ code: "03657", area: "Raspay", type: "Standard" }] },
-          { id: "ES_12_1", name: "Murcia", postalCodes: [{ code: "30001", area: "Murcia", type: "Standard" }, { code: "30002", area: "Murcia", type: "Standard" }, { code: "30003", area: "Murcia", type: "Standard" }, { code: "30004", area: "Murcia", type: "Standard" }, { code: "30005", area: "Murcia", type: "Standard" }] },
+          { id: "ES_12_1", name: "Murcia", postalCodes: [{ code: "30001", area: "Murcia", type: "Standard" }, { code: "30002", area: "Murcia", type: "Standard" }, { code: "30003", area: "Murcia", type: "Standard" }, { code: "30004", area: "Murcia", type: "Standard" }, { code: "30005", area: "Murcia", type: "Standard" }], lat: 37.9922, lng: -1.1307 },
           { id: "ES_12_2", name: "Espinardo", postalCodes: [{ code: "30100", area: "Espinardo", type: "Standard" }] },
           { id: "ES_12_3", name: "Molinos Alfatego", postalCodes: [{ code: "30100", area: "Molinos Alfatego", type: "Standard" }] },
           { id: "ES_12_4", name: "Puntal, El (Espinardo)", postalCodes: [{ code: "30100", area: "Puntal, El (Espinardo)", type: "Standard" }] },
@@ -4481,7 +4481,7 @@ const postalData = {
           { id: "AT_2_14", name: "Oberzwischenbrunn", postalCodes: [{ code: "3100", area: "Oberzwischenbrunn", type: "Standard" }] }
         ]},
         { id: "AT_3", name: "Oberösterreich", cities: [
-          { id: "AT_3_0", name: "Linz", postalCodes: [{ code: "4020", area: "Linz", type: "Standard" }, { code: "4030", area: "Linz", type: "Standard" }, { code: "4040", area: "Linz", type: "Standard" }] },
+          { id: "AT_3_0", name: "Linz", postalCodes: [{ code: "4020", area: "Linz", type: "Standard" }, { code: "4030", area: "Linz", type: "Standard" }, { code: "4040", area: "Linz", type: "Standard" }], lat: 48.3069, lng: 14.2858 },
           { id: "AT_3_1", name: "Steyr", postalCodes: [{ code: "4400", area: "Steyr", type: "Standard" }, { code: "4407", area: "Steyr", type: "Standard" }, { code: "4451", area: "Steyr", type: "Standard" }] },
           { id: "AT_3_2", name: "Kirchham", postalCodes: [{ code: "4600", area: "Kirchham", type: "Standard" }, { code: "4656", area: "Kirchham", type: "Standard" }, { code: "4891", area: "Kirchham", type: "Standard" }] },
           { id: "AT_3_3", name: "Pernau", postalCodes: [{ code: "4600", area: "Pernau", type: "Standard" }, { code: "4076", area: "Pernau", type: "Standard" }, { code: "4212", area: "Pernau", type: "Standard" }, { code: "4292", area: "Pernau", type: "Standard" }] },
@@ -4537,7 +4537,7 @@ const postalData = {
           { id: "AT_6_2", name: "Arzl", postalCodes: [{ code: "6020", area: "Arzl", type: "Standard" }] },
           { id: "AT_6_3", name: "Mühlau", postalCodes: [{ code: "6020", area: "Mühlau", type: "Standard" }] },
           { id: "AT_6_4", name: "Wilten", postalCodes: [{ code: "6020", area: "Wilten", type: "Standard" }] },
-          { id: "AT_6_5", name: "Innsbruck", postalCodes: [{ code: "6020", area: "Innsbruck", type: "Standard" }] },
+          { id: "AT_6_5", name: "Innsbruck", postalCodes: [{ code: "6020", area: "Innsbruck", type: "Standard" }], lat: 47.2692, lng: 11.4041 },
           { id: "AT_6_6", name: "Hötting", postalCodes: [{ code: "6020", area: "Hötting", type: "Standard" }] },
           { id: "AT_6_7", name: "Pradl", postalCodes: [{ code: "6020", area: "Pradl", type: "Standard" }] },
           { id: "AT_6_8", name: "Igls", postalCodes: [{ code: "6080", area: "Igls", type: "Standard" }] },
@@ -4657,7 +4657,7 @@ const postalData = {
           { id: "CH_3_14", name: "La Heutte", postalCodes: [{ code: "2604", area: "La Heutte", type: "Standard" }] }
         ]},
         { id: "CH_4", name: "Kanton Basel-Landschaft", cities: [
-          { id: "CH_4_0", name: "Basel", postalCodes: [{ code: "4040", area: "Basel", type: "Standard" }] },
+          { id: "CH_4_0", name: "Basel", postalCodes: [{ code: "4040", area: "Basel", type: "Standard" }], lat: 47.5596, lng: 7.5886 },
           { id: "CH_4_1", name: "Basel PF OC", postalCodes: [{ code: "4042", area: "Basel PF OC", type: "Standard" }] },
           { id: "CH_4_2", name: "Basel PF Operations Center", postalCodes: [{ code: "4042", area: "Basel PF Operations Center", type: "Standard" }] },
           { id: "CH_4_3", name: "Bruderholz", postalCodes: [{ code: "4101", area: "Bruderholz", type: "Standard" }] },
@@ -4674,7 +4674,7 @@ const postalData = {
           { id: "CH_4_14", name: "Birsfelden", postalCodes: [{ code: "4127", area: "Birsfelden", type: "Standard" }] }
         ]},
         { id: "CH_5", name: "Kanton Basel-Stadt", cities: [
-          { id: "CH_5_0", name: "Basel", postalCodes: [{ code: "4000", area: "Basel", type: "Standard" }, { code: "4001", area: "Basel", type: "Standard" }, { code: "4002", area: "Basel", type: "Standard" }, { code: "4005", area: "Basel", type: "Standard" }, { code: "4009", area: "Basel", type: "Standard" }] },
+          { id: "CH_5_0", name: "Basel", postalCodes: [{ code: "4000", area: "Basel", type: "Standard" }, { code: "4001", area: "Basel", type: "Standard" }, { code: "4002", area: "Basel", type: "Standard" }, { code: "4005", area: "Basel", type: "Standard" }, { code: "4009", area: "Basel", type: "Standard" }], lat: 47.5596, lng: 7.5886 },
           { id: "CH_5_1", name: "Basel SSF", postalCodes: [{ code: "4039", area: "Basel SSF", type: "Standard" }] },
           { id: "CH_5_2", name: "Basel UBS", postalCodes: [{ code: "4041", area: "Basel UBS", type: "Standard" }] },
           { id: "CH_5_3", name: "Basel SPI GLS", postalCodes: [{ code: "4089", area: "Basel SPI GLS", type: "Standard" }] },
@@ -5688,7 +5688,7 @@ const postalData = {
       name: "South Africa",
       states: [
         { id: "ZA_0", name: "General", cities: [
-          { id: "ZA_0_0", name: "Pretoria", postalCodes: [{ code: "0002", area: "Pretoria", type: "Standard" }, { code: "0003", area: "Pretoria", type: "Standard" }, { code: "0004", area: "Pretoria", type: "Standard" }, { code: "0005", area: "Pretoria", type: "Standard" }, { code: "0006", area: "Pretoria", type: "Standard" }] },
+          { id: "ZA_0_0", name: "Pretoria", postalCodes: [{ code: "0002", area: "Pretoria", type: "Standard" }, { code: "0003", area: "Pretoria", type: "Standard" }, { code: "0004", area: "Pretoria", type: "Standard" }, { code: "0005", area: "Pretoria", type: "Standard" }, { code: "0006", area: "Pretoria", type: "Standard" }], lat: -25.7479, lng: 28.2293 },
           { id: "ZA_0_1", name: "Atteridgeville", postalCodes: [{ code: "0008", area: "Atteridgeville", type: "Standard" }] },
           { id: "ZA_0_2", name: "Glenstantia", postalCodes: [{ code: "0010", area: "Glenstantia", type: "Standard" }, { code: "0181", area: "Glenstantia", type: "Standard" }] },
           { id: "ZA_0_3", name: "Centurion", postalCodes: [{ code: "0014", area: "Centurion", type: "Standard" }, { code: "0046", area: "Centurion", type: "Standard" }, { code: "0051", area: "Centurion", type: "Standard" }, { code: "0149", area: "Centurion", type: "Standard" }, { code: "0157", area: "Centurion", type: "Standard" }] },
@@ -7070,7 +7070,7 @@ const postalData = {
           { id: "HU_5_11", name: "Felgyő", postalCodes: [{ code: "6645", area: "Felgyő", type: "Standard" }] },
           { id: "HU_5_12", name: "Tömörkény", postalCodes: [{ code: "6646", area: "Tömörkény", type: "Standard" }] },
           { id: "HU_5_13", name: "Csanytelek", postalCodes: [{ code: "6647", area: "Csanytelek", type: "Standard" }] },
-          { id: "HU_5_14", name: "Szeged", postalCodes: [{ code: "6700", area: "Szeged", type: "Standard" }, { code: "6710", area: "Szeged", type: "Standard" }, { code: "6720", area: "Szeged", type: "Standard" }, { code: "6721", area: "Szeged", type: "Standard" }, { code: "6722", area: "Szeged", type: "Standard" }] }
+          { id: "HU_5_14", name: "Szeged", postalCodes: [{ code: "6700", area: "Szeged", type: "Standard" }, { code: "6710", area: "Szeged", type: "Standard" }, { code: "6720", area: "Szeged", type: "Standard" }, { code: "6721", area: "Szeged", type: "Standard" }, { code: "6722", area: "Szeged", type: "Standard" }], lat: 46.253, lng: 20.1414 }
         ]},
         { id: "HU_6", name: "Fejér", cities: [
           { id: "HU_6_0", name: "Bicske", postalCodes: [{ code: "2060", area: "Bicske", type: "Standard" }] },
@@ -7107,7 +7107,7 @@ const postalData = {
           { id: "HU_7_14", name: "Töltéstava", postalCodes: [{ code: "9086", area: "Töltéstava", type: "Standard" }] }
         ]},
         { id: "HU_8", name: "Hajdú-Bihar", cities: [
-          { id: "HU_8_0", name: "Debrecen", postalCodes: [{ code: "4000", area: "Debrecen", type: "Standard" }, { code: "4002", area: "Debrecen", type: "Standard" }, { code: "4024", area: "Debrecen", type: "Standard" }, { code: "4025", area: "Debrecen", type: "Standard" }, { code: "4026", area: "Debrecen", type: "Standard" }] },
+          { id: "HU_8_0", name: "Debrecen", postalCodes: [{ code: "4000", area: "Debrecen", type: "Standard" }, { code: "4002", area: "Debrecen", type: "Standard" }, { code: "4024", area: "Debrecen", type: "Standard" }, { code: "4025", area: "Debrecen", type: "Standard" }, { code: "4026", area: "Debrecen", type: "Standard" }], lat: 47.5316, lng: 21.6273 },
           { id: "HU_8_1", name: "Balmazújváros", postalCodes: [{ code: "4060", area: "Balmazújváros", type: "Standard" }] },
           { id: "HU_8_2", name: "Nagyhegyes", postalCodes: [{ code: "4064", area: "Nagyhegyes", type: "Standard" }] },
           { id: "HU_8_3", name: "Újszentmargita", postalCodes: [{ code: "4065", area: "Újszentmargita", type: "Standard" }] },
@@ -7338,7 +7338,7 @@ const postalData = {
           { id: "SK_1_1", name: "Bratislava-Ružinov", postalCodes: [{ code: "821 01", area: "Bratislava-Ružinov", type: "Standard" }, { code: "821 02", area: "Bratislava-Ružinov", type: "Standard" }, { code: "821 03", area: "Bratislava-Ružinov", type: "Standard" }, { code: "821 04", area: "Bratislava-Ružinov", type: "Standard" }, { code: "821 05", area: "Bratislava-Ružinov", type: "Standard" }] },
           { id: "SK_1_2", name: "Bratislava-Podunajské Biskupice", postalCodes: [{ code: "821 06", area: "Bratislava-Podunajské Biskupice", type: "Standard" }, { code: "821 07", area: "Bratislava-Podunajské Biskupice", type: "Standard" }] },
           { id: "SK_1_3", name: "Bratislava-Vrakuňa", postalCodes: [{ code: "821 07", area: "Bratislava-Vrakuňa", type: "Standard" }] },
-          { id: "SK_1_4", name: "Bratislava", postalCodes: [{ code: "830 00", area: "Bratislava", type: "Standard" }, { code: "830 05", area: "Bratislava", type: "Standard" }, { code: "831 51", area: "Bratislava", type: "Standard" }, { code: "831 52", area: "Bratislava", type: "Standard" }, { code: "831 53", area: "Bratislava", type: "Standard" }] },
+          { id: "SK_1_4", name: "Bratislava", postalCodes: [{ code: "830 00", area: "Bratislava", type: "Standard" }, { code: "830 05", area: "Bratislava", type: "Standard" }, { code: "831 51", area: "Bratislava", type: "Standard" }, { code: "831 52", area: "Bratislava", type: "Standard" }, { code: "831 53", area: "Bratislava", type: "Standard" }], lat: 48.1486, lng: 17.1077 },
           { id: "SK_1_5", name: "Bratislava-Nové Mesto", postalCodes: [{ code: "831 01", area: "Bratislava-Nové Mesto", type: "Standard" }, { code: "831 02", area: "Bratislava-Nové Mesto", type: "Standard" }, { code: "831 03", area: "Bratislava-Nové Mesto", type: "Standard" }, { code: "831 04", area: "Bratislava-Nové Mesto", type: "Standard" }] },
           { id: "SK_1_6", name: "Bratislava-Rača", postalCodes: [{ code: "831 06", area: "Bratislava-Rača", type: "Standard" }] },
           { id: "SK_1_7", name: "Bratislava-Vajnory", postalCodes: [{ code: "831 07", area: "Bratislava-Vajnory", type: "Standard" }] },
@@ -7647,7 +7647,7 @@ const postalData = {
         ]},
         { id: "HR_11", name: "Primorsko-Goranska", cities: [
           { id: "HR_11_0", name: "Kostrena", postalCodes: [{ code: "51000", area: "Kostrena", type: "Standard" }] },
-          { id: "HR_11_1", name: "Rijeka", postalCodes: [{ code: "51000", area: "Rijeka", type: "Standard" }] },
+          { id: "HR_11_1", name: "Rijeka", postalCodes: [{ code: "51000", area: "Rijeka", type: "Standard" }], lat: 45.3271, lng: 14.4422 },
           { id: "HR_11_2", name: "Permani", postalCodes: [{ code: "51211", area: "Permani", type: "Standard" }] },
           { id: "HR_11_3", name: "Pobri", postalCodes: [{ code: "51211", area: "Pobri", type: "Standard" }] },
           { id: "HR_11_4", name: "Male Mune", postalCodes: [{ code: "51211", area: "Male Mune", type: "Standard" }] },
@@ -7697,7 +7697,7 @@ const postalData = {
           { id: "HR_13_14", name: "Desni Dubrovčak", postalCodes: [{ code: "44000", area: "Desni Dubrovčak", type: "Standard" }] }
         ]},
         { id: "HR_14", name: "Splitsko-Dalmatinska", cities: [
-          { id: "HR_14_0", name: "Split", postalCodes: [{ code: "21000", area: "Split", type: "Standard" }] },
+          { id: "HR_14_0", name: "Split", postalCodes: [{ code: "21000", area: "Split", type: "Standard" }], lat: 43.5081, lng: 16.4402 },
           { id: "HR_14_1", name: "Kamen", postalCodes: [{ code: "21000", area: "Kamen", type: "Standard" }] },
           { id: "HR_14_2", name: "Pribude", postalCodes: [{ code: "21203", area: "Pribude", type: "Standard" }] },
           { id: "HR_14_3", name: "Gornje Postinje", postalCodes: [{ code: "21203", area: "Gornje Postinje", type: "Standard" }] },
@@ -7981,7 +7981,7 @@ const postalData = {
           { id: "LT_8_14", name: "Anykščių vienk.", postalCodes: [{ code: "29001", area: "Anykščių vienk.", type: "Standard" }] }
         ]},
         { id: "LT_9", name: "Vilniaus apskritis", cities: [
-          { id: "LT_9_0", name: "Vilnius", postalCodes: [{ code: "01001", area: "Vilnius", type: "Standard" }, { code: "01013", area: "Vilnius", type: "Standard" }, { code: "01025", area: "Vilnius", type: "Standard" }, { code: "01031", area: "Vilnius", type: "Standard" }, { code: "01047", area: "Vilnius", type: "Standard" }] },
+          { id: "LT_9_0", name: "Vilnius", postalCodes: [{ code: "01001", area: "Vilnius", type: "Standard" }, { code: "01013", area: "Vilnius", type: "Standard" }, { code: "01025", area: "Vilnius", type: "Standard" }, { code: "01031", area: "Vilnius", type: "Standard" }, { code: "01047", area: "Vilnius", type: "Standard" }], lat: 54.6872, lng: 25.2797 },
           { id: "LT_9_1", name: "SB „Ribiškės“", postalCodes: [{ code: "02007", area: "SB „Ribiškės“", type: "Standard" }] },
           { id: "LT_9_2", name: "SB „Žaliasis kelias“", postalCodes: [{ code: "02007", area: "SB „Žaliasis kelias“", type: "Standard" }] },
           { id: "LT_9_3", name: "SB „Giedra“", postalCodes: [{ code: "02011", area: "SB „Giedra“", type: "Standard" }] },
@@ -8089,7 +8089,7 @@ const postalData = {
           { id: "LV_4_14", name: "Amata", postalCodes: [{ code: "LV-4101", area: "Amata", type: "Standard" }] }
         ]},
         { id: "LV_5", name: "Daugavpils", cities: [
-          { id: "LV_5_0", name: "Daugavpils", postalCodes: [{ code: "LV-5401", area: "Daugavpils", type: "Standard" }, { code: "LV-5404", area: "Daugavpils", type: "Standard" }, { code: "LV-5410", area: "Daugavpils", type: "Standard" }, { code: "LV-5412", area: "Daugavpils", type: "Standard" }, { code: "LV-5413", area: "Daugavpils", type: "Standard" }] }
+          { id: "LV_5_0", name: "Daugavpils", postalCodes: [{ code: "LV-5401", area: "Daugavpils", type: "Standard" }, { code: "LV-5404", area: "Daugavpils", type: "Standard" }, { code: "LV-5410", area: "Daugavpils", type: "Standard" }, { code: "LV-5412", area: "Daugavpils", type: "Standard" }, { code: "LV-5413", area: "Daugavpils", type: "Standard" }], lat: 55.8758, lng: 26.5362 }
         ]},
         { id: "LV_6", name: "Dobeles nov.", cities: [
           { id: "LV_6_0", name: "Annenieki", postalCodes: [{ code: "LV-3718", area: "Annenieki", type: "Standard" }] },
@@ -8954,7 +8954,7 @@ const postalData = {
       name: "China",
       states: [
         { id: "CN_0", name: "Anhui", cities: [
-          { id: "CN_0_0", name: "Hefei", postalCodes: [{ code: "230000", area: "Hefei", type: "Standard" }] },
+          { id: "CN_0_0", name: "Hefei", postalCodes: [{ code: "230000", area: "Hefei", type: "Standard" }], lat: 31.8206, lng: 117.2272 },
           { id: "CN_0_1", name: "Changfeng County", postalCodes: [{ code: "231100", area: "Changfeng County", type: "Standard" }] },
           { id: "CN_0_2", name: "Feixi County", postalCodes: [{ code: "231200", area: "Feixi County", type: "Standard" }] },
           { id: "CN_0_3", name: "Lujiang County", postalCodes: [{ code: "231500", area: "Lujiang County", type: "Standard" }] },
@@ -8979,7 +8979,7 @@ const postalData = {
           { id: "CN_1_5", name: "Tonglu County", postalCodes: [{ code: "311500", area: "Tonglu County", type: "Standard" }] },
           { id: "CN_1_6", name: "Jiande", postalCodes: [{ code: "311600", area: "Jiande", type: "Standard" }] },
           { id: "CN_1_7", name: "Chun'an County", postalCodes: [{ code: "311700", area: "Chun'an County", type: "Standard" }] },
-          { id: "CN_1_8", name: "Ningbo", postalCodes: [{ code: "315000", area: "Ningbo", type: "Standard" }] },
+          { id: "CN_1_8", name: "Ningbo", postalCodes: [{ code: "315000", area: "Ningbo", type: "Standard" }], lat: 29.8683, lng: 121.544 },
           { id: "CN_1_9", name: "Yinzhou District", postalCodes: [{ code: "315100", area: "Yinzhou District", type: "Standard" }] },
           { id: "CN_1_10", name: "Zhenhai District", postalCodes: [{ code: "315200", area: "Zhenhai District", type: "Standard" }] },
           { id: "CN_1_11", name: "Cixi City", postalCodes: [{ code: "315300", area: "Cixi City", type: "Standard" }] },
@@ -8988,7 +8988,7 @@ const postalData = {
           { id: "CN_1_14", name: "Ninghai County", postalCodes: [{ code: "315600", area: "Ninghai County", type: "Standard" }] }
         ]},
         { id: "CN_2", name: "Jiangxi", cities: [
-          { id: "CN_2_0", name: "Nanchang", postalCodes: [{ code: "330000", area: "Nanchang", type: "Standard" }] },
+          { id: "CN_2_0", name: "Nanchang", postalCodes: [{ code: "330000", area: "Nanchang", type: "Standard" }], lat: 28.682, lng: 115.8579 },
           { id: "CN_2_1", name: "Xinjian District", postalCodes: [{ code: "330100", area: "Xinjian District", type: "Standard" }] },
           { id: "CN_2_2", name: "Nanchang County", postalCodes: [{ code: "330200", area: "Nanchang County", type: "Standard" }] },
           { id: "CN_2_3", name: "Anyi County", postalCodes: [{ code: "330500", area: "Anyi County", type: "Standard" }] },
@@ -9011,7 +9011,7 @@ const postalData = {
           { id: "CN_3_3", name: "Gaochun District", postalCodes: [{ code: "211300", area: "Gaochun District", type: "Standard" }] },
           { id: "CN_3_4", name: "Luhe District", postalCodes: [{ code: "211500", area: "Luhe District", type: "Standard" }] },
           { id: "CN_3_5", name: "Jiangpu County", postalCodes: [{ code: "211800", area: "Jiangpu County", type: "Standard" }] },
-          { id: "CN_3_6", name: "Wuxi", postalCodes: [{ code: "214000", area: "Wuxi", type: "Standard" }] },
+          { id: "CN_3_6", name: "Wuxi", postalCodes: [{ code: "214000", area: "Wuxi", type: "Standard" }], lat: 31.4912, lng: 120.3119 },
           { id: "CN_3_7", name: "Xishan District", postalCodes: [{ code: "214100", area: "Xishan District", type: "Standard" }] },
           { id: "CN_3_8", name: "Huishan District", postalCodes: [{ code: "214100", area: "Huishan District", type: "Standard" }] },
           { id: "CN_3_9", name: "Yixing", postalCodes: [{ code: "214200", area: "Yixing", type: "Standard" }] },
@@ -9022,7 +9022,7 @@ const postalData = {
           { id: "CN_3_14", name: "Pizhou", postalCodes: [{ code: "221300", area: "Pizhou", type: "Standard" }] }
         ]},
         { id: "CN_4", name: "Jilin", cities: [
-          { id: "CN_4_0", name: "Changchun", postalCodes: [{ code: "130000", area: "Changchun", type: "Standard" }] },
+          { id: "CN_4_0", name: "Changchun", postalCodes: [{ code: "130000", area: "Changchun", type: "Standard" }], lat: 43.8171, lng: 125.3235 },
           { id: "CN_4_1", name: "Nong'an County", postalCodes: [{ code: "130200", area: "Nong'an County", type: "Standard" }] },
           { id: "CN_4_2", name: "Dehui", postalCodes: [{ code: "130300", area: "Dehui", type: "Standard" }] },
           { id: "CN_4_3", name: "Yushu", postalCodes: [{ code: "130400", area: "Yushu", type: "Standard" }] },
@@ -9039,7 +9039,7 @@ const postalData = {
           { id: "CN_4_14", name: "Gongzhuling", postalCodes: [{ code: "136100", area: "Gongzhuling", type: "Standard" }] }
         ]},
         { id: "CN_5", name: "Qinghai", cities: [
-          { id: "CN_5_0", name: "Xining", postalCodes: [{ code: "810000", area: "Xining", type: "Standard" }] },
+          { id: "CN_5_0", name: "Xining", postalCodes: [{ code: "810000", area: "Xining", type: "Standard" }], lat: 36.6171, lng: 101.7782 },
           { id: "CN_5_1", name: "Datong Hui and Tu Autonomous County", postalCodes: [{ code: "810100", area: "Datong Hui and Tu Autonomous County", type: "Standard" }] },
           { id: "CN_5_2", name: "Ping'an District", postalCodes: [{ code: "810600", area: "Ping'an District", type: "Standard" }] },
           { id: "CN_5_3", name: "Ledu District", postalCodes: [{ code: "810700", area: "Ledu District", type: "Standard" }] },
@@ -9056,7 +9056,7 @@ const postalData = {
           { id: "CN_5_14", name: "Tongren County", postalCodes: [{ code: "811300", area: "Tongren County", type: "Standard" }] }
         ]},
         { id: "CN_6", name: "Fujian", cities: [
-          { id: "CN_6_0", name: "Fuzhou", postalCodes: [{ code: "350000", area: "Fuzhou", type: "Standard" }] },
+          { id: "CN_6_0", name: "Fuzhou", postalCodes: [{ code: "350000", area: "Fuzhou", type: "Standard" }], lat: 26.0745, lng: 119.2965 },
           { id: "CN_6_1", name: "Minhou County", postalCodes: [{ code: "350100", area: "Minhou County", type: "Standard" }] },
           { id: "CN_6_2", name: "Changle", postalCodes: [{ code: "350200", area: "Changle", type: "Standard" }] },
           { id: "CN_6_3", name: "Fuqing", postalCodes: [{ code: "350300", area: "Fuqing", type: "Standard" }] },
@@ -9065,7 +9065,7 @@ const postalData = {
           { id: "CN_6_6", name: "Luoyuan County", postalCodes: [{ code: "350600", area: "Luoyuan County", type: "Standard" }] },
           { id: "CN_6_7", name: "Yongtai County", postalCodes: [{ code: "350700", area: "Yongtai County", type: "Standard" }] },
           { id: "CN_6_8", name: "Minqing County", postalCodes: [{ code: "350800", area: "Minqing County", type: "Standard" }] },
-          { id: "CN_6_9", name: "Xiamen", postalCodes: [{ code: "361000", area: "Xiamen", type: "Standard" }] },
+          { id: "CN_6_9", name: "Xiamen", postalCodes: [{ code: "361000", area: "Xiamen", type: "Standard" }], lat: 24.4798, lng: 118.0894 },
           { id: "CN_6_10", name: "Tong'an District", postalCodes: [{ code: "361100", area: "Tong'an District", type: "Standard" }] },
           { id: "CN_6_11", name: "Putian", postalCodes: [{ code: "351100", area: "Putian", type: "Standard" }] },
           { id: "CN_6_12", name: "Xianyou County", postalCodes: [{ code: "351200", area: "Xianyou County", type: "Standard" }] },
@@ -9073,7 +9073,7 @@ const postalData = {
           { id: "CN_6_14", name: "Taining County", postalCodes: [{ code: "354400", area: "Taining County", type: "Standard" }] }
         ]},
         { id: "CN_7", name: "Heilongjiang", cities: [
-          { id: "CN_7_0", name: "Harbin", postalCodes: [{ code: "150000", area: "Harbin", type: "Standard" }] },
+          { id: "CN_7_0", name: "Harbin", postalCodes: [{ code: "150000", area: "Harbin", type: "Standard" }], lat: 45.8038, lng: 126.535 },
           { id: "CN_7_1", name: "Shuangcheng District", postalCodes: [{ code: "150100", area: "Shuangcheng District", type: "Standard" }] },
           { id: "CN_7_2", name: "Wuchang", postalCodes: [{ code: "150200", area: "Wuchang", type: "Standard" }] },
           { id: "CN_7_3", name: "Acheng District", postalCodes: [{ code: "150300", area: "Acheng District", type: "Standard" }] },
@@ -9107,7 +9107,7 @@ const postalData = {
           { id: "CN_8_14", name: "Luoyang", postalCodes: [{ code: "471000", area: "Luoyang", type: "Standard" }] }
         ]},
         { id: "CN_9", name: "Hebei", cities: [
-          { id: "CN_9_0", name: "Shijiazhuang", postalCodes: [{ code: "050000", area: "Shijiazhuang", type: "Standard" }] },
+          { id: "CN_9_0", name: "Shijiazhuang", postalCodes: [{ code: "050000", area: "Shijiazhuang", type: "Standard" }], lat: 38.0428, lng: 114.5149 },
           { id: "CN_9_1", name: "Jingxing Mining District", postalCodes: [{ code: "050100", area: "Jingxing Mining District", type: "Standard" }] },
           { id: "CN_9_2", name: "Luquan District", postalCodes: [{ code: "050200", area: "Luquan District", type: "Standard" }] },
           { id: "CN_9_3", name: "Jingxing County", postalCodes: [{ code: "050300", area: "Jingxing County", type: "Standard" }] },
@@ -9124,7 +9124,7 @@ const postalData = {
           { id: "CN_9_14", name: "Gaocheng District", postalCodes: [{ code: "052100", area: "Gaocheng District", type: "Standard" }] }
         ]},
         { id: "CN_10", name: "Hunan", cities: [
-          { id: "CN_10_0", name: "Changsha", postalCodes: [{ code: "410000", area: "Changsha", type: "Standard" }] },
+          { id: "CN_10_0", name: "Changsha", postalCodes: [{ code: "410000", area: "Changsha", type: "Standard" }], lat: 28.2282, lng: 112.9388 },
           { id: "CN_10_1", name: "Changsha County", postalCodes: [{ code: "410100", area: "Changsha County", type: "Standard" }] },
           { id: "CN_10_2", name: "Wangcheng District", postalCodes: [{ code: "410200", area: "Wangcheng District", type: "Standard" }] },
           { id: "CN_10_3", name: "Liuyang", postalCodes: [{ code: "410300", area: "Liuyang", type: "Standard" }] },
@@ -9175,7 +9175,7 @@ const postalData = {
           { id: "CN_12_14", name: "Bole, Xinjiang", postalCodes: [{ code: "833400", area: "Bole, Xinjiang", type: "Standard" }] }
         ]},
         { id: "CN_13", name: "Tibet", cities: [
-          { id: "CN_13_0", name: "Lhasa", postalCodes: [{ code: "850000", area: "Lhasa", type: "Standard" }] },
+          { id: "CN_13_0", name: "Lhasa", postalCodes: [{ code: "850000", area: "Lhasa", type: "Standard" }], lat: 29.65, lng: 91.1 },
           { id: "CN_13_1", name: "Dagzê County", postalCodes: [{ code: "850100", area: "Dagzê County", type: "Standard" }] },
           { id: "CN_13_2", name: "Maizhokunggar County", postalCodes: [{ code: "850200", area: "Maizhokunggar County", type: "Standard" }] },
           { id: "CN_13_3", name: "Qüxü County", postalCodes: [{ code: "850600", area: "Qüxü County", type: "Standard" }] },
@@ -9192,7 +9192,7 @@ const postalData = {
           { id: "CN_13_14", name: "Gyantse County", postalCodes: [{ code: "857400", area: "Gyantse County", type: "Standard" }] }
         ]},
         { id: "CN_14", name: "Gansu", cities: [
-          { id: "CN_14_0", name: "Lanzhou", postalCodes: [{ code: "730000", area: "Lanzhou", type: "Standard" }] },
+          { id: "CN_14_0", name: "Lanzhou", postalCodes: [{ code: "730000", area: "Lanzhou", type: "Standard" }], lat: 36.0611, lng: 103.8343 },
           { id: "CN_14_1", name: "Yuzhong County", postalCodes: [{ code: "730100", area: "Yuzhong County", type: "Standard" }] },
           { id: "CN_14_2", name: "Gaolan County", postalCodes: [{ code: "730200", area: "Gaolan County", type: "Standard" }] },
           { id: "CN_14_3", name: "Yongdeng County", postalCodes: [{ code: "730300", area: "Yongdeng County", type: "Standard" }] },
@@ -9209,7 +9209,7 @@ const postalData = {
           { id: "CN_14_14", name: "Qingshui County", postalCodes: [{ code: "741300", area: "Qingshui County", type: "Standard" }] }
         ]},
         { id: "CN_15", name: "Guangxi", cities: [
-          { id: "CN_15_0", name: "Nanning", postalCodes: [{ code: "530000", area: "Nanning", type: "Standard" }] },
+          { id: "CN_15_0", name: "Nanning", postalCodes: [{ code: "530000", area: "Nanning", type: "Standard" }], lat: 22.817, lng: 108.3665 },
           { id: "CN_15_1", name: "Wuming District", postalCodes: [{ code: "530100", area: "Wuming District", type: "Standard" }] },
           { id: "CN_15_2", name: "Yongning District", postalCodes: [{ code: "530200", area: "Yongning District", type: "Standard" }] },
           { id: "CN_15_3", name: "Heng County", postalCodes: [{ code: "530300", area: "Heng County", type: "Standard" }] },
@@ -9226,7 +9226,7 @@ const postalData = {
           { id: "CN_15_14", name: "Luzhai County", postalCodes: [{ code: "545600", area: "Luzhai County", type: "Standard" }] }
         ]},
         { id: "CN_16", name: "Guizhou", cities: [
-          { id: "CN_16_0", name: "Guiyang", postalCodes: [{ code: "550000", area: "Guiyang", type: "Standard" }] },
+          { id: "CN_16_0", name: "Guiyang", postalCodes: [{ code: "550000", area: "Guiyang", type: "Standard" }], lat: 26.6477, lng: 106.6302 },
           { id: "CN_16_1", name: "Xiuwen County", postalCodes: [{ code: "550200", area: "Xiuwen County", type: "Standard" }] },
           { id: "CN_16_2", name: "Kaiyang County", postalCodes: [{ code: "550300", area: "Kaiyang County", type: "Standard" }] },
           { id: "CN_16_3", name: "Xifeng County", postalCodes: [{ code: "551100", area: "Xifeng County", type: "Standard" }] },
@@ -9243,7 +9243,7 @@ const postalData = {
           { id: "CN_16_14", name: "Meitan County", postalCodes: [{ code: "564100", area: "Meitan County", type: "Standard" }] }
         ]},
         { id: "CN_17", name: "Liaoning", cities: [
-          { id: "CN_17_0", name: "Shenyang", postalCodes: [{ code: "110000", area: "Shenyang", type: "Standard" }] },
+          { id: "CN_17_0", name: "Shenyang", postalCodes: [{ code: "110000", area: "Shenyang", type: "Standard" }], lat: 41.8057, lng: 123.4315 },
           { id: "CN_17_1", name: "Liaozhong District", postalCodes: [{ code: "110200", area: "Liaozhong District", type: "Standard" }] },
           { id: "CN_17_2", name: "Xinmin", postalCodes: [{ code: "110300", area: "Xinmin", type: "Standard" }] },
           { id: "CN_17_3", name: "Faku County", postalCodes: [{ code: "110400", area: "Faku County", type: "Standard" }] },
@@ -9260,7 +9260,7 @@ const postalData = {
           { id: "CN_17_14", name: "Haicheng", postalCodes: [{ code: "114200", area: "Haicheng", type: "Standard" }] }
         ]},
         { id: "CN_18", name: "Inner Mongolia", cities: [
-          { id: "CN_18_0", name: "Hohhot", postalCodes: [{ code: "010000", area: "Hohhot", type: "Standard" }] },
+          { id: "CN_18_0", name: "Hohhot", postalCodes: [{ code: "010000", area: "Hohhot", type: "Standard" }], lat: 40.8414, lng: 111.7519 },
           { id: "CN_18_1", name: "Tumed Left Banner", postalCodes: [{ code: "010100", area: "Tumed Left Banner", type: "Standard" }] },
           { id: "CN_18_2", name: "Togtoh County", postalCodes: [{ code: "010200", area: "Togtoh County", type: "Standard" }] },
           { id: "CN_18_3", name: "Horinger County", postalCodes: [{ code: "011500", area: "Horinger County", type: "Standard" }] },
@@ -9278,7 +9278,7 @@ const postalData = {
         ]},
         { id: "CN_19", name: "Ningxia", cities: [
           { id: "CN_19_0", name: "Alxa Left Banner", postalCodes: [{ code: "750300", area: "Alxa Left Banner", type: "Standard" }] },
-          { id: "CN_19_1", name: "Yinchuan", postalCodes: [{ code: "750000", area: "Yinchuan", type: "Standard" }] },
+          { id: "CN_19_1", name: "Yinchuan", postalCodes: [{ code: "750000", area: "Yinchuan", type: "Standard" }], lat: 38.4872, lng: 106.2309 },
           { id: "CN_19_2", name: "Yongning County", postalCodes: [{ code: "750100", area: "Yongning County", type: "Standard" }] },
           { id: "CN_19_3", name: "Helan County", postalCodes: [{ code: "750200", area: "Helan County", type: "Standard" }] },
           { id: "CN_19_4", name: "Lingwu City", postalCodes: [{ code: "751400", area: "Lingwu City", type: "Standard" }] },
@@ -9364,7 +9364,7 @@ const postalData = {
           { id: "GR_B_1", name: "Serres", postalCodes: [{ code: "62100", area: "Serres", type: "Standard" }, { code: "62125", area: "Serres", type: "Standard" }] }
         ]},
         { id: "C", name: "West Greece", cities: [
-          { id: "GR_C_0", name: "Patras", postalCodes: [{ code: "26221", area: "Patras", type: "Standard" }, { code: "26222", area: "Patras", type: "Standard" }, { code: "26223", area: "Patras", type: "Standard" }] }
+          { id: "GR_C_0", name: "Patras", postalCodes: [{ code: "26221", area: "Patras", type: "Standard" }, { code: "26222", area: "Patras", type: "Standard" }, { code: "26223", area: "Patras", type: "Standard" }], lat: 38.2466, lng: 21.7346 }
         ]},
         { id: "D", name: "Epirus", cities: [
           { id: "GR_D_0", name: "Ioannina", postalCodes: [{ code: "45221", area: "Ioannina", type: "Standard" }, { code: "45332", area: "Ioannina", type: "Standard" }] }
@@ -9373,7 +9373,7 @@ const postalData = {
           { id: "GR_F_0", name: "Corfu", postalCodes: [{ code: "49100", area: "Corfu", type: "Standard" }, { code: "49132", area: "Corfu", type: "Standard" }] }
         ]},
         { id: "H", name: "Crete", cities: [
-          { id: "GR_H_0", name: "Heraklion", postalCodes: [{ code: "71201", area: "Heraklion", type: "Standard" }, { code: "71202", area: "Heraklion", type: "Standard" }, { code: "71414", area: "Heraklion", type: "Standard" }] },
+          { id: "GR_H_0", name: "Heraklion", postalCodes: [{ code: "71201", area: "Heraklion", type: "Standard" }, { code: "71202", area: "Heraklion", type: "Standard" }, { code: "71414", area: "Heraklion", type: "Standard" }], lat: 35.3387, lng: 25.1442 },
           { id: "GR_H_1", name: "Chania", postalCodes: [{ code: "73131", area: "Chania", type: "Standard" }, { code: "73132", area: "Chania", type: "Standard" }] }
         ]}
       ]
@@ -9645,7 +9645,7 @@ const postalData = {
       states: [
         { id: "MY_0", name: "Johor", cities: [
           { id: "MY_0_0", name: "Nusajaya", postalCodes: [{ code: "79000", area: "Nusajaya", type: "Standard" }, { code: "79100", area: "Nusajaya", type: "Standard" }, { code: "79150", area: "Nusajaya", type: "Standard" }, { code: "79200", area: "Nusajaya", type: "Standard" }, { code: "79250", area: "Nusajaya", type: "Standard" }] },
-          { id: "MY_0_1", name: "Johor Bahru", postalCodes: [{ code: "80000", area: "Johor Bahru", type: "Standard" }, { code: "80050", area: "Johor Bahru", type: "Standard" }, { code: "80100", area: "Johor Bahru", type: "Standard" }, { code: "80150", area: "Johor Bahru", type: "Standard" }, { code: "80200", area: "Johor Bahru", type: "Standard" }] },
+          { id: "MY_0_1", name: "Johor Bahru", postalCodes: [{ code: "80000", area: "Johor Bahru", type: "Standard" }, { code: "80050", area: "Johor Bahru", type: "Standard" }, { code: "80100", area: "Johor Bahru", type: "Standard" }, { code: "80150", area: "Johor Bahru", type: "Standard" }, { code: "80200", area: "Johor Bahru", type: "Standard" }], lat: 1.4927, lng: 103.7414 },
           { id: "MY_0_2", name: "Kulai", postalCodes: [{ code: "81000", area: "Kulai", type: "Standard" }] },
           { id: "MY_0_3", name: "Senai", postalCodes: [{ code: "81400", area: "Senai", type: "Standard" }] },
           { id: "MY_0_4", name: "Bandar Tenggara", postalCodes: [{ code: "81440", area: "Bandar Tenggara", type: "Standard" }] },
@@ -9800,7 +9800,7 @@ const postalData = {
           { id: "MY_11_14", name: "Mambang Di Awan", postalCodes: [{ code: "31900", area: "Mambang Di Awan", type: "Standard" }, { code: "31920", area: "Mambang Di Awan", type: "Standard" }, { code: "31950", area: "Mambang Di Awan", type: "Standard" }] }
         ]},
         { id: "MY_12", name: "Sabah", cities: [
-          { id: "MY_12_0", name: "Kota Kinabalu", postalCodes: [{ code: "88000", area: "Kota Kinabalu", type: "Standard" }, { code: "88100", area: "Kota Kinabalu", type: "Standard" }, { code: "88200", area: "Kota Kinabalu", type: "Standard" }, { code: "88300", area: "Kota Kinabalu", type: "Standard" }, { code: "88400", area: "Kota Kinabalu", type: "Standard" }] },
+          { id: "MY_12_0", name: "Kota Kinabalu", postalCodes: [{ code: "88000", area: "Kota Kinabalu", type: "Standard" }, { code: "88100", area: "Kota Kinabalu", type: "Standard" }, { code: "88200", area: "Kota Kinabalu", type: "Standard" }, { code: "88300", area: "Kota Kinabalu", type: "Standard" }, { code: "88400", area: "Kota Kinabalu", type: "Standard" }], lat: 5.9804, lng: 116.0735 },
           { id: "MY_12_1", name: "Beverly", postalCodes: [{ code: "88700", area: "Beverly", type: "Standard" }, { code: "89260", area: "Beverly", type: "Standard" }] },
           { id: "MY_12_2", name: "Putatan", postalCodes: [{ code: "88721", area: "Putatan", type: "Standard" }, { code: "88722", area: "Putatan", type: "Standard" }, { code: "88723", area: "Putatan", type: "Standard" }, { code: "88724", area: "Putatan", type: "Standard" }, { code: "88725", area: "Putatan", type: "Standard" }] },
           { id: "MY_12_3", name: "Likas", postalCodes: [{ code: "88856", area: "Likas", type: "Standard" }] },
@@ -9834,7 +9834,7 @@ const postalData = {
           { id: "MY_13_14", name: "Kajang", postalCodes: [{ code: "43000", area: "Kajang", type: "Standard" }, { code: "43007", area: "Kajang", type: "Standard" }, { code: "43009", area: "Kajang", type: "Standard" }, { code: "43558", area: "Kajang", type: "Standard" }] }
         ]},
         { id: "MY_14", name: "Sarawak", cities: [
-          { id: "MY_14_0", name: "Kuching", postalCodes: [{ code: "93000", area: "Kuching", type: "Standard" }, { code: "93010", area: "Kuching", type: "Standard" }, { code: "93050", area: "Kuching", type: "Standard" }, { code: "93100", area: "Kuching", type: "Standard" }, { code: "93150", area: "Kuching", type: "Standard" }] },
+          { id: "MY_14_0", name: "Kuching", postalCodes: [{ code: "93000", area: "Kuching", type: "Standard" }, { code: "93010", area: "Kuching", type: "Standard" }, { code: "93050", area: "Kuching", type: "Standard" }, { code: "93100", area: "Kuching", type: "Standard" }, { code: "93150", area: "Kuching", type: "Standard" }], lat: 1.5535, lng: 110.3593 },
           { id: "MY_14_1", name: "Bau", postalCodes: [{ code: "94000", area: "Bau", type: "Standard" }, { code: "94007", area: "Bau", type: "Standard" }, { code: "94009", area: "Bau", type: "Standard" }] },
           { id: "MY_14_2", name: "Siburan", postalCodes: [{ code: "94200", area: "Siburan", type: "Standard" }] },
           { id: "MY_14_3", name: "Kota Samarahan", postalCodes: [{ code: "94300", area: "Kota Samarahan", type: "Standard" }] },
@@ -9965,7 +9965,7 @@ const postalData = {
           { id: "PH_5_3", name: "Loay", postalCodes: [{ code: "6303", area: "Loay", type: "Standard" }] },
           { id: "PH_5_4", name: "Lila", postalCodes: [{ code: "6304", area: "Lila", type: "Standard" }] },
           { id: "PH_5_5", name: "Dimiao", postalCodes: [{ code: "6305", area: "Dimiao", type: "Standard" }] },
-          { id: "PH_5_6", name: "Valencia", postalCodes: [{ code: "6306", area: "Valencia", type: "Standard" }] },
+          { id: "PH_5_6", name: "Valencia", postalCodes: [{ code: "6306", area: "Valencia", type: "Standard" }], lat: 39.4699, lng: -0.3763 },
           { id: "PH_5_7", name: "Garcia Hernandez", postalCodes: [{ code: "6307", area: "Garcia Hernandez", type: "Standard" }] },
           { id: "PH_5_8", name: "Jagna", postalCodes: [{ code: "6308", area: "Jagna", type: "Standard" }] },
           { id: "PH_5_9", name: "Duero", postalCodes: [{ code: "6309", area: "Duero", type: "Standard" }] },
@@ -10019,7 +10019,7 @@ const postalData = {
           { id: "PH_8_6", name: "Libona", postalCodes: [{ code: "8706", area: "Libona", type: "Standard" }] },
           { id: "PH_8_7", name: "Baungon", postalCodes: [{ code: "8707", area: "Baungon", type: "Standard" }] },
           { id: "PH_8_8", name: "Talakag", postalCodes: [{ code: "8708", area: "Talakag", type: "Standard" }] },
-          { id: "PH_8_9", name: "Valencia", postalCodes: [{ code: "8709", area: "Valencia", type: "Standard" }] },
+          { id: "PH_8_9", name: "Valencia", postalCodes: [{ code: "8709", area: "Valencia", type: "Standard" }], lat: 39.4699, lng: -0.3763 },
           { id: "PH_8_10", name: "Musuan", postalCodes: [{ code: "8710", area: "Musuan", type: "Standard" }] },
           { id: "PH_8_11", name: "San Fernando", postalCodes: [{ code: "8711", area: "San Fernando", type: "Standard" }] },
           { id: "PH_8_12", name: "Don Carlos", postalCodes: [{ code: "8712", area: "Don Carlos", type: "Standard" }] },
@@ -10027,7 +10027,7 @@ const postalData = {
           { id: "PH_8_14", name: "Maramag", postalCodes: [{ code: "8714", area: "Maramag", type: "Standard" }] }
         ]},
         { id: "PH_9", name: "Davao", cities: [
-          { id: "PH_9_0", name: "Davao City", postalCodes: [{ code: "8000", area: "Davao City", type: "Standard" }] },
+          { id: "PH_9_0", name: "Davao City", postalCodes: [{ code: "8000", area: "Davao City", type: "Standard" }], lat: 7.1907, lng: 125.4553 },
           { id: "PH_9_1", name: "Santa Cruz", postalCodes: [{ code: "8001", area: "Santa Cruz", type: "Standard" }] },
           { id: "PH_9_2", name: "Digos", postalCodes: [{ code: "8002", area: "Digos", type: "Standard" }] },
           { id: "PH_9_3", name: "Matanao", postalCodes: [{ code: "8003", area: "Matanao", type: "Standard" }] },
@@ -10135,7 +10135,7 @@ const postalData = {
           { id: "PH_15_3", name: "Torrijos", postalCodes: [{ code: "4903", area: "Torrijos", type: "Standard" }] },
           { id: "PH_15_4", name: "Buenavista", postalCodes: [{ code: "4904", area: "Buenavista", type: "Standard" }] },
           { id: "PH_15_5", name: "Gasan", postalCodes: [{ code: "4905", area: "Gasan", type: "Standard" }] },
-          { id: "PH_15_6", name: "San Jose", postalCodes: [{ code: "5100", area: "San Jose", type: "Standard" }, { code: "5510", area: "San Jose", type: "Standard" }] },
+          { id: "PH_15_6", name: "San Jose", postalCodes: [{ code: "5100", area: "San Jose", type: "Standard" }, { code: "5510", area: "San Jose", type: "Standard" }], lat: 37.3382, lng: -121.8863 },
           { id: "PH_15_7", name: "Magsaysay", postalCodes: [{ code: "5101", area: "Magsaysay", type: "Standard" }, { code: "5319", area: "Magsaysay", type: "Standard" }] },
           { id: "PH_15_8", name: "Calintaan", postalCodes: [{ code: "5102", area: "Calintaan", type: "Standard" }] },
           { id: "PH_15_9", name: "Rizal", postalCodes: [{ code: "5103", area: "Rizal", type: "Standard" }] },
