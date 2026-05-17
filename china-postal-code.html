@@ -382,16 +382,49 @@
         <span class="ad-label">Advertisement</span>
       </div>
 
-      <!-- Bottom Section: Cities + States -->
+      <!-- Bottom Section: States + City Selection -->
       <div class="bottom-section">
-        <!-- Left: Popular Cities -->
+        <!-- Left: State/Province List + City Selection Combined -->
         <section class="popular-cities" aria-labelledby="cities-heading">
           <h2 id="cities-heading" class="section-title">
-            Popular Cities in China
+            Select City in China
           </h2>
           <p class="cities-note">
-            Below is the select list of some major cities from China. Click on the "Show Postal Code" button to go get its postal code.
+            First select a state/province to filter cities, then choose a city to view its postal code.
           </p>
+
+          <!-- State/Province Filter -->
+          <div class="states-filter-wrapper" style="margin-bottom: 1rem;">
+            <h3 style="font-size: 0.875rem; color: var(--color-text-muted); margin-bottom: 0.5rem;">Filter by State/Province:</h3>
+            <div id="states-container" class="states-container">
+              <a href="#anhui" class="state-link" data-state="Anhui">Anhui</a>
+              <a href="#beijing" class="state-link" data-state="Beijing">Beijing</a>
+              <a href="#chongqing" class="state-link" data-state="Chongqing">Chongqing</a>
+              <a href="#fujian" class="state-link" data-state="Fujian">Fujian</a>
+              <a href="#gansu" class="state-link" data-state="Gansu">Gansu</a>
+              <a href="#guangdong" class="state-link" data-state="Guangdong">Guangdong</a>
+              <a href="#guangxi" class="state-link" data-state="Guangxi">Guangxi</a>
+              <a href="#guizhou" class="state-link" data-state="Guizhou">Guizhou</a>
+              <a href="#hebei" class="state-link" data-state="Hebei">Hebei</a>
+              <a href="#heilongjiang" class="state-link" data-state="Heilongjiang">Heilongjiang</a>
+              <a href="#henan" class="state-link" data-state="Henan">Henan</a>
+              <a href="#hubei" class="state-link" data-state="Hubei">Hubei</a>
+              <a href="#hunan" class="state-link" data-state="Hunan">Hunan</a>
+              <a href="#inner-mongolia" class="state-link" data-state="Inner Mongolia">Inner Mongolia</a>
+              <a href="#jiangsu" class="state-link" data-state="Jiangsu">Jiangsu</a>
+              <a href="#jiangxi" class="state-link" data-state="Jiangxi">Jiangxi</a>
+              <a href="#jilin" class="state-link" data-state="Jilin">Jilin</a>
+              <a href="#liaoning" class="state-link" data-state="Liaoning">Liaoning</a>
+              <a href="#ningxia" class="state-link" data-state="Ningxia">Ningxia</a>
+              <a href="#qinghai" class="state-link" data-state="Qinghai">Qinghai</a>
+              <a href="#shaanxi" class="state-link" data-state="Shaanxi">Shaanxi</a>
+              <a href="#shanghai" class="state-link" data-state="Shanghai">Shanghai</a>
+              <a href="#sichuan" class="state-link" data-state="Sichuan">Sichuan</a>
+              <a href="#tibet" class="state-link" data-state="Tibet">Tibet</a>
+              <a href="#xinjiang" class="state-link" data-state="Xinjiang">Xinjiang</a>
+              <a href="#zhejiang" class="state-link" data-state="Zhejiang">Zhejiang</a>
+            </div>
+          </div>
 
           <div class="cities-select-wrapper">
             <select id="cities-select" class="cities-select" aria-label="Select a city in China">
@@ -602,101 +635,57 @@
           <button id="show-selected-btn" class="show-btn">
             Show Postal Code
           </button>
-
-          <!-- Popular Cities Links for SEO -->
-          <div class="popular-cities-links" style="margin-top: 1.5rem;">
-            <h3 style="font-size: 0.875rem; color: var(--color-text-muted); margin-bottom: 0.75rem;">Popular China Cities with Postal Codes:</h3>
-            <div class="city-links-grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 0.5rem; font-size: 0.8rem;">
-        <div class="city-link-item" data-city="Acheng District">Acheng District (Heilongjiang)</div>
-        <div class="city-link-item" data-city="Alxa Left Banner">Alxa Left Banner (Ningxia)</div>
-        <div class="city-link-item" data-city="Anshan">Anshan (Liaoning)</div>
-        <div class="city-link-item" data-city="Anyi County">Anyi County (Jiangxi)</div>
-        <div class="city-link-item" data-city="Aohan Banner">Aohan Banner (Inner Mongolia)</div>
-        <div class="city-link-item" data-city="Bainang County">Bainang County (Tibet)</div>
-        <div class="city-link-item" data-city="Baiyin">Baiyin (Gansu)</div>
-        <div class="city-link-item" data-city="Baotou">Baotou (Inner Mongolia)</div>
-        <div class="city-link-item" data-city="Barköl Kazakh Autonomous County">Barköl Kazakh Autonomous County (Xinjiang)</div>
-        <div class="city-link-item" data-city="Bayan County">Bayan County (Heilongjiang)</div>
-        <div class="city-link-item" data-city="Beijing">Beijing (Beijing)</div>
-        <div class="city-link-item" data-city="Bengbu">Bengbu (Anhui)</div>
-        <div class="city-link-item" data-city="Bin County">Bin County (Heilongjiang)</div>
-        <div class="city-link-item" data-city="Binyang County">Binyang County (Guangxi)</div>
-        <div class="city-link-item" data-city="Bole, Xinjiang">Bole, Xinjiang (Xinjiang)</div>
-        <div class="city-link-item" data-city="Bozhou District">Bozhou District (Guizhou)</div>
-        <div class="city-link-item" data-city="Caidian District">Caidian District (Hubei)</div>
-        <div class="city-link-item" data-city="Chaling County">Chaling County (Hunan)</div>
-        <div class="city-link-item" data-city="Changchun">Changchun (Jilin)</div>
-        <div class="city-link-item" data-city="Changfeng County">Changfeng County (Anhui)</div>
-        <div class="city-link-item" data-city="Changhai County">Changhai County (Liaoning)</div>
-        <div class="city-link-item" data-city="Changji Hui Autonomous Prefecture">Changji Hui Autonomous Prefecture (Xinjiang)</div>
-        <div class="city-link-item" data-city="Changle">Changle (Fujian)</div>
-        <div class="city-link-item" data-city="Changsha">Changsha (Hunan)</div>
-        <div class="city-link-item" data-city="Changsha County">Changsha County (Hunan)</div>
-        <div class="city-link-item" data-city="Chaohu">Chaohu (Anhui)</div>
-        <div class="city-link-item" data-city="Chengdu">Chengdu (Sichuan)</div>
-        <div class="city-link-item" data-city="Chifeng">Chifeng (Inner Mongolia)</div>
-        <div class="city-link-item" data-city="Chongqing">Chongqing (Chongqing)</div>
-        <div class="city-link-item" data-city="Chun'an County">Chun'an County (Zhejiang)</div>
-        <div class="city-link-item" data-city="Cixi City">Cixi City (Zhejiang)</div>
-        <div class="city-link-item" data-city="Dagzê County">Dagzê County (Tibet)</div>
-        <div class="city-link-item" data-city="Dalian">Dalian (Liaoning)</div>
-        <div class="city-link-item" data-city="Damxung County">Damxung County (Tibet)</div>
-        <div class="city-link-item" data-city="Daozhen Gelao and Miao Autonomous County">Daozhen Gelao and Miao Autonomous County (Guizhou)</div>
-        <div class="city-link-item" data-city="Darhan Muminggan United Banner">Darhan Muminggan United Banner (Inner Mongolia)</div>
-        <div class="city-link-item" data-city="Datong Hui and Tu Autonomous County">Datong Hui and Tu Autonomous County (Qinghai)</div>
-        <div class="city-link-item" data-city="Daye">Daye (Hubei)</div>
-        <div class="city-link-item" data-city="De'an County">De'an County (Jiangxi)</div>
-        <div class="city-link-item" data-city="Dehui">Dehui (Jilin)</div>
-        <div class="city-link-item" data-city="Dengfeng">Dengfeng (Henan)</div>
-        <div class="city-link-item" data-city="Dinggyê County">Dinggyê County (Tibet)</div>
-        <div class="city-link-item" data-city="Doilungdêqên District">Doilungdêqên District (Tibet)</div>
-        <div class="city-link-item" data-city="Faku County">Faku County (Liaoning)</div>
-        <div class="city-link-item" data-city="Fanchang County">Fanchang County (Anhui)</div>
-        <div class="city-link-item" data-city="Fang County">Fang County (Hubei)</div>
-        <div class="city-link-item" data-city="Fangzheng County">Fangzheng County (Heilongjiang)</div>
-        <div class="city-link-item" data-city="Feidong County">Feidong County (Anhui)</div>
-        <div class="city-link-item" data-city="Feixi County">Feixi County (Anhui)</div>
-        <div class="city-link-item" data-city="Fenghua">Fenghua (Zhejiang)</div>
-            </div>
-          </div>
         </section>
 
-        <!-- Right: State/Province List -->
+        <!-- Right: Info or additional content -->
         <section class="states-list" aria-labelledby="states-heading">
-          <h2 id="states-heading" class="states-title">State/Province level Postal Code Search:</h2>
-          <p style="font-size: 0.8rem; color: var(--color-text-muted); margin-bottom: 1rem;">
-            Click on a state/province to filter cities in that region.
+          <h2 id="states-heading" class="states-title">About China Postal Codes</h2>
+          <p style="font-size: 0.875rem; line-height: 1.6; color: var(--color-text-muted);">
+            China uses a 6-digit postal code system. The first two digits represent the province or autonomous region, the third digit represents the postal district within the province, and the last three digits represent the specific delivery office.
           </p>
-          <div id="states-container" class="states-container">
-          <a href="#anhui" class="state-link" data-state="Anhui">Anhui</a>
-          <a href="#beijing" class="state-link" data-state="Beijing">Beijing</a>
-          <a href="#chongqing" class="state-link" data-state="Chongqing">Chongqing</a>
-          <a href="#fujian" class="state-link" data-state="Fujian">Fujian</a>
-          <a href="#gansu" class="state-link" data-state="Gansu">Gansu</a>
-          <a href="#guangdong" class="state-link" data-state="Guangdong">Guangdong</a>
-          <a href="#guangxi" class="state-link" data-state="Guangxi">Guangxi</a>
-          <a href="#guizhou" class="state-link" data-state="Guizhou">Guizhou</a>
-          <a href="#hebei" class="state-link" data-state="Hebei">Hebei</a>
-          <a href="#heilongjiang" class="state-link" data-state="Heilongjiang">Heilongjiang</a>
-          <a href="#henan" class="state-link" data-state="Henan">Henan</a>
-          <a href="#hubei" class="state-link" data-state="Hubei">Hubei</a>
-          <a href="#hunan" class="state-link" data-state="Hunan">Hunan</a>
-          <a href="#inner-mongolia" class="state-link" data-state="Inner Mongolia">Inner Mongolia</a>
-          <a href="#jiangsu" class="state-link" data-state="Jiangsu">Jiangsu</a>
-          <a href="#jiangxi" class="state-link" data-state="Jiangxi">Jiangxi</a>
-          <a href="#jilin" class="state-link" data-state="Jilin">Jilin</a>
-          <a href="#liaoning" class="state-link" data-state="Liaoning">Liaoning</a>
-          <a href="#ningxia" class="state-link" data-state="Ningxia">Ningxia</a>
-          <a href="#qinghai" class="state-link" data-state="Qinghai">Qinghai</a>
-          <a href="#shaanxi" class="state-link" data-state="Shaanxi">Shaanxi</a>
-          <a href="#shanghai" class="state-link" data-state="Shanghai">Shanghai</a>
-          <a href="#sichuan" class="state-link" data-state="Sichuan">Sichuan</a>
-          <a href="#tibet" class="state-link" data-state="Tibet">Tibet</a>
-          <a href="#xinjiang" class="state-link" data-state="Xinjiang">Xinjiang</a>
-          <a href="#zhejiang" class="state-link" data-state="Zhejiang">Zhejiang</a>
-          </div>
+          <p style="font-size: 0.875rem; line-height: 1.6; color: var(--color-text-muted); margin-top: 1rem;">
+            Our database covers cities and towns across all 26 provinces and autonomous regions in China, including major cities like Beijing, Shanghai, Guangzhou, and Shenzhen.
+          </p>
         </section>
       </div>
+
+      <!-- Popular Cities Links Section (Moved to bottom) -->
+      <section class="popular-cities-links-section" style="margin-top: 2rem; padding: 1.5rem; background: var(--color-surface); border-radius: var(--radius-lg);">
+        <h2 style="font-size: 1.25rem; margin-bottom: 1rem; color: var(--color-text);">Popular China Cities with Postal Codes</h2>
+        <p style="font-size: 0.875rem; color: var(--color-text-muted); margin-bottom: 1rem;">Click on any city below to quickly view its postal code information.</p>
+        <div class="city-links-grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 0.5rem; font-size: 0.8rem;">
+          <div class="city-link-item" data-city="Beijing">Beijing</div>
+          <div class="city-link-item" data-city="Shanghai">Shanghai</div>
+          <div class="city-link-item" data-city="Guangzhou">Guangzhou</div>
+          <div class="city-link-item" data-city="Shenzhen">Shenzhen</div>
+          <div class="city-link-item" data-city="Chengdu">Chengdu</div>
+          <div class="city-link-item" data-city="Hangzhou">Hangzhou</div>
+          <div class="city-link-item" data-city="Wuhan">Wuhan</div>
+          <div class="city-link-item" data-city="Xi'an">Xi'an</div>
+          <div class="city-link-item" data-city="Nanjing">Nanjing</div>
+          <div class="city-link-item" data-city="Chongqing">Chongqing</div>
+          <div class="city-link-item" data-city="Tianjin">Tianjin</div>
+          <div class="city-link-item" data-city="Suzhou">Suzhou</div>
+          <div class="city-link-item" data-city="Zhengzhou">Zhengzhou</div>
+          <div class="city-link-item" data-city="Changsha">Changsha</div>
+          <div class="city-link-item" data-city="Qingdao">Qingdao</div>
+          <div class="city-link-item" data-city="Shenyang">Shenyang</div>
+          <div class="city-link-item" data-city="Dalian">Dalian</div>
+          <div class="city-link-item" data-city="Xiamen">Xiamen</div>
+          <div class="city-link-item" data-city="Harbin">Harbin</div>
+          <div class="city-link-item" data-city="Jinan">Jinan</div>
+          <div class="city-link-item" data-city="Ningbo">Ningbo</div>
+          <div class="city-link-item" data-city="Kunming">Kunming</div>
+          <div class="city-link-item" data-city="Fuzhou">Fuzhou</div>
+          <div class="city-link-item" data-city="Changchun">Changchun</div>
+          <div class="city-link-item" data-city="Hefei">Hefei</div>
+          <div class="city-link-item" data-city="Shijiazhuang">Shijiazhuang</div>
+          <div class="city-link-item" data-city="Nanning">Nanning</div>
+          <div class="city-link-item" data-city="Guiyang">Guiyang</div>
+          <div class="city-link-item" data-city="Lanzhou">Lanzhou</div>
+          <div class="city-link-item" data-city="Urumqi">Urumqi</div>
+        </div>
+      </section>
 
       <!-- SEO Content Section -->
       <section class="seo-content" style="margin-top: 2rem; padding: 1.5rem; background: var(--color-surface); border-radius: var(--radius-lg);">
