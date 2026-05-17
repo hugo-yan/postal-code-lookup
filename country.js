@@ -46,8 +46,71 @@ class CountryPage {
   }
 
   getCountryIdFromUrl() {
+    // First check URL query params (for country.html?country=US)
     const params = new URLSearchParams(window.location.search);
-    return params.get('country');
+    const countryFromQuery = params.get('country');
+    if (countryFromQuery) return countryFromQuery;
+
+    // Then check static page URL (for us-postal-code.html)
+    const path = window.location.pathname;
+    const match = path.match(/([a-z-]+)-postal-code\.html$/);
+    if (match) {
+      const slug = match[1];
+      // Map slug back to country ID
+      const slugToId = {
+        'us': 'US',
+        'canada': 'CA',
+        'united-kingdom': 'UK',
+        'germany': 'DE',
+        'france': 'FR',
+        'japan': 'JP',
+        'india': 'IN',
+        'australia': 'AU',
+        'brazil': 'BR',
+        'italy': 'IT',
+        'spain': 'ES',
+        'netherlands': 'NL',
+        'sweden': 'SE',
+        'norway': 'NO',
+        'finland': 'FI',
+        'denmark': 'DK',
+        'poland': 'PL',
+        'austria': 'AT',
+        'switzerland': 'CH',
+        'belgium': 'BE',
+        'portugal': 'PT',
+        'ireland': 'IE',
+        'new-zealand': 'NZ',
+        'south-africa': 'ZA',
+        'mexico': 'MX',
+        'russia': 'RU',
+        'turkey': 'TR',
+        'czech-republic': 'CZ',
+        'hungary': 'HU',
+        'slovakia': 'SK',
+        'croatia': 'HR',
+        'slovenia': 'SI',
+        'lithuania': 'LT',
+        'latvia': 'LV',
+        'estonia': 'EE',
+        'luxembourg': 'LU',
+        'iceland': 'IS',
+        'malta': 'MT',
+        'china': 'CN',
+        'indonesia': 'ID',
+        'greece': 'GR',
+        'singapore': 'SG',
+        'thailand': 'TH',
+        'malaysia': 'MY',
+        'philippines': 'PH',
+        'south-korea': 'KR',
+        'uae': 'AE',
+        'israel': 'IL'
+      };
+      return slugToId[slug] || null;
+    }
+
+    return null;
   }
 
   init() {
