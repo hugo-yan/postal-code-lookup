@@ -201,6 +201,58 @@ DEFAULT_COORDS = {
     'AE': [23.4241, 53.8478], 'IL': [31.0461, 34.8516],
 }
 
+# Country-specific postal code format info for personalized FAQs
+COUNTRY_POSTAL_INFO = {
+    'US': {'format': '5-digit numeric (ZIP Code)', 'example': '90210', 'digits': '5 digits (or 9 with ZIP+4)', 'detail': 'the first digit represents a group of states, and the next two identify a sectional center facility'},
+    'CA': {'format': '6-character alphanumeric (A1A 1A1)', 'example': 'K1A 0B1', 'digits': '6 alternating letters and numbers', 'detail': 'the first letter identifies the province or territory'},
+    'UK': {'format': '5-7 character alphanumeric', 'example': 'SW1A 1AA', 'digits': '5 to 7 characters (letters and numbers)', 'detail': 'the first part identifies the postcode area and district'},
+    'DE': {'format': '5-digit numeric (Postleitzahl)', 'example': '10115', 'digits': '5 digits', 'detail': 'the first digit represents a geographic zone'},
+    'FR': {'format': '5-digit numeric', 'example': '75001', 'digits': '5 digits', 'detail': 'the first two digits represent the department number'},
+    'JP': {'format': '7-digit numeric (3+4)', 'example': '100-0001', 'digits': '7 digits in 3+4 format', 'detail': 'the first three digits represent the post office region'},
+    'IN': {'format': '6-digit numeric (PIN Code)', 'example': '110001', 'digits': '6 digits', 'detail': 'the first digit indicates the region, the next two the sub-region and district'},
+    'AU': {'format': '4-digit numeric', 'example': '2000', 'digits': '4 digits', 'detail': 'the first digit represents the state'},
+    'BR': {'format': '8-digit numeric (CEP)', 'example': '01001-000', 'digits': '8 digits', 'detail': 'the first digit identifies the region'},
+    'IT': {'format': '5-digit numeric (CAP)', 'example': '00100', 'digits': '5 digits', 'detail': 'the first two digits identify the province'},
+    'ES': {'format': '5-digit numeric', 'example': '28001', 'digits': '5 digits', 'detail': 'the first two digits represent the province'},
+    'NL': {'format': '4-digit + 2-letter (1234 AB)', 'example': '1012 AB', 'digits': '4 digits followed by 2 letters', 'detail': 'the digits identify the city/district, the letters the street'},
+    'SE': {'format': '5-digit numeric', 'example': '111 20', 'digits': '5 digits', 'detail': 'the first two digits identify the city, the remaining specify the postal district'},
+    'NO': {'format': '4-digit numeric', 'example': '0010', 'digits': '4 digits', 'detail': 'the first two digits identify the postal region'},
+    'FI': {'format': '5-digit numeric', 'example': '00100', 'digits': '5 digits', 'detail': 'the first two digits identify the municipality'},
+    'DK': {'format': '4-digit numeric', 'example': '1050', 'digits': '4 digits', 'detail': 'the first digit identifies the region'},
+    'PL': {'format': '5-digit numeric (XX-XXX)', 'example': '00-001', 'digits': '5 digits in XX-XXX format', 'detail': 'the first digit identifies the postal district'},
+    'AT': {'format': '4-digit numeric', 'example': '1010', 'digits': '4 digits', 'detail': 'the first digit identifies the state'},
+    'CH': {'format': '4-digit numeric', 'example': '8001', 'digits': '4 digits', 'detail': 'the first two digits identify the district'},
+    'BE': {'format': '4-digit numeric', 'example': '1000', 'digits': '4 digits', 'detail': 'the first digits identify the postal zone'},
+    'PT': {'format': '7-digit numeric (XXXX-XXX)', 'example': '1000-001', 'digits': '7 digits in XXXX-XXX format', 'detail': 'the first four digits identify the distribution center'},
+    'IE': {'format': '7-character alphanumeric (Eircode)', 'example': 'D02 X285', 'digits': '7 characters (letters and numbers)', 'detail': 'the first three characters identify the routing key'},
+    'NZ': {'format': '4-digit numeric', 'example': '6011', 'digits': '4 digits', 'detail': 'each digit narrows down the delivery area'},
+    'ZA': {'format': '4-digit numeric', 'example': '8001', 'digits': '4 digits', 'detail': 'the digits identify the postal region and delivery office'},
+    'MX': {'format': '5-digit numeric', 'example': '01000', 'digits': '5 digits', 'detail': 'the first two digits identify the state'},
+    'RU': {'format': '6-digit numeric', 'example': '101000', 'digits': '6 digits', 'detail': 'the first three digits identify the city or region'},
+    'TR': {'format': '5-digit numeric', 'example': '34000', 'digits': '5 digits', 'detail': 'the first two digits identify the province'},
+    'CZ': {'format': '5-digit numeric', 'example': '110 00', 'digits': '5 digits', 'detail': 'the first digit identifies the postal zone'},
+    'HU': {'format': '4-digit numeric', 'example': '1011', 'digits': '4 digits', 'detail': 'the first digit identifies the region'},
+    'SK': {'format': '5-digit numeric', 'example': '811 01', 'digits': '5 digits', 'detail': 'the first digit identifies the postal zone'},
+    'HR': {'format': '5-digit numeric', 'example': '10000', 'digits': '5 digits', 'detail': 'the first two digits identify the county'},
+    'SI': {'format': '4-digit numeric', 'example': '1000', 'digits': '4 digits', 'detail': 'the first two digits identify the post office'},
+    'LT': {'format': '5-digit numeric', 'example': '01100', 'digits': '5 digits', 'detail': 'the first two digits identify the postal transportation route'},
+    'LV': {'format': '4-digit numeric (LV-XXXX)', 'example': 'LV-1010', 'digits': '4 digits (often prefixed with LV-)', 'detail': 'the first two digits identify the postal area'},
+    'EE': {'format': '5-digit numeric', 'example': '10111', 'digits': '5 digits', 'detail': 'the first two digits identify the county'},
+    'LU': {'format': '4-digit numeric', 'example': '1111', 'digits': '4 digits', 'detail': 'the first digit identifies the district'},
+    'IS': {'format': '3-digit numeric', 'example': '101', 'digits': '3 digits', 'detail': 'the first digit identifies the region'},
+    'MT': {'format': '3-letter + 4-digit', 'example': 'VLT 1111', 'digits': '3 letters followed by 4 digits', 'detail': 'the first three letters identify the locality'},
+    'CN': {'format': '6-digit numeric', 'example': '100000', 'digits': '6 digits', 'detail': 'the first two digits represent the province, the last four the delivery area'},
+    'ID': {'format': '5-digit numeric', 'example': '10110', 'digits': '5 digits', 'detail': 'the first digit identifies the region'},
+    'GR': {'format': '5-digit numeric', 'example': '104 31', 'digits': '5 digits', 'detail': 'the first three digits identify the regional sorting center'},
+    'SG': {'format': '6-digit numeric', 'example': '018906', 'digits': '6 digits', 'detail': 'the first two digits identify the postal sector'},
+    'TH': {'format': '5-digit numeric', 'example': '10100', 'digits': '5 digits', 'detail': 'the first two digits identify the province'},
+    'MY': {'format': '5-digit numeric', 'example': '50000', 'digits': '5 digits', 'detail': 'the first two digits identify the state'},
+    'PH': {'format': '4-digit numeric', 'example': '1000', 'digits': '4 digits', 'detail': 'the first two digits identify the province'},
+    'KR': {'format': '5-digit numeric', 'example': '03188', 'digits': '5 digits', 'detail': 'each digit represents a progressively smaller geographic area'},
+    'AE': {'format': 'varies by emirate', 'example': '', 'digits': 'no standard national system', 'detail': 'UAE does not use a universal postal code; most mail is delivered using PO Box numbers'},
+    'IL': {'format': '7-digit numeric', 'example': '6100000', 'digits': '7 digits', 'detail': 'the first two digits identify the postal region'},
+}
+
 
 def parse_mock_data():
     """Parse the mockData.js file to extract full country data"""
@@ -353,6 +405,8 @@ def extract_country_data_from_js(country_id):
 
 def generate_faq_schema(display_name, country_id):
     """Generate FAQPage schema for rich snippets"""
+    pinfo = COUNTRY_POSTAL_INFO.get(country_id, {'format': 'varies by region', 'example': '', 'digits': 'varies', 'detail': 'codes are structured to help postal services sort and deliver mail efficiently across the country'})
+
     return {
         "@context": "https://schema.org",
         "@type": "FAQPage",
@@ -362,15 +416,15 @@ def generate_faq_schema(display_name, country_id):
                 "name": f"How do I find a postal code in {display_name}?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": f"To find a postal code in {display_name}, simply enter the city name or address in our search box above. Select your location from the dropdown suggestions, and the postal code will be displayed along with an interactive map showing the exact location."
+                    "text": f"To find a postal code in {display_name}, enter a city name or address in our search box above. Select your location from the autocomplete suggestions, and the postal code will be displayed alongside an interactive map showing the exact delivery area."
                 }
             },
             {
                 "@type": "Question",
-                "name": f"How many digits are in a {display_name} postal code?",
+                "name": f"What is the format of a {display_name} postal code?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": f"The number of digits in a {display_name} postal code varies depending on the specific postal system. Our tool provides the correct format for each location within {display_name}."
+                    "text": f"{display_name} uses a {pinfo['format']} postal code system. For example, a valid postal code in {display_name} would look like '{pinfo['example']}'. The format consists of {pinfo['digits']}, where {pinfo['detail']}."
                 }
             },
             {
@@ -378,7 +432,7 @@ def generate_faq_schema(display_name, country_id):
                 "name": f"Can I search for postal codes by city name in {display_name}?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": f"Yes, you can search for postal codes by city name in {display_name}. Our database covers thousands of cities and towns across {display_name}. Simply type the city name in the search box and select from the autocomplete suggestions."
+                    "text": f"Yes, you can search for postal codes by city name in {display_name}. Our database covers thousands of cities and towns across {display_name}, and our search box supports autocomplete for faster lookups."
                 }
             },
             {
@@ -386,7 +440,7 @@ def generate_faq_schema(display_name, country_id):
                 "name": f"Is this {display_name} postal code lookup free to use?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": f"Yes, our {display_name} postal code lookup tool is completely free to use. You can search for unlimited postal codes across {display_name} without any registration or fees."
+                    "text": f"Yes, our {display_name} postal code lookup tool is completely free. You can search for unlimited postal codes across all cities in {display_name} without any registration or fees."
                 }
             },
             {
@@ -526,6 +580,8 @@ def generate_static_page_v3(country_id, country_data):
     all_schemas = [schema_webpage, schema_itemlist, schema_org, schema_faq] + schema_postalcodes[:5]
 
     # Generate FAQ HTML section
+    pinfo = COUNTRY_POSTAL_INFO.get(country_id, {'format': 'varies by region', 'example': '', 'digits': 'varies', 'detail': 'codes are structured to help postal services sort and deliver mail efficiently across the country'})
+
     faq_html = f'''
       <!-- FAQ Section for SEO -->
       <section class="faq-section" style="margin-top: 2rem; padding: 1.5rem; background: var(--color-surface); border-radius: var(--radius-lg);">
@@ -534,25 +590,25 @@ def generate_static_page_v3(country_id, country_data):
           <details class="faq-item" style="border: 1px solid var(--color-border); border-radius: var(--radius-md); padding: 1rem;">
             <summary style="font-weight: 600; cursor: pointer; color: var(--color-primary);">How do I find a postal code in {display_name}?</summary>
             <p style="margin-top: 0.5rem; color: var(--color-text-muted); line-height: 1.6;">
-              To find a postal code in {display_name}, simply enter the city name or address in our search box above. Select your location from the dropdown suggestions, and the postal code will be displayed along with an interactive map showing the exact location.
+              To find a postal code in {display_name}, enter a city name or address in our search box above. Select your location from the autocomplete suggestions, and the postal code will be displayed alongside an interactive map showing the exact delivery area.
             </p>
           </details>
           <details class="faq-item" style="border: 1px solid var(--color-border); border-radius: var(--radius-md); padding: 1rem;">
-            <summary style="font-weight: 600; cursor: pointer; color: var(--color-primary);">How many digits are in a {display_name} postal code?</summary>
+            <summary style="font-weight: 600; cursor: pointer; color: var(--color-primary);">What is the format of a {display_name} postal code?</summary>
             <p style="margin-top: 0.5rem; color: var(--color-text-muted); line-height: 1.6;">
-              The number of digits in a {display_name} postal code varies depending on the specific postal system. Our tool provides the correct format for each location within {display_name}.
+              {display_name} uses a {pinfo['format']} postal code system. For example, a valid postal code in {display_name} would look like '{pinfo['example']}'. The format consists of {pinfo['digits']}, where {pinfo['detail']}.
             </p>
           </details>
           <details class="faq-item" style="border: 1px solid var(--color-border); border-radius: var(--radius-md); padding: 1rem;">
             <summary style="font-weight: 600; cursor: pointer; color: var(--color-primary);">Can I search for postal codes by city name in {display_name}?</summary>
             <p style="margin-top: 0.5rem; color: var(--color-text-muted); line-height: 1.6;">
-              Yes, you can search for postal codes by city name in {display_name}. Our database covers thousands of cities and towns across {display_name}. Simply type the city name in the search box and select from the autocomplete suggestions.
+              Yes, you can search for postal codes by city name in {display_name}. Our database covers thousands of cities and towns across {display_name}, and our search box supports autocomplete for faster lookups.
             </p>
           </details>
           <details class="faq-item" style="border: 1px solid var(--color-border); border-radius: var(--radius-md); padding: 1rem;">
             <summary style="font-weight: 600; cursor: pointer; color: var(--color-primary);">Is this {display_name} postal code lookup free to use?</summary>
             <p style="margin-top: 0.5rem; color: var(--color-text-muted); line-height: 1.6;">
-              Yes, our {display_name} postal code lookup tool is completely free to use. You can search for unlimited postal codes across {display_name} without any registration or fees.
+              Yes, our {display_name} postal code lookup tool is completely free. You can search for unlimited postal codes across all cities in {display_name} without any registration or fees.
             </p>
           </details>
           <details class="faq-item" style="border: 1px solid var(--color-border); border-radius: var(--radius-md); padding: 1rem;">
@@ -585,9 +641,6 @@ def generate_static_page_v3(country_id, country_data):
   <meta property="og:description" content="Search postal codes for {len(cities)}+ cities in {display_name}. Free lookup tool with interactive map.">
   <meta property="og:url" content="https://postalcodelookup.info/{slug}.html">
   <meta property="og:site_name" content="Postal Code Lookup">
-  <meta property="og:image" content="https://postalcodelookup.info/og-image.jpg">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
 
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="{display_name} Postal Code Lookup">
@@ -610,6 +663,15 @@ def generate_static_page_v3(country_id, country_data):
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" media="print" onload="this.media='all'">
   <noscript><link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"></noscript>
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){{dataLayer.push(arguments);}}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
 
   <!-- Schema.org Structured Data -->
   <script type="application/ld+json">
@@ -910,7 +972,7 @@ def generate_city_pages(country_id, country_data, country_slug):
         if not city['postalCodes']:
             continue
 
-        city_slug = city['name'].lower().replace(' ', '-').replace(',', '')
+        city_slug = city['name'].lower().replace(' ', '-').replace('/', '-').replace(',', '')
         filename = f"{country_slug}/{city_slug}-postal-code.html"
 
         # Create directory if needed
@@ -939,6 +1001,13 @@ def generate_city_pages(country_id, country_data, country_slug):
   <link rel="canonical" href="https://postalcodelookup.info/{filename}">
   <link rel="stylesheet" href="../styles.css">
   <link rel="stylesheet" href="../country.css">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){{dataLayer.push(arguments);}}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
   <script type="application/ld+json">
   {json.dumps(schema_city, indent=2)}
   </script>
@@ -1002,8 +1071,8 @@ def main():
         country_id = country['id']
         country_name = country['name']
 
-        # Skip duplicates (UK/GB) and invalid IDs
-        if country_id == 'GB' or len(country_id) != 2:
+        # Skip duplicates (UK/GB), invalid IDs, and Israeli district pages (TA/JM/HA)
+        if country_id in ('GB', 'TA', 'JM', 'HA') or len(country_id) != 2:
             continue
 
         # Extract full country data from JS file

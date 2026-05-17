@@ -3,7 +3,7 @@
     {
       "source": "/country.html",
       "destination": "/us-postal-code.html",
-      "permanent": true
+      "permanent": false
     }
   ],
   "headers": [

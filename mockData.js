@@ -10680,3 +10680,5 @@ function searchPostalCode(countryCode, query) {
 if (typeof module !== "undefined" && module.exports) {
   module.exports = { postalData, countryNames, getCountryData, getAllCountries, searchPostalCode };
 }
+
+window.initAds = window.initAds || function() {};

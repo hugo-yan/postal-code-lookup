@@ -109,8 +109,9 @@ def main():
         city_files = glob.glob(f'{city_dir}*.html')
         for city_file in city_files:
             city_name = os.path.basename(city_file).replace('-postal-code.html', '')
+            city_url = city_file.replace('\\', '/')
             urls.append({
-                'loc': f'https://postalcodelookup.info/{city_file}',
+                'loc': f'https://postalcodelookup.info/{city_url}',
                 'lastmod': today,
                 'changefreq': 'monthly',
                 'priority': '0.7'

@@ -9,9 +9,10 @@
   <meta name="description" content="Free postal code and zip code lookup for over 40 countries. Search by city, address, or location to find postal codes on Google Maps.">
   <meta name="keywords" content="postal code lookup, zip code finder, international postal codes, postcode search">
   <meta name="robots" content="index, follow">
-  <link rel="canonical" href="https://postalcodelookup.com/">
+  <link rel="canonical" href="https://postalcodelookup.info/">
 
   <meta property="og:type" content="website">
+  <meta property="og:url" content="https://postalcodelookup.info/">
   <meta property="og:title" content="Postal Code Lookup | Find Zip Codes Worldwide">
   <meta property="og:description" content="Free postal code lookup tool for 40+ countries. Search by city or address.">
 
@@ -24,16 +25,24 @@
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="home.css">
 
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "WebSite",
     "name": "Postal Code Lookup",
-    "url": "https://postalcodelookup.com/",
+    "url": "https://postalcodelookup.info/",
     "description": "Free international postal code and zip code lookup directory",
     "potentialAction": {
       "@type": "SearchAction",
-      "target": "https://postalcodelookup.com/?q={search_term_string}",
+      "target": "https://postalcodelookup.info/?q={search_term_string}",
       "query-input": "required name=search_term_string"
     }
   }
