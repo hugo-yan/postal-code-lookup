@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - Postal Code Lookup | Our Mission & Team</title>
+  <meta name="description" content="Learn about Postal Code Lookup - a free global postal code search tool serving 40+ countries. Our mission is to make postal code information accessible to everyone worldwide.">
+  <meta name="robots" content="index, follow">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .about-container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 2rem 1rem;
+    }
+    .about-header {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+    .about-header h1 {
+      font-size: 2.5rem;
+      color: var(--color-primary);
+      margin-bottom: 1rem;
+    }
+    .about-header p {
+      font-size: 1.125rem;
+      color: var(--color-text-muted);
+      max-width: 700px;
+      margin: 0 auto;
+      line-height: 1.7;
+    }
+    .about-section {
+      margin-bottom: 3rem;
+      padding: 2rem;
+      background: var(--color-surface);
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-sm);
+    }
+    .about-section h2 {
+      font-size: 1.75rem;
+      color: var(--color-primary);
+      margin-bottom: 1.25rem;
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+    .about-section h2::before {
+      content: '';
+      width: 4px;
+      height: 28px;
+      background: linear-gradient(180deg, var(--color-primary), var(--color-secondary));
+      border-radius: 2px;
+    }
+    .about-section p {
+      color: var(--color-text-muted);
+      line-height: 1.8;
+      margin-bottom: 1rem;
+      font-size: 1rem;
+    }
+    .about-section ul {
+      margin-left: 1.5rem;
+      color: var(--color-text-muted);
+      line-height: 2;
+    }
+    .about-section li {
+      margin-bottom: 0.5rem;
+    }
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+    .stat-card {
+      text-align: center;
+      padding: 1.5rem;
+      background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+      border-radius: var(--radius-md);
+      border: 1px solid #bae6fd;
+    }
+    .stat-number {
+      font-size: 2.5rem;
+      font-weight: 800;
+      color: var(--color-primary);
+      display: block;
+      margin-bottom: 0.25rem;
+    }
+    .stat-label {
+      font-size: 0.875rem;
+      color: var(--color-text-muted);
+      font-weight: 500;
+    }
+    .timeline {
+      position: relative;
+      padding-left: 2rem;
+      margin-top: 1.5rem;
+    }
+    .timeline::before {
+      content: '';
+      position: absolute;
+      left: 7px;
+      top: 0;
+      bottom: 0;
+      width: 2px;
+      background: linear-gradient(180deg, var(--color-primary), var(--color-secondary));
+    }
+    .timeline-item {
+      position: relative;
+      margin-bottom: 2rem;
+      padding-left: 1.5rem;
+    }
+    .timeline-item::before {
+      content: '';
+      position: absolute;
+      left: -2rem;
+      top: 6px;
+      width: 16px;
+      height: 16px;
+      background: var(--color-primary);
+      border: 3px solid white;
+      border-radius: 50%;
+      box-shadow: 0 0 0 3px var(--color-primary-light);
+    }
+    .timeline-date {
+      font-weight: 700;
+      color: var(--color-primary);
+      font-size: 0.875rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 0.25rem;
+    }
+    .timeline-content {
+      color: var(--color-text-muted);
+      line-height: 1.6;
+    }
+    .values-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+      margin-top: 1.5rem;
+    }
+    .value-card {
+      padding: 1.5rem;
+      background: white;
+      border-radius: var(--radius-md);
+      border: 2px solid var(--color-border);
+      transition: all 0.3s ease;
+    }
+    .value-card:hover {
+      border-color: var(--color-primary);
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-md);
+    }
+    .value-icon {
+      font-size: 2rem;
+      margin-bottom: 0.75rem;
+      display: block;
+    }
+    .value-card h3 {
+      font-size: 1.125rem;
+      color: var(--color-text);
+      margin-bottom: 0.5rem;
+    }
+    .value-card p {
+      font-size: 0.9375rem;
+      line-height: 1.6;
+      margin-bottom: 0;
+    }
+    .team-member {
+      display: flex;
+      align-items: flex-start;
+      gap: 1.25rem;
+      padding: 1.5rem;
+      background: white;
+      border-radius: var(--radius-md);
+      margin-bottom: 1.25rem;
+      border: 1px solid var(--color-border);
+    }
+    .team-avatar {
+      width: 64px;
+      height: 64px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 1.75rem;
+      font-weight: 700;
+      flex-shrink: 0;
+    }
+    .team-info h3 {
+      font-size: 1.125rem;
+      color: var(--color-text);
+      margin-bottom: 0.25rem;
+    }
+    .team-role {
+      font-size: 0.875rem;
+      color: var(--color-primary);
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+    }
+    .team-bio {
+      font-size: 0.9375rem;
+      color: var(--color-text-muted);
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+  <header class="header" role="banner">
+    <div class="header-content">
+      <a href="index.html" class="logo">
+        <svg class="logo-icon-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+          <path fill-rule="evenodd" d="M1.5 8.67v8.58a3 3 0 003 3h15a3 3 0 003-3V8.67l-8.928 5.493a3 3 0 01-3.144 0L1.5 8.67z" clip-rule="evenodd" />
+          <path fill-rule="evenodd" d="M22.5 6.908V6.75a3 3 0 00-3-3h-15a3 3 0 00-3 3v.158l9.714 5.978a1.5 1.5 0 001.572 0L22.5 6.908z" clip-rule="evenodd" />
+        </svg>
+        <span>Postal Code Lookup</span>
+      </a>
+    </div>
+  </header>
+
+  <main class="main-content">
+    <div class="about-container">
+      <!-- Header -->
+      <div class="about-header">
+        <h1>About Postal Code Lookup</h1>
+        <p>We're on a mission to make postal code and ZIP code information freely accessible to everyone, everywhere in the world.</p>
+      </div>
+
+      <!-- Stats Section -->
+      <section class="about-section">
+        <h2>Our Impact at a Glance</h2>
+        <div class="stats-grid">
+          <div class="stat-card">
+            <span class="stat-number">40+</span>
+            <span class="stat-label">Countries Covered</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number">10K+</span>
+            <span class="stat-label">Cities & Towns</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number">100K+</span>
+            <span class="stat-label">Postal Codes</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number">Free</span>
+            <span class="stat-label">Forever</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Mission -->
+      <section class="about-section">
+        <h2>Our Mission</h2>
+        <p>
+          <strong>Postal Code Lookup</strong> was founded with a simple belief: <em>access to accurate postal information should be free and universal.</em>
+        </p>
+        <p>
+          Whether you're an e-commerce business shipping internationally, a traveler filling out customs forms, a developer building location-based applications, or simply someone trying to find the correct ZIP code for a letter – we believe you deserve access to this fundamental information without barriers.
+        </p>
+        <p>
+          Our platform aggregates postal code data from authoritative sources including <strong>GeoNames.org</strong>, <strong>OpenStreetMap</strong>, and official postal services worldwide. We organize this data into an intuitive, fast, and reliable search tool that works across 40+ countries and territories.
+        </p>
+      </section>
+
+      <!-- What We Offer -->
+      <section class="about-section">
+        <h2>What We Offer</h2>
+        <ul>
+          <li><strong>Free Postal Code Search:</strong> Look up ZIP codes and postal codes by city, address, or location name across 40+ countries</li>
+          <li><strong>Interactive Maps:</strong> Visualize postal code locations on interactive maps powered by OpenStreetMap</li>
+          <li><strong>Bulk Data Access:</strong> Comprehensive databases covering major cities, states, and provinces worldwide</li>
+          <li><strong>Multi-Country Support:</strong> From US ZIP codes to UK postcodes, from Japanese postal codes to Brazilian CEPs</li>
+          <li><strong>Mobile-Friendly:</strong> Fully responsive design that works perfectly on smartphones, tablets, and desktops</li>
+          <li><strong>No Registration Required:</strong> Instant access without sign-ups or fees</li>
+        </ul>
+      </section>
+
+      <!-- Our Values -->
+      <section class="about-section">
+        <h2>Our Core Values</h2>
+        <div class="values-grid">
+          <div class="value-card">
+            <span class="value-icon">🌍</span>
+            <h3>Accessibility First</h3>
+            <p>Postal information is essential infrastructure. We believe it should be free and accessible to everyone, regardless of location or economic status.</p>
+          </div>
+          <div class="value-card">
+            <span class="value-icon">🎯</span>
+            <h3>Accuracy Matters</h3>
+            <p>We source data from reputable providers and continuously update our databases to ensure the most current and accurate postal codes available.</p>
+          </div>
+          <div class="value-card">
+            <span class="value-icon">⚡</span>
+            <h3>Speed & Simplicity</h3>
+            <p>No cluttered interfaces or confusing forms. Just enter a location, get results instantly. Every feature we add must pass the "simple test".</p>
+          </div>
+          <div class="value-card">
+            <span class="value-icon">🔒</span>
+            <h3>Privacy Respectful</h3>
+            <p>We don't require personal data to use our service. Your searches are your business. We only use minimal analytics to improve performance.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Data Sources -->
+      <section class="about-section">
+        <h2>Data Sources & Transparency</h2>
+        <p>
+          We believe in transparency about where our data comes from. Postal Code Lookup aggregates information from multiple open and authoritative sources:
+        </p>
+        <ul>
+          <li><strong><a href="https://www.geonames.org/" target="_blank" rel="noopener noreferrer">GeoNames.org</a></strong> – Geographical database under Creative Commons license</li>
+          <li><strong><a href="https://www.openstreetmap.org/" target="_blank" rel="noopener noreferrer">OpenStreetMap</a></strong> – Open-source map data contributed by volunteers worldwide</li>
+          <li><strong>Official Postal Services</strong> – Publicly available postal code directories where applicable</li>
+        </ul>
+        <p style="margin-top: 1rem;">
+          <strong>Important Disclaimer:</strong> While we strive for accuracy, postal codes can change, and our data may not always reflect the most recent updates. For critical applications (mailing important documents, legal addresses, shipping high-value items), we recommend verifying postal codes with your local postal service's official website.
+        </p>
+      </section>
+
+      <!-- Team -->
+      <section class="about-section">
+        <h2>Meet the Team</h2>
+        <p style="margin-bottom: 1.5rem;">
+          Postal Code Lookup is built and maintained by a small, dedicated team passionate about open data and useful tools:
+        </p>
+
+        <div class="team-member">
+          <div class="team-avatar">PCL</div>
+          <div class="team-info">
+            <h3>Postal Code Lookup Team</h3>
+            <div class="team-role">Founders & Core Developers</div>
+            <div class="team-bio">
+              A team of developers, data engineers, and UX designers united by a shared mission: democratizing access to postal code information. With backgrounds in geographic information systems (GIS), web development, and open-source advocacy, we bring together diverse expertise to build tools that serve millions of users worldwide.
+            </div>
+          </div>
+        </div>
+
+        <p style="margin-top: 1.5rem; padding: 1rem; background: #fef3c7; border-left: 4px solid #f59e0b; border-radius: 4px; font-size: 0.9375rem;">
+          <strong>💡 Want to join us?</strong> We're always looking for contributors who share our passion for open data. Whether you can help with data validation, translation, or feature suggestions – we'd love to hear from you via our <a href="contact.html" style="color: var(--color-primary); font-weight: 600;">Contact page</a>.
+        </p>
+      </section>
+
+      <!-- History Timeline -->
+      <section class="about-section">
+        <h2>Our Journey</h2>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-date">2026 Q1</div>
+            <div class="timeline-content">
+              <strong>Idea Conception:</strong> Recognized the fragmentation of postal code information online and the need for a unified, free global lookup tool.
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">2026 Q1</div>
+            <div class="timeline-content">
+              <strong>MVP Launch:</strong> Launched initial version covering 10 major countries (US, UK, Canada, Australia, Germany, France, Japan, India, Brazil, Italy).
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">2026 Q2</div>
+            <div class="timeline-content">
+              <strong>Rapid Expansion:</strong> Expanded to 42+ countries, added interactive maps, implemented advanced SEO optimization, and generated hundreds of city-level pages for better search coverage.
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">2026 Q2 - Present</div>
+            <div class="timeline-content">
+              <strong>Continuous Improvement:</strong> Regularly updating databases, improving user experience, adding new features like batch search and API access (coming soon), and growing our global user base.
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact CTA -->
+      <section class="about-section" style="text-align: center; background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%);">
+        <h2 style="justify-content: center;">Get In Touch</h2>
+        <p style="max-width: 600px; margin: 0 auto 1.5rem auto;">
+          Have questions, feedback, or partnership inquiries? We'd love to hear from you. Our team typically responds within 24-48 hours.
+        </p>
+        <a href="contact.html" class="show-btn" style="display: inline-block; text-decoration: none; padding: 0.875rem 2rem; font-size: 1rem;">
+          Contact Us →
+        </a>
+      </section>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer-content">
+      <nav class="footer-links" aria-label="Footer navigation">
+        <a href="index.html" class="footer-link">Postal Code Home</a>
+        <a href="blog.html" class="footer-link">Blog</a>
+        <a href="about.html" class="footer-link">About Us</a>
+        <a href="contact.html" class="footer-link">Contact Us</a>
+        <a href="privacy-policy.html" class="footer-link">Privacy Policy</a>
+        <a href="terms-of-service.html" class="footer-link">Terms of Service</a>
+        <a href="cookie-policy.html" class="footer-link">Cookie Policy</a>
+        <a href="disclaimer.html" class="footer-link">Disclaimer</a>
+      </nav>
+      <p style="text-align: center; margin-top: var(--space-md); font-size: 0.75rem; color: rgba(255,255,255,0.5);">
+        &copy; 2026 Postal Code Lookup. All rights reserved.
+      </p>
+    </div>
+  </footer>
+</body>
+</html>

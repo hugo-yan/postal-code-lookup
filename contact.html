@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - Postal Code Lookup | Get in Touch</title>
+  <meta name="description" content="Contact Postal Code Lookup team for support, feedback, data corrections, or business inquiries. We typically respond within 24-48 hours.">
+  <meta name="robots" content="index, follow">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .contact-container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 2rem 1rem;
+    }
+    .contact-header {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+    .contact-header h1 {
+      font-size: 2.5rem;
+      color: var(--color-primary);
+      margin-bottom: 1rem;
+    }
+    .contact-header p {
+      font-size: 1.125rem;
+      color: var(--color-text-muted);
+      max-width: 700px;
+      margin: 0 auto;
+      line-height: 1.7;
+    }
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2.5rem;
+      align-items: start;
+    }
+    @media (max-width: 768px) {
+      .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+      }
+    }
+    .contact-form-wrapper {
+      background: var(--color-surface);
+      padding: 2.5rem;
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-md);
+    }
+    .form-title {
+      font-size: 1.5rem;
+      color: var(--color-text);
+      margin-bottom: 1.5rem;
+      font-weight: 700;
+    }
+    .form-group {
+      margin-bottom: 1.5rem;
+    }
+    .form-label {
+      display: block;
+      font-size: 0.9375rem;
+      font-weight: 600;
+      color: var(--color-text);
+      margin-bottom: 0.5rem;
+    }
+    .form-label .required {
+      color: #ef4444;
+      margin-left: 0.25rem;
+    }
+    .form-input,
+    .form-select,
+    .form-textarea {
+      width: 100%;
+      padding: 0.875rem 1rem;
+      font-size: 1rem;
+      border: 2px solid var(--color-border);
+      border-radius: var(--radius-md);
+      background: white;
+      color: var(--color-text);
+      transition: all 0.2s ease;
+      font-family: inherit;
+    }
+    .form-input:focus,
+    .form-select:focus,
+    .form-textarea:focus {
+      outline: none;
+      border-color: var(--color-primary);
+      box-shadow: 0 0 0 3px rgba(30, 64, 175, 0.1);
+    }
+    .form-textarea {
+      min-height: 150px;
+      resize: vertical;
+    }
+    .form-select {
+      cursor: pointer;
+      appearance: none;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3E%3Cpath stroke='%236B7280' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3E%3C/svg%3E");
+      background-position: right 0.75rem center;
+      background-repeat: no-repeat;
+      background-size: 1.25rem;
+      padding-right: 2.5rem;
+    }
+    .submit-btn {
+      width: 100%;
+      padding: 1rem 2rem;
+      font-size: 1.0625rem;
+      font-weight: 700;
+      color: white;
+      background: linear-gradient(135deg, var(--color-primary), #1e3a8a);
+      border: none;
+      border-radius: var(--radius-md);
+      cursor: pointer;
+      transition: all 0.3s ease;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+    }
+    .submit-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(30, 64, 175, 0.35);
+    }
+    .submit-btn:active {
+      transform: translateY(0);
+    }
+    .contact-info-wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+    .info-card {
+      background: var(--color-surface);
+      padding: 2rem;
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-sm);
+      border-left: 4px solid var(--color-primary);
+    }
+    .info-card h3 {
+      font-size: 1.25rem;
+      color: var(--color-text);
+      margin-bottom: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+    .info-icon {
+      width: 40px;
+      height: 40px;
+      background: linear-gradient(135deg, #eff6ff, #dbeafe);
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.25rem;
+      flex-shrink: 0;
+    }
+    .info-content p {
+      color: var(--color-text-muted);
+      line-height: 1.7;
+      margin-bottom: 0.75rem;
+      font-size: 0.9375rem;
+    }
+    .info-content a {
+      color: var(--color-primary);
+      text-decoration: none;
+      font-weight: 600;
+      word-break: break-all;
+    }
+    .info-content a:hover {
+      text-decoration: underline;
+    }
+    .response-time {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.625rem 1rem;
+      background: #dcfce7;
+      color: #166534;
+      border-radius: var(--radius-full);
+      font-size: 0.875rem;
+      font-weight: 600;
+      margin-top: 0.5rem;
+    }
+    .faq-preview {
+      background: linear-gradient(135deg, #fefce8, #fef9c3);
+      padding: 1.5rem;
+      border-radius: var(--radius-md);
+      border: 1px solid #fde047;
+    }
+    .faq-preview h4 {
+      color: #854d0e;
+      font-size: 1rem;
+      margin-bottom: 0.75rem;
+    }
+    .faq-preview ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .faq-preview li {
+      padding: 0.5rem 0;
+      border-bottom: 1px dashed #fde047;
+      font-size: 0.9375rem;
+      color: #a16207;
+    }
+    .faq-preview li:last-child {
+      border-bottom: none;
+    }
+    .faq-preview a {
+      color: var(--color-primary);
+      font-weight: 600;
+      text-decoration: none;
+    }
+    .success-message {
+      display: none;
+      padding: 1.5rem;
+      background: #dcfce7;
+      border: 2px solid #22c55e;
+      border-radius: var(--radius-md);
+      text-align: center;
+      margin-top: 1rem;
+    }
+    .success-message.show {
+      display: block;
+      animation: slideDown 0.3s ease;
+    }
+    @keyframes slideDown {
+      from { opacity: 0; transform: translateY(-10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .success-message h3 {
+      color: #166534;
+      margin-bottom: 0.5rem;
+      font-size: 1.125rem;
+    }
+    .success-message p {
+      color: #15803d;
+      font-size: 0.9375rem;
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+  <header class="header" role="banner">
+    <div class="header-content">
+      <a href="index.html" class="logo">
+        <svg class="logo-icon-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+          <path fill-rule="evenodd" d="M1.5 8.67v8.58a3 3 0 003 3h15a3 3 0 003-3V8.67l-8.928 5.493a3 3 0 01-3.144 0L1.5 8.67z" clip-rule="evenodd" />
+          <path fill-rule="evenodd" d="M22.5 6.908V6.75a3 3 0 00-3-3h-15a3 3 0 00-3 3v.158l9.714 5.978a1.5 1.5 0 001.572 0L22.5 6.908z" clip-rule="evenodd" />
+        </svg>
+        <span>Postal Code Lookup</span>
+      </a>
+    </div>
+  </header>
+
+  <main class="main-content">
+    <div class="contact-container">
+      <!-- Header -->
+      <div class="contact-header">
+        <h1>Contact Us</h1>
+        <p>Have a question, suggestion, or found an error in our data? We'd love to hear from you. Fill out the form below and we'll get back to you within 24-48 hours.</p>
+      </div>
+
+      <!-- Main Grid -->
+      <div class="contact-grid">
+        <!-- Left: Contact Form -->
+        <div class="contact-form-wrapper">
+          <h2 class="form-title">Send us a Message</h2>
+
+          <form id="contact-form" action="#" method="POST" novalidate>
+            <div class="form-group">
+              <label for="name" class="form-label">Full Name <span class="required">*</span></label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                class="form-input"
+                placeholder="John Doe"
+                required
+                autocomplete="name"
+              >
+            </div>
+
+            <div class="form-group">
+              <label for="email" class="form-label">Email Address <span class="required">*</span></label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                class="form-input"
+                placeholder="john@example.com"
+                required
+                autocomplete="email"
+              >
+            </div>
+
+            <div class="form-group">
+              <label for="subject" class="form-label">Subject <span class="required">*</span></label>
+              <select id="subject" name="subject" class="form-select" required>
+                <option value="">Select a topic...</option>
+                <option value="general">General Inquiry</option>
+                <option value="data-correction">Data Correction / Error Report</option>
+                <option value="feature-request">Feature Request</option>
+                <option value="technical-issue">Technical Issue / Bug Report</option>
+                <option value="business-partnership">Business Partnership</option>
+                <option value="advertising">Advertising Inquiry</option>
+                <option value="api-access">API Access Request</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="country-relevant" class="form-label">Relevant Country (Optional)</label>
+              <select id="country-relevant" name="country" class="form-select">
+                <option value="">Not applicable</option>
+                <option value="US">United States (US)</option>
+                <option value="UK">United Kingdom (UK)</option>
+                <option value="CA">Canada</option>
+                <option value="AU">Australia</option>
+                <option value="DE">Germany</option>
+                <option value="FR">France</option>
+                <option value="JP">Japan</option>
+                <option value="IN">India</option>
+                <option value="BR">Brazil</option>
+                <option value="IT">Italy</option>
+                <option value="other-country">Other Country</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="message" class="form-label">Your Message <span class="required">*</span></label>
+              <textarea
+                id="message"
+                name="message"
+                class="form-textarea"
+                placeholder="Please describe your question or issue in detail..."
+                required
+                minlength="10"
+                maxlength="2000"
+              ></textarea>
+              <small style="display: block; margin-top: 0.5rem; color: var(--color-text-muted); font-size: 0.8125rem;">
+                Minimum 10 characters. Maximum 2,000 characters.
+              </small>
+            </div>
+
+            <button type="submit" class="submit-btn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+              </svg>
+              Send Message
+            </button>
+          </form>
+
+          <!-- Success Message -->
+          <div id="success-message" class="success-message">
+            <h3>✅ Message Sent Successfully!</h3>
+            <p>Thank you for contacting us. We've received your message and will respond within 24-48 hours. Please check your email inbox (and spam folder) for our reply.</p>
+          </div>
+        </div>
+
+        <!-- Right: Contact Info -->
+        <div class="contact-info-wrapper">
+
+          <!-- Email Card -->
+          <div class="info-card">
+            <h3>
+              <span class="info-icon">📧</span>
+              Email Us
+            </h3>
+            <div class="info-content">
+              <p>For general inquiries, partnerships, or advertising:</p>
+              <p><a href="mailto:support@postalcodelookup.com">support@postalcodelookup.com</a></p>
+              <p>For data corrections and technical issues:</p>
+              <p><a href="mailto:data@postalcodelookup.com">data@postalcodelookup.com</a></p>
+              <div class="response-time">
+                ⏱️ Average response time: 24-48 hours
+              </div>
+            </div>
+          </div>
+
+          <!-- Response Time Card -->
+          <div class="info-card">
+            <h3>
+              <span class="info-icon">⏰</span>
+              Response Times
+            </h3>
+            <div class="info-content">
+              <ul style="margin-left: 1.25rem; line-height: 2;">
+                <li><strong>General Inquiries:</strong> 24-48 hours</li>
+                <li><strong>Data Corrections:</strong> 48-72 hours (requires verification)</li>
+                <li><strong>Technical Issues:</strong> Within 24 hours during business days</li>
+                <li><strong>Business Partnerships:</strong> Within 3 business days</li>
+              </ul>
+              <p style="margin-top: 1rem; font-size: 0.875rem;">
+                <em>Note: We're a small team, so response times may vary slightly during weekends and holidays.</em>
+              </p>
+            </div>
+          </div>
+
+          <!-- FAQ Preview -->
+          <div class="faq-preview">
+            <h4>💡 Before you write...</h4>
+            <ul>
+              <li><strong>Data error?</strong> Include the city name and incorrect postal code</li>
+              <li><strong>Technical bug?</strong> Describe what happened and your browser/device</li>
+              <li><strong>Feature request?</strong> Tell us how it would help you</li>
+              <li><strong>General question?</strong> Check our <a href="about.html">About page</a> first!</li>
+            </ul>
+          </div>
+
+          <!-- Social/Community -->
+          <div class="info-card" style="border-left-color: var(--color-secondary);">
+            <h3>
+              <span class="info-icon" style="background: linear-gradient(135deg, #ecfdf5, #d1fae5);">🌐</span>
+              Connect With Us
+            </h3>
+            <div class="info-content">
+              <p>We're working on building our community presence. Stay tuned for updates on:</p>
+              <p style="font-size: 0.875rem;">
+                • Twitter/X (coming soon)<br>
+                • GitHub Open Source (coming soon)<br>
+                • Blog & Newsletter (coming soon)
+              </p>
+              <p style="margin-top: 0.75rem; font-style: italic; font-size: 0.875rem;">
+                Want to be notified when we launch? Send us a message with subject "Newsletter"!
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer-content">
+      <nav class="footer-links" aria-label="Footer navigation">
+        <a href="index.html" class="footer-link">Postal Code Home</a>
+        <a href="blog.html" class="footer-link">Blog</a>
+        <a href="about.html" class="footer-link">About Us</a>
+        <a href="contact.html" class="footer-link">Contact Us</a>
+        <a href="privacy-policy.html" class="footer-link">Privacy Policy</a>
+        <a href="terms-of-service.html" class="footer-link">Terms of Service</a>
+        <a href="cookie-policy.html" class="footer-link">Cookie Policy</a>
+        <a href="disclaimer.html" class="footer-link">Disclaimer</a>
+      </nav>
+      <p style="text-align: center; margin-top: var(--space-md); font-size: 0.75rem; color: rgba(255,255,255,0.5);">
+        &copy; 2026 Postal Code Lookup. All rights reserved.
+      </p>
+    </div>
+  </footer>
+
+  <!-- Form Handling Script -->
+  <script>
+    document.getElementById('contact-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+
+      const form = this;
+      const name = document.getElementById('name').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const subject = document.getElementById('subject').value;
+      const message = document.getElementById('message').value.trim();
+
+      // Basic validation
+      if (!name || !email || !subject || !message) {
+        alert('Please fill in all required fields.');
+        return;
+      }
+
+      if (!isValidEmail(email)) {
+        alert('Please enter a valid email address.');
+        return;
+      }
+
+      if (message.length < 10) {
+        alert('Message must be at least 10 characters long.');
+        return;
+      }
+
+      // Simulate form submission (replace with actual backend endpoint)
+      const submitBtn = form.querySelector('.submit-btn');
+      const originalText = submitBtn.innerHTML;
+
+      submitBtn.innerHTML = '⏳ Sending...';
+      submitBtn.disabled = true;
+
+      // Simulate API call delay
+      setTimeout(function() {
+        // Show success message
+        document.getElementById('success-message').classList.add('show');
+
+        // Reset form
+        form.reset();
+
+        // Restore button
+        submitBtn.innerHTML = originalText;
+        submitBtn.disabled = false;
+
+        // Hide success message after 10 seconds
+        setTimeout(function() {
+          document.getElementById('success-message').classList.remove('show');
+        }, 10000);
+
+      }, 1500);
+    });
+
+    function isValidEmail(email) {
+      const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      return regex.test(email);
+    }
+
+    // Real-time character count for textarea
+    const messageTextarea = document.getElementById('message');
+    if (messageTextarea) {
+      messageTextarea.addEventListener('input', function() {
+        const currentLength = this.value.length;
+        // Could add character counter here if desired
+      });
+    }
+  </script>
+</body>
+</html>
